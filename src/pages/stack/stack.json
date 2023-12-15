@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Frontend",
+        "children": [
+            { "name": "React", "svg": "logos:react" },
+            { "name": "Svelte Kit", "svg": "logos:svelte-icon" },
+            { "name": "Tailwindcss", "svg": "logos:tailwindcss-icon" },
+            { "name": "React Router", "svg": "logos:react-router" },
+            { "name": "Next Js", "svg": "vscode-icons:file-type-next" },
+            { "name": "Astro", "svg": "vscode-icons:file-type-astro" }
+        ]
+    },
+    {
+        "name": "Backend",
+        "children": [
+            { "name": "Node", "svg": "logos:nodejs-icon" },
+            { "name": "Express", "svg": "simple-icons:express" },
+            { "name": "Mongo", "svg": "vscode-icons:file-type-mongo" },
+            { "name": "SQL", "svg": "logos:postgresql" },
+            { "name": "Firebase", "svg": "logos:firebase" }
+        ]
+    },
+    {
+        "name": "Mobile",
+        "children": [
+            { "name": "React Native", "svg": "logos:react" },
+            { "name": "Expo", "svg": "vscode-icons:file-type-light-expo" }
+        ]
+    },
+    {
+        "name": "UI design",
+        "children": [
+            { "name": "Figma", "svg": "logos:figma" },
+            { "name": "Adobe XD", "svg": "cib:adobe-xd" }
+        ]
+    },
+    {
+        "name": "Languges",
+        "children": [
+            { "name": "Js", "svg": "logos:javascript" },
+            { "name": "Ts", "svg": "logos:typescript-icon" },
+            { "name": "Python", "svg": "logos:python" },
+            { "name": "Java", "svg": "logos:java" },
+            { "name": "C", "svg": "logos:c" },
+            { "name": "C++", "svg": "logos:c-plusplus" },
+            { "name": "Go", "svg": "logos:go" },
+            { "name": "Kotlin", "svg": "logos:kotlin" }
+        ]
+    }
+]

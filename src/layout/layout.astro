@@ -1,0 +1,88 @@
+---
+import { Icon } from "astro-icon"
+import "./../styles/index.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Kira Aziz</title>
+	</head>
+	<body class="h-[100svh] w-screen p-0 m-0 bg-black/95 flex flex-col">
+		<div
+			class="w-full p-8 shadow-xl bg-gray-950 flex items-center z-10 border-b-[0.005px] border-gray-800 justify-center"
+		>
+			<div
+				class="w-full h-full max-w-5xl flex justify-between items-center text-white"
+			>
+				<h1 class="text-xl font-bold md:flex hidden items-center justify-center gap-3">
+					<Icon name="ph:terminal-bold" size="30" class="text-purple-600" />	
+					Kira Aziz
+				</h1>
+				<div class="flex gap-7 lg:mx-0 mx-auto">
+					<a
+						href="/"
+						class="flex items-center justify-center gap-2 opacity-70 hover:opacity-100"
+					>
+						<Icon
+							name="line-md:home"
+							size="20"
+							class="text-purple-600"
+						/>
+						<p class="lg:block hidden">Home</p>
+					</a>
+					<a
+						href="/stack"
+						class="flex items-center justify-center gap-2 opacity-70 hover:opacity-100"
+					>
+						<Icon
+							name="tabler:brand-python"
+							size="20"
+							class="text-purple-600"
+						/>
+						<p class="lg:block hidden">Satck</p>
+					</a>
+					<a
+						href="/project"
+						class="flex items-center justify-center gap-2 opacity-70 hover:opacity-100"
+					>
+						<Icon
+							name="line-md:github"
+							size="20"
+							class="text-purple-600"
+						/>
+						<p class="lg:block hidden">Projects</p>
+					</a>
+					<a
+						href="/blog"
+						class="flex items-center justify-center gap-2 opacity-70 hover:opacity-100"
+					>
+						<Icon
+							name="line-md:edit"
+							size="20"
+							class="text-purple-600"
+						/>
+						<p class="lg:block hidden">Blog</p>
+					</a>
+					<a
+						href="/contact"
+						class="flex items-center justify-center gap-2 opacity-70 hover:opacity-100"
+					>
+						<Icon
+							name="lucide:mail"
+							size="20"
+							class="text-purple-600"
+						/>
+						<p class="lg:block hidden">Contact</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="layout relative w-full flex-1 bg-gray-900 overflow-auto">
+			<slot />
+			<div style="z-index: 0" class="shBox fixed top-20 left-20" ></div>
+			<div style="z-index: 0" class="shBox2 fixed bottom-20 right-20"></div>
+		</div>
+	</body>
+</html>

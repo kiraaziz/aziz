@@ -1,0 +1,79 @@
+@font-face {
+    font-family: f1;
+    src: url(/font/Heebo.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #1f293700;
+    /* Tailwind gray-900 */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: white;
+    /* DaisyUI primary purple */
+  }
+  
+  /* Firefox */
+  ::-moz-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  ::-moz-scrollbar-track {
+    background-color: #1f293700;
+    /* Tailwind gray-900 */
+  }
+  
+  ::-moz-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #7c3aed;
+    /* DaisyUI primary purple */
+  }
+  
+  /* IE 11+ */
+  ::-ms-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  ::-ms-scrollbar-track {
+    background-color: #1f293700;
+    /* Tailwind gray-900 */
+  }
+  
+  ::-ms-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #7c3aed;
+    /* DaisyUI primary purple */
+  }
+
+body {
+    font-family: f1;
+}
+
+.layout {
+    background:
+        repeating-linear-gradient(to right, transparent,
+            transparent 25px,
+            rgba(255, 255, 255, 0.2) 25px,
+            black 26px),
+        repeating-linear-gradient(to bottom, transparent,
+            transparent 25px,
+            rgba(255, 255, 255, 0.2) 25px,
+            black 26px),
+        linear-gradient(20deg, rgb(3 7 18), rgb(3 7 18));
+}
+
+.shBox {
+    box-shadow: 0px 0px 700px 90px rgb(147 51 234);
+}
+
+.shBox2 {
+    box-shadow: 0px 0px 700px 90px rgb(59 130 246);
+}

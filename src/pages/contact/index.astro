@@ -1,0 +1,72 @@
+---
+import Layout from "../../layout/layout.astro";
+import { Icon } from "astro-icon";
+
+const email = "kiraaziz2020@gmail.com";
+const phone = "+216 93 989 486";
+const facebook = "https://www.facebook.com/aziz.kira.581/";
+const github = "https://github.com/kiraaziz";
+const linkedin = "https://linkedin.com/in/kira-aziz-863a3a278";
+---
+
+<Layout>
+    <div class="h-10 w-full"></div>
+    <div class="w-full max-w-5xl !p-5 mx-auto flex gap-2">
+        <div
+            class="flex-1 flex justify-center gap-4 flex-col items-center lg:items-start"
+        >
+            <ul class="flex flex-col gap-2.5 items-start justify-start">
+                <h1 class="text-2xl font-bold text-purple-600 mb-3">
+                    Contact Us
+                </h1>
+                <a
+                    href={facebook}
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
+                >
+                    <Icon
+                        name="mdi:facebook"
+                        size="30"
+                        class="text-purple-600"
+                    />
+                     Facebook
+                </a>
+                <a
+                    href={github}
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
+                >
+                    <Icon name="mdi:github" size="30" class="text-purple-600" />
+                     Github
+                </a>
+                <a
+                    href={linkedin}
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
+                >
+                    <Icon
+                        name="mdi:linkedin"
+                        size="30"
+                        class="text-purple-600"
+                    />
+                     Linkedin
+                </a>
+                <a
+                    href={`mailto:${email}`}
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
+                >
+                    <Icon name="mdi:email" size="30" class="text-purple-600" />
+                    {email}
+                </a>
+                <a
+                    href={`tel:${phone}`}
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
+                >
+                    <Icon name="mdi:phone" size="30" class="text-purple-600" />
+                    {phone}
+                </a>
+            </ul>
+        </div>
+        <div class="flex-1 lg:flex items-center justify-center hidden">
+            <img src="/svg/Contact.svg" class="h-96 w-96 object-cover" />
+        </div>
+    </div>
+    <div class="h-10 w-full"></div>
+</Layout>

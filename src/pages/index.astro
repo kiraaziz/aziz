@@ -1,0 +1,34 @@
+---
+import Layout from "../layout/layout.astro"
+import { Icon } from 'astro-icon'
+
+const facebook = "https://www.facebook.com/aziz.kira.581/"
+const github = "https://github.com/kiraaziz"
+const linkedin = "https://linkedin.com/in/kira-aziz-863a3a278"
+---
+
+<Layout>
+    <div style="z-index: 1" class="w-full h-full flex items-center justify-center p-4">
+        <div class="w-full max-w-3xl flex items-center justify-center flex-col    ">
+            <h1 class="text-2xl lg:text-5xl text-white font-semibold text-center">
+                👋Hello There my name is 
+                <span class="underline decoration-purple-600 font-bold">Aziz</span>
+            </h1>
+            <p class="text-white text-base lg:text-xl mt-0.5 opacity-90 text-center">
+                I am Rj Med Aziz aka KIRA And I am full stack developer
+            </p>
+
+            <div class="flex mt-9 gap-2">
+                <a href={github} class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
+                    <Icon name="mdi:github" size="30" class="text-purple-600" />
+                </a>
+                <a href={linkedin}  class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
+                    <Icon name="mdi:linkedin" size="28" class="text-purple-600" />
+                </a>
+                <a href={facebook} class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
+                    <Icon name="mdi:facebook" size="28" class="text-purple-600" />
+                </a>
+            </div>
+        </div>
+    </div>
+</Layout>

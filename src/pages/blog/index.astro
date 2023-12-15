@@ -1,0 +1,42 @@
+---
+import Layout from "../../layout/layout.astro";
+import { Icon } from "astro-icon";
+
+const articleReq = await fetch(`https://dev.to/api/articles?username=kiraaziz`);
+const article = await articleReq.json();
+---
+
+<Layout>
+    <div
+        style="z-index: 1"
+        class="w-full h-full flex items-center flex-col px-3"
+    >
+        <div
+            class="grid grid-cols-1 lg:grid-cols-3 w-full max-w-6xl py-10 gap-4 text-white"
+        >
+            {
+                article.map((val) => (
+                    <a href={val.url} class="w-full h-full p-2 backdrop-blur-md text-white col-span-1 gap-4 border rounded-xl border-purple-600 flex flex-col text-white/80 z-20 ">
+                        <div class="flex-1 b">
+                            <img
+                                src={val.cover_image}
+                                class="w-full h-max rounded-lg object-cover"
+                            />
+                        </div>
+                        <div class="flex-1 flex lg:h-full flex-col px-3 pb-3">
+                            <div class="w-full flex flex-wrap gap-1">
+                            {val.tags.split(", ").map((val)=>(
+                                <button class="bg-purple-600 px-3 py-1 text-sm">{val}</button>
+                            ))}
+                            </div>
+                            <div class="w-full h-4" />
+                            <h1 class="text-lg font-medium">{val.title}</h1>
+                            <p class="my-0.5 text-sm font-light text-white/60">{val.description}</p>
+                        </div>
+                    </a>
+                ))
+            }
+            <div class="h-10 w-full"></div>
+        </div>
+    </div>
+</Layout>
