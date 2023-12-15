@@ -30,6 +30,15 @@
         ]
     },
     {
+        "name": "3D editor",
+        "description": "🚀 Dive into the magic of React 3D Editor with Three.js! This GitHub repo marries the simplicity of React with the enchanting world of Three.js. 🎨✨ Craft visually stunning 3D environments effortlessly. Your next creative adventure starts here!",
+        "tags": "react threejs reactfiber",
+        "images": [
+            "/images/new/3d editor/1.webp",
+            "/images/new/3d editor/2.webp"
+        ]
+    },
+    {
         "name": "Be Shop",
         "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
         "tags": "react reactrouter tailwind ecommerce",
