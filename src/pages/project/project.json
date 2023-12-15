@@ -12,6 +12,16 @@
         ]
     },
     {
+        "name": "Manga Hook",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 express scraping manga",
+        "images": [
+            "/images/new/manga/1.webp",
+            "/images/new/manga/2.webp",
+            "/images/new/manga/3.webp"
+        ]
+    },
+    {
         "name": "Fireblog",
         "description": "A blog app 📝 built with Next.js, Tailwind, and PocketBase for an easy and fun experience. Find the best topics on the home page and read great articles by searching for them by tags or searching for what you want .",
         "tags": "react blog nextjs pocketbase",
