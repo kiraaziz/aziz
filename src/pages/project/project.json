@@ -3,7 +3,7 @@
         "name": "Light Ai",
         "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
         "tags": "next13 react firebase huggingface ai",
-        "url": "https://lightai.vercel.app",
+        "url": "https://light-ai.vercel.app",
         "images": [
             "/images/new/lightai/1.webp",
             "/images/new/lightai/2.webp",
