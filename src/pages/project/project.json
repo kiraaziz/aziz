@@ -13,12 +13,31 @@
     },
     {
         "name": "Manga Hook",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "Dive into a world of manga magic with our free reading app! 📚🌟 Inspired by seamless design, it offers limitless creativity. Explore manga effortlessly, anytime, anywhere! 🚀",
         "tags": "next13 express scraping manga",
         "images": [
             "/images/new/manga/1.webp",
             "/images/new/manga/2.webp",
             "/images/new/manga/3.webp"
+        ]
+    },
+    {
+        "name": "UI editor",
+        "description": "Revolutionize creativity with our React app! 🚀 Infused with Adobe XD vibes, it's the ultimate blend of style and functionality. Effortlessly unleash ideas! ✨",
+        "tags": "react nextjs design ui",
+        "images": [
+            "/images/new/uieditor/1.webp"
+        ]
+    },
+    {
+        "name": "Be Shop",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "react reactrouter tailwind ecommerce",
+        "url": "https://go-beshop.vercel.app/",
+        "images": [
+            "/images/new/beshop/1.webp",
+            "/images/new/beshop/2.webp",
+            "/images/new/beshop/3.webp"
         ]
     },
     {
@@ -40,9 +59,9 @@
         "tags": "rollup svelte sqlite3 electronjs image-downloader tailwindcss",
         "url": "https://github.com/kiraaziz/myCat",
         "images": [
-            "/images/0/1.png",
-            "/images/0/2.png",
-            "/images/0/3.png"
+            "/images/0/1.webp",
+            "/images/0/2.webp",
+            "/images/0/3.webp"
         ]
     },
     {
