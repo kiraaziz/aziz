@@ -6,7 +6,7 @@ Embark on a journey through my digital universe, crafted with Astro and Tailwind
 - sitemap integration
 - tailwind integration
 - fancy icons
-##Pages
+## Pages
 1. 🏠 Home: Discover who I am and what fuels my coding passion.
 2. 🛠️ Stack: Explore the technologies that power my coding adventures. ⚙️
 3. 🚀 Projects: Witness the stars of my coding prowess, each project a shining star in my development journey. ✨
