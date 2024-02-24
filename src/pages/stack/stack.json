@@ -4,6 +4,7 @@
         "children": [
             { "name": "React", "svg": "logos:react" },
             { "name": "Svelte Kit", "svg": "logos:svelte-icon" },
+            { "name": "Vue", "svg": "logos:vue" },
             { "name": "Tailwindcss", "svg": "logos:tailwindcss-icon" },
             { "name": "React Router", "svg": "logos:react-router" },
             { "name": "Next Js", "svg": "vscode-icons:file-type-next" },
@@ -14,6 +15,7 @@
         "name": "Backend",
         "children": [
             { "name": "Node", "svg": "logos:nodejs-icon" },
+            { "name": "Nest Js", "svg": "logos:nestjs" },
             { "name": "Express", "svg": "simple-icons:express" },
             { "name": "Mongo", "svg": "vscode-icons:file-type-mongo" },
             { "name": "SQL", "svg": "logos:postgresql" },
@@ -28,10 +30,15 @@
         ]
     },
     {
-        "name": "UI design",
+        "name": "Tools",
         "children": [
+            { "name": "Vercel", "svg": "simple-icons:vercel" },
+            { "name": "Github", "svg": "logos:github" },
+            { "name": "HuggingFace", "svg": "logos:hugging-face-icon" },
+            { "name": "Neon", "svg": "logos:neon-icon" },
+            { "name": "Cockroach", "svg": "logos:figma" },
             { "name": "Figma", "svg": "logos:figma" },
-            { "name": "Adobe XD", "svg": "cib:adobe-xd" }
+            { "name": "Adobe XD", "svg": "logos:adobe-xd" }
         ]
     },
     {

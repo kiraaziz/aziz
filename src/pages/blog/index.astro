@@ -10,28 +10,36 @@ const article = await articleReq.json();
     <div
         style="z-index: 1"
         class="w-full h-full flex items-center flex-col px-3"
+        transition:name="hero"
     >
         <div
             class="grid grid-cols-1 lg:grid-cols-3 w-full max-w-6xl py-10 gap-4 text-white"
         >
             {
                 article.map((val) => (
-                    <a href={val.url} class="w-full h-full p-2 backdrop-blur-md text-white col-span-1 gap-4 border rounded-xl border-purple-600 flex flex-col text-white/80 z-20 ">
+                    <a
+                        href={val.url}
+                        class="w-full h-full p-2 bg-gray-950/50 backdrop-blur-lg text-white col-span-1 gap-4 border rounded-xl border-purple-600 flex flex-col text-white/80 z-20   hover:scale-105 ease-in-out duration-200 transbox"
+                    >
                         <div class="flex-1 b">
                             <img
                                 src={val.cover_image}
-                                class="w-full h-max rounded-lg object-cover"
+                                class="w-full h-max rounded-lg object-cover min-h-40 bg-white"
                             />
                         </div>
                         <div class="flex-1 flex lg:h-full flex-col px-3 pb-3">
                             <div class="w-full flex flex-wrap gap-1">
-                            {val.tags.split(", ").map((val)=>(
-                                <button class="bg-purple-600 px-3 py-1 text-sm">{val}</button>
-                            ))}
+                                {val.tags.split(", ").map((val) => (
+                                    <button class="bg-purple-600 px-3 py-1 text-sm">
+                                        {val}
+                                    </button>
+                                ))}
                             </div>
                             <div class="w-full h-4" />
-                            <h1 class="text-lg font-medium">{val.title}</h1>
-                            <p class="my-0.5 text-sm font-light text-white/60">{val.description}</p>
+                            <h1 class="text-base font-medium">{val.title}</h1>
+                            <p class="my-0.5 text-sm font-light text-white/60">
+                                {val.description}
+                            </p>
                         </div>
                     </a>
                 ))
