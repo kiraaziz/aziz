@@ -200,6 +200,7 @@
         "description": "📝🔔 Keep your life organized with our React Native Memo and Reminder app. Jot down quick memos or set reminders for important events, appointments, and deadlines! ⏰✅",
         "tags": "react-native tailwind localstorag",
         "url": "https://github.com/kiraaziz/My-Memo",
+        "mobile": true, 
         "images": [
             "/images/4/1.png",
             "/images/4/2.png",
