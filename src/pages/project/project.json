@@ -1,9 +1,9 @@
 [
     {
         "name": "Story Ai",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
+        "description": "✨ Introducing Story Ai: Your AI-powered creative companion! 🚀📖 Transform ideas into stories effortlessly. 🌈 Simply choose your theme, pages, and genre to get a delightful and optimistic story. 🎉 Unleash creativity with ease! ✨",
+        "tags": "next13 react firebase stable_diffusion llama lahuggingface ai",
+        "url": "https://story--ai.vercel.app/",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709380342/portfolio/skkf7kxer6hfjap0su05.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709380344/portfolio/ijub3xgtnfdlxgn4kait.webp",
@@ -14,7 +14,7 @@
     },
     {
         "name": "Light Ai update",
-        "description": "",
+        "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -25,9 +25,9 @@
     },
     {
         "name": "Schooler",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
+        "description": "📚 Dive into collaboration with Schooler – the ultimate document-sharing app for teachers and students! 🚀✨ Explore member management, security rules, and a sleek search feature. Enjoy the flexibility of white and dark modes. Elevate your learning journey with Schooler! 💻📄",
+        "tags": "next13 neon prisma shadcn posgresql",
+        "url": "https://schooler-delta.vercel.app/",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378955/portfolio/pelxo9vzkdogdwfrzkrp.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378959/portfolio/tezacdhvx7bleewixhw7.webp",
@@ -40,9 +40,9 @@
     },
     {
         "name": "Neoflow",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
+        "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
+        "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
+        "url": "https://neoflow.deno.dev/",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379884/portfolio/bhyfnxmqmst6a3kcxu1l.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379890/portfolio/ecj4oeigw2dbzwcdnklc.webp",
@@ -55,9 +55,9 @@
     },
     {
         "name": "Manga Hook Api",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
+        "description": "📖 Manga Hook API: Your go-to documentation for fetching manga data effortlessly! 🔍🚀 Explore, search, and discover manga narratives seamlessly. #MangaHookAPI #OpenSourceLibrary",
+        "tags": "astro documentation SSG",
+        "url": "http://mangahook-api.vercel.app/",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378905/portfolio/wzmsi8blha5pjjaaw1wn.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378906/portfolio/abookfnygkbavpyjdkhp.webp",
