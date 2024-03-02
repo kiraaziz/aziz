@@ -1,5 +1,84 @@
 [
     {
+        "name": "Light Ai update",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/new/lightai/3.png",
+            "/new/lightai/2.png",
+            "/new/lightai/1.png"
+        ]
+    },
+    {
+        "name": "Schooler",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/new/schooler/1.png",
+            "/new/schooler/2.png",
+            "/new/schooler/3.png",
+            "/new/schooler/4.png"
+        ]
+    },
+    {
+        "name": "Neoflow",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/new/neoflow/1.png"
+        ]
+    },
+    {
+        "name": "Manga Hook Api",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/new/mangahook-api/1.png",
+            "/new/mangahook-api/2.png",
+            "/new/mangahook-api/3.png"
+        ]
+    },
+    {
+        "name": "Old Portfolio",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/images/new/lightai/1.webp",
+            "/images/new/lightai/2.webp",
+            "/images/new/lightai/3.webp",
+            "/images/new/lightai/4.webp"
+        ]
+    },
+    {
+        "name": "Flash Read",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/images/new/lightai/1.webp",
+            "/images/new/lightai/2.webp",
+            "/images/new/lightai/3.webp",
+            "/images/new/lightai/4.webp"
+        ]
+    },
+    {
+        "name": "Phone Wallpapers",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/images/new/lightai/1.webp",
+            "/images/new/lightai/2.webp",
+            "/images/new/lightai/3.webp",
+            "/images/new/lightai/4.webp"
+        ]
+    },
+    {
         "name": "Light Ai",
         "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
         "tags": "next13 react firebase huggingface ai",

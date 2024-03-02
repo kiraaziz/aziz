@@ -7,11 +7,11 @@ import project from "./project.json";
 <Layout>
     <div style="z-index: 1" class="w-full h-full flex items-center flex-col" transition:name="hero">
         <div
-            class="gap-4 w-full grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 max-w-6xl py-7 px-3"
+            class="gap-4 w-full grid md:grid-cols-2 grid-cols-1 2xl:grid-cols-3 max-w-6xl py-7 px-3"
         >
             {
                 project.map((val) => (
-                    <div class="w-full h-full p-4 backdrop-blur-md text-white col-span-1 gap-4 border rounded-xl border-purple-600 flex items-center justify-center flex-col text-white/80 z-20">
+                    <div class="w-full h-full p-4 bg-gray-950 text-white col-span-1 gap-4 border rounded-xl border-purple-600 flex items-center justify-center flex-col text-white/80 z-20">
                         <div class="w-max max-w-full mx-auto h-max flex gap-2 overflow-x-auto">
                             {val.images.map((img) => (
                                 <img
@@ -38,7 +38,7 @@ import project from "./project.json";
                             >
                                 {val.url}
                             </a>
-                            <p class="text-sm font-light">{val.description}</p>
+                            <p class="text-sm font-light text-white/70">{val.description}</p>
                         </div>
                     </div>
                 ))

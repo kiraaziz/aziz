@@ -7,11 +7,16 @@ const phone = "+216 93 989 486";
 const facebook = "https://www.facebook.com/aziz.kira.581/";
 const github = "https://github.com/kiraaziz";
 const linkedin = "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/";
+const devto = "https://dev.to/kiraaziz"
+
 ---
 
 <Layout>
     <div class="h-10 w-full"></div>
-    <div class="w-full max-w-5xl !p-5 mx-auto flex gap-2" transition:name="hero">
+    <div
+        class="w-full max-w-5xl !p-5 mx-auto flex gap-2"
+        transition:name="hero"
+    >
         <div
             class="flex-1 flex justify-center gap-4 flex-col items-center lg:items-start"
         >
@@ -21,21 +26,39 @@ const linkedin = "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/";
                 </h1>
                 <a
                     href={facebook}
-                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100 "
                 >
                     <Icon
                         name="mdi:facebook"
                         size="30"
                         class="text-purple-600"
                     />
-                     Facebook
+                    Facebook
+                </a>
+                <a
+                    href={devto}
+                    class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100 translate-x-1"
+                >
+                    <svg
+                        class="scale-[2] fill-purple-600"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        ><path
+                            class="fill-purple-600 "
+                            d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525M19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.473c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3M9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899zm4.045-3.562H11.1v1.544h1.309v1.188H11.1v1.543h2.142v1.188h-2.498a.813.813 0 0 1-.833-.792V9.497a.813.813 0 0 1 .792-.832h2.539zm4.165 4.632c-.531 1.235-1.481.99-1.906 0l-1.548-5.818h1.309l1.193 4.569l1.188-4.569h1.31z"
+                        ></path></svg
+                    >
+
+                    Dev.to
                 </a>
                 <a
                     href={github}
                     class="text-lg text-white/90 flex gap-4 items-center justify-center opacity-70 hover:opacity-100"
                 >
                     <Icon name="mdi:github" size="30" class="text-purple-600" />
-                     Github
+                    Github
                 </a>
                 <a
                     href={linkedin}
@@ -46,7 +69,7 @@ const linkedin = "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/";
                         size="30"
                         class="text-purple-600"
                     />
-                     Linkedin
+                    Linkedin
                 </a>
                 <a
                     href={`mailto:${email}`}
