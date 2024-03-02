@@ -65,6 +65,17 @@
         ]
     },
     {
+        "name": "Flash Read",
+        "description": "",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709382819/portfolio/zvgkqvdsjxgxg0rrxibc.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709382818/portfolio/mneznb78gzftztaondg8.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709382820/portfolio/vcl73txpdeqi6lpqi7w2.webp"
+        ]
+    },
+    {
         "name": "Old Portfolio",
         "description": "",
         "tags": "next13 react firebase huggingface ai",
@@ -74,18 +85,6 @@
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379414/portfolio/oar39wnwglhctyud5rud.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379417/portfolio/apgpalqrqotvcusgk8vj.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379414/portfolio/gjyhr6nxwd3yjzsg3ys1.webp"
-        ]
-    },
-    {
-        "name": "Flash Read",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
-        "images": [
-            "/images/new/lightai/1.webp",
-            "/images/new/lightai/2.webp",
-            "/images/new/lightai/3.webp",
-            "/images/new/lightai/4.webp"
         ]
     },
     {
