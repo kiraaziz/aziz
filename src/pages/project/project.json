@@ -66,9 +66,8 @@
     },
     {
         "name": "Flash Read",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
+        "description": "🔥 Dive into Flash Read: Your go-to blog app for easy post creation, management, and community interaction! 💻📝 #FlashRead #BloggingMadeEasy",
+        "tags": "next13 react firebase",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709382819/portfolio/zvgkqvdsjxgxg0rrxibc.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709382818/portfolio/mneznb78gzftztaondg8.webp",
@@ -77,9 +76,9 @@
     },
     {
         "name": "Old Portfolio",
-        "description": "",
-        "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
+        "description": "🕰️ Dive into My Old Portfolio: A snapshot of my developer journey with a landing page, stack showcase, projects, and contact section! 👨‍💻✨",
+        "tags": "svelet tailwindcss",
+        "url": "https://kiraazizold.vercel.app/",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379416/portfolio/tzkoyxp4lznbvbu4eaz1.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379414/portfolio/oar39wnwglhctyud5rud.webp",
@@ -89,9 +88,8 @@
     },
     {
         "name": "Pixel Photos",
-        "description": "",
+        "description": "📸 Dive into Pixel Photos: Your go-to mobile app for fetching, searching, saving, and liking pixel-perfect images! 🌈🚀 ",
         "tags": "next13 react firebase huggingface ai",
-        "url": "https://light-ai.vercel.app",
         "mobile": true,
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709386361/wqpf3ipollrkooocygsx.webp",
@@ -100,7 +98,7 @@
     },
     {
         "name": "Light Ai",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website !",
+        "description": "✨ Create stunning AI images for free with Light AI! 🚀🎨 Simply input prompts and watch the magic unfold. Join the creativity at this url",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -140,7 +138,7 @@
     },
     {
         "name": "Be Shop",
-        "description": "",
+        "description": "🛍️ Explore Be Shop: Your go-to for stylish and seamless online shopping using React, React Router, and Tailwind! 🚀💻",
         "tags": "react reactrouter tailwind ecommerce",
         "url": "https://go-beshop.vercel.app/",
         "images": [
