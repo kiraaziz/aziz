@@ -1,19 +1,22 @@
 ---
-import Layout from "../../layout/layout.astro"
-import { Icon } from "astro-icon";
+import Layout from "../../layout/layout.astro";
 import project from "./project.json";
 ---
 
 <Layout>
-    <div style="z-index: 1" class="w-full h-full flex items-center flex-col" transition:name="hero">
+    <div
+        style="z-index: 1"
+        class="w-full h-full flex items-center flex-col"
+        transition:name="hero"
+    >
         <div
             class="gap-4 w-full grid md:grid-cols-2 grid-cols-1 2xl:grid-cols-3 max-w-6xl py-7 px-3"
         >
             {
-                project.map((val) => (
+                project.map((val, i) => (
                     <div class="w-full h-full p-4 bg-gray-950 text-white col-span-1 gap-4 border rounded-xl border-purple-600 flex items-center justify-center flex-col text-white/80 z-20">
                         <div class="w-max max-w-full mx-auto h-max flex gap-2 overflow-x-auto">
-                            {val.images.map((img) => (
+                            {val.images.slice(0, 2).map((img) => (
                                 <img
                                     src={img}
                                     class=" max-h-60 rounded-lg object-cover"
@@ -25,11 +28,19 @@ import project from "./project.json";
                                 {val.name}
                             </h1>
                             <div class="w-full flex flex-wrap gap-1">
-                                {val.tags.split(" ").map((tag) => (
-                                    <button class="border border-purple-600 rounded-full text-sm   px-3 py-1">
-                                        {tag}
+                                {val.tags
+                                    .split(" ")
+                                    .slice(0, 2)
+                                    .map((tag) => (
+                                        <button class="border border-purple-600 rounded-full text-sm   px-3 py-1">
+                                            {tag}
+                                        </button>
+                                    ))}
+                                {val.tags.split(" ").length > 2 && (
+                                    <button class="border border-purple-600 rounded-full text-sm   px-3 py-1 flex items-center justify-center">
+                                        . . .
                                     </button>
-                                ))}
+                                )}
                             </div>
                             <div class="w-full h-4" />
                             <a
@@ -38,7 +49,17 @@ import project from "./project.json";
                             >
                                 {val.url}
                             </a>
-                            <p class="text-sm font-light text-white/70">{val.description}</p>
+                            <p class="text-sm font-light text-white/70">
+                                {val.description.slice(0, 150)}{val.description.length > 150 && "..."}
+                            </p>
+                            <div class="flex items-center justify-end">
+                                <a
+                                    href={`/project/${i}`}
+                                    class="bg-purple-500 px-3 py-2 mt-4"
+                                >
+                                    Read more
+                                </a>
+                            </div>
                         </div>
                     </div>
                 ))

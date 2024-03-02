@@ -44,6 +44,8 @@
             { "name": "HuggingFace", "svg": 7 , "off": true},
             { "name": "Neon", "svg": 8 , "off": true},
             { "name": "Cockroach", "svg": 9 , "off": true},
+            { "name": "Cloudinary", "svg": 11 , "off": true},
+
             { "name": "Figma", "svg": "logos:figma" },
             { "name": "Adobe XD", "svg": 10 , "off": true }
         ]
