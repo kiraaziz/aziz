@@ -88,15 +88,14 @@
         ]
     },
     {
-        "name": "Phone Wallpapers",
+        "name": "Pixel Photos",
         "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
+        "mobile": true,
         "images": [
-            "/images/new/lightai/1.webp",
-            "/images/new/lightai/2.webp",
-            "/images/new/lightai/3.webp",
-            "/images/new/lightai/4.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709386361/wqpf3ipollrkooocygsx.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709386361/kt0j5vd210stxvizlatx.webp"
         ]
     },
     {
