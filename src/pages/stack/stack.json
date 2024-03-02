@@ -6,9 +6,12 @@
             { "name": "Svelte Kit", "svg": "logos:svelte-icon" },
             { "name": "Vue", "svg": "logos:vue" },
             { "name": "Tailwindcss", "svg": "logos:tailwindcss-icon" },
+            { "name": "Schadcn", "svg": 1, "off": true },
             { "name": "React Router", "svg": "logos:react-router" },
             { "name": "Next Js", "svg": "vscode-icons:file-type-next" },
-            { "name": "Astro", "svg": "vscode-icons:file-type-astro" }
+            { "name": "Astro", "svg": "vscode-icons:file-type-astro" },
+            { "name": "jQuery", "svg": 2, "off": true },
+            { "name": "Bootstrap", "svg": 3, "off": true }
         ]
     },
     {
@@ -16,10 +19,14 @@
         "children": [
             { "name": "Node", "svg": "logos:nodejs-icon" },
             { "name": "Nest Js", "svg": "logos:nestjs" },
+            { "name": "Prisma", "svg": "vscode-icons:file-type-prisma" },
             { "name": "Express", "svg": "simple-icons:express" },
+            { "name": "Mongoose", "svg": 0 , "off": true },
             { "name": "Mongo", "svg": "vscode-icons:file-type-mongo" },
             { "name": "SQL", "svg": "logos:postgresql" },
-            { "name": "Firebase", "svg": "logos:firebase" }
+            { "name": "Firebase", "svg": "logos:firebase" },
+            { "name": "Hono", "svg": 4, "off": true },
+            { "name": "Flask", "svg": 5, "off": true }
         ]
     },
     {
@@ -33,12 +40,12 @@
         "name": "Tools",
         "children": [
             { "name": "Vercel", "svg": "simple-icons:vercel" },
-            { "name": "Github", "svg": "logos:github" },
-            { "name": "HuggingFace", "svg": "logos:hugging-face-icon" },
-            { "name": "Neon", "svg": "logos:neon-icon" },
-            { "name": "Cockroach", "svg": "logos:figma" },
+            { "name": "Github", "svg":6 , "off": true},
+            { "name": "HuggingFace", "svg": 7 , "off": true},
+            { "name": "Neon", "svg": 8 , "off": true},
+            { "name": "Cockroach", "svg": 9 , "off": true},
             { "name": "Figma", "svg": "logos:figma" },
-            { "name": "Adobe XD", "svg": "logos:adobe-xd" }
+            { "name": "Adobe XD", "svg": 10 , "off": true }
         ]
     },
     {
