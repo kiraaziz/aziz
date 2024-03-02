@@ -1,7 +1,18 @@
 [
     {
+        "name": "Story Ai",
+        "description": "",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app",
+        "images": [
+            "/new/lightai/3.png",
+            "/new/lightai/2.png",
+            "/new/lightai/1.png"
+        ]
+    },
+    {
         "name": "Light Ai update",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -12,7 +23,7 @@
     },
     {
         "name": "Schooler",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -24,7 +35,7 @@
     },
     {
         "name": "Neoflow",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -33,7 +44,7 @@
     },
     {
         "name": "Manga Hook Api",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -44,7 +55,7 @@
     },
     {
         "name": "Old Portfolio",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -56,7 +67,7 @@
     },
     {
         "name": "Flash Read",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -68,7 +79,7 @@
     },
     {
         "name": "Phone Wallpapers",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
@@ -80,14 +91,14 @@
     },
     {
         "name": "Light Ai",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website !",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
-            "/images/new/lightai/1.webp",
-            "/images/new/lightai/2.webp",
-            "/images/new/lightai/3.webp",
-            "/images/new/lightai/4.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378090/portfolio/cxne4iee0mtxx3uf5ahu.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378090/portfolio/a4oftkbyijblfgog8gx1.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378089/portfolio/q8orro7mg6ddvqsvinis.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378089/portfolio/z7irpefkx7h3mbjvmola.webp"
         ]
     },
     {
@@ -95,9 +106,10 @@
         "description": "Dive into a world of manga magic with our free reading app! 📚🌟 Inspired by seamless design, it offers limitless creativity. Explore manga effortlessly, anytime, anywhere! 🚀",
         "tags": "next13 express scraping manga",
         "images": [
-            "/images/new/manga/1.webp",
-            "/images/new/manga/2.webp",
-            "/images/new/manga/3.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378358/portfolio/ogxaava310j3ndvk14xi.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378356/portfolio/xg9lhnzwufpwdmg3urdx.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378356/portfolio/mwvvg48whnksrnokviat.png",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378355/portfolio/wzdc7e75rxjwfzdy5dvd.png"
         ]
     },
     {
@@ -105,7 +117,7 @@
         "description": "Revolutionize creativity with our React app! 🚀 Infused with Adobe XD vibes, it's the ultimate blend of style and functionality. Effortlessly unleash ideas! ✨",
         "tags": "react nextjs design ui",
         "images": [
-            "/images/new/uieditor/1.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378115/portfolio/seulj5hh2lgrl2ycqj7a.webp"
         ]
     },
     {
@@ -113,19 +125,19 @@
         "description": "🚀 Dive into the magic of React 3D Editor with Three.js! This GitHub repo marries the simplicity of React with the enchanting world of Three.js. 🎨✨ Craft visually stunning 3D environments effortlessly. Your next creative adventure starts here!",
         "tags": "react threejs reactfiber",
         "images": [
-            "/images/new/3d editor/1.webp",
-            "/images/new/3d editor/2.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378080/portfolio/xcnwte4kznhwwabqroaq.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378080/portfolio/qvnr4vtmcb8t5rw34ouu.webp"
         ]
     },
     {
         "name": "Be Shop",
-        "description": "🚀 Free text-to-image web app. 2500+ users, 20,000+ images. Transform words into visuals effortlessly. Embrace emotion with our 🎉 emoji library. Join for free on our website!",
+        "description": "",
         "tags": "react reactrouter tailwind ecommerce",
         "url": "https://go-beshop.vercel.app/",
         "images": [
-            "/images/new/beshop/1.webp",
-            "/images/new/beshop/2.webp",
-            "/images/new/beshop/3.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378072/portfolio/hy8hhg6ngrpgn1iyguat.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378072/portfolio/awomk9tjwdzme5mwu3ti.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378073/portfolio/dnautltcwlee9utqlg1b.webp"
         ]
     },
     {
@@ -134,11 +146,11 @@
         "tags": "react blog nextjs pocketbase",
         "url": "https://gofireblog.vercel.app",
         "images": [
-            "/images/1/1.webp",
-            "/images/1/2.webp",
-            "/images/1/3.webp",
-            "/images/1/4.webp",
-            "/images/1/5.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377346/portfolio/eo534ncjdja1d9aude8c.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377347/portfolio/nezr6xoyzpcr8sxuiote.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377347/portfolio/jheezraxw8ziqnttkjrt.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377346/portfolio/qq13ivcymzbqgqqra4w5.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377348/portfolio/m9rxkt2ixrrfdrqcazqd.webp"
         ]
     },
     {
@@ -147,9 +159,9 @@
         "tags": "rollup svelte sqlite3 electronjs image-downloader tailwindcss",
         "url": "https://github.com/kiraaziz/myCat",
         "images": [
-            "/images/0/1.webp",
-            "/images/0/2.webp",
-            "/images/0/3.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377300/portfolio/ilpcpbpgjwdd3usnndgd.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377301/portfolio/tvpnhv1mzai5hm9hvqve.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377301/portfolio/hyydn6nbxldvpje2m4f3.webp"
         ]
     },
     {
@@ -158,7 +170,7 @@
         "tags": "react markdown firebase text-editor tailwindcss",
         "url": "https://electronbook-4c796.web.app/",
         "images": [
-            "/images/6.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377534/portfolio/c5safphhnsnzqkeinkas.webp"
         ]
     },
     {
@@ -166,10 +178,10 @@
         "description": "🏔️📸 The Mountain is a photo-sharing platform built with SvelteKit, Tailwind, and Firebase. Upload your favorite snapshots . The Mountain is the perfect place to share your adventures and discover new ones. 🌄👍👏",
         "tags": "sveltekit tailwind firebase photo",
         "images": [
-            "/images/2/1.png",
-            "/images/2/2.png",
-            "/images/2/3.png",
-            "/images/2/1.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377442/portfolio/b9vqryvvtqxpt0v5hzpg.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377443/portfolio/eizt5eru5sfgbv7aioxl.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377443/portfolio/xnjm4idhphmtvhxu4ytd.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377444/portfolio/ozhpp8fpfkuilreinybi.webp"
         ]
     },
     {
@@ -178,9 +190,9 @@
         "tags": "astro static",
         "url": "https://mbtisay.vercel.app/",
         "images": [
-            "/images/3/1.png",
-            "/images/3/2.png",
-            "/images/3/3.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377451/portfolio/gbdkfvip4odvhqdcb2l6.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377451/portfolio/e8wvwqcsepp2nqk73unq.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377452/portfolio/l5uh9komr7midrswfjug.webp"
         ]
     },
     {
@@ -189,9 +201,9 @@
         "tags": "react nextjs tailwindcss pocketbase",
         "url": "https://github.com/kiraaziz/shoppingCandy",
         "images": [
-            "/images/5/1.png",
-            "/images/5/2.png",
-            "/images/5/3.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377478/portfolio/gvg6nz1yvusyckmoi5g5.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377466/portfolio/vkzfzjfyfcep9bbfum6r.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377472/portfolio/ygqiwiwyjkdvobdjq6wv.webp"
         ]
     },
     {
@@ -199,11 +211,11 @@
         "description": "📝🔔 Keep your life organized with our React Native Memo and Reminder app. Jot down quick memos or set reminders for important events, appointments, and deadlines! ⏰✅",
         "tags": "react-native tailwind localstorag",
         "url": "https://github.com/kiraaziz/My-Memo",
-        "mobile": true, 
+        "mobile": true,
         "images": [
-            "/images/4/1.png",
-            "/images/4/2.png",
-            "/images/4/3.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377457/portfolio/gu2qdnwbujojdqwmociv.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377458/portfolio/dp0twvrljswz3m9d2bie.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377459/portfolio/hh5tefntbzq3hltyrmqu.webp"
         ]
     },
     {
@@ -211,7 +223,7 @@
         "description": "🎥🔊 Watch videos in style with Buzz, a video player built with ElectronJS and Svelte. Enjoy your favorite movies, TV shows, and videos with customizable interface. From sleek design to advanced features, Buzz is the perfect video player for your needs. 📺👌",
         "tags": "svelte tailwind electron player",
         "images": [
-            "/images/7.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377536/portfolio/zdqeuqn2kqxuqfnhnb5e.webp"
         ]
     },
     {
@@ -219,7 +231,7 @@
         "description": "📝💻 Simplify your writing process with Simple Editor, a Word-like text editor built with Electron and React. Enjoy a seamless writing experience with advanced formatting . Whether you're a student, writer, or professional, Simple Editor makes it easy to create polished and professional documents. 📄✨",
         "tags": "electron react markdown",
         "images": [
-            "/images/8.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377536/portfolio/wwvpwkudbae09inosf5l.webp"
         ]
     },
     {
@@ -228,7 +240,7 @@
         "url": "http://github.com/kiraaziz/ToDo",
         "tags": "svelte tailwind",
         "images": [
-            "/images/9.png"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709377537/portfolio/kmcmgyl97yrn0t1qhqae.webp"
         ]
     }
 ]
