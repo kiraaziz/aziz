@@ -119,6 +119,7 @@
     },
     {
         "name": "Manga Hook",
+        "url": "http://mangahook.vercel.app/",
         "description": "Dive into a world of manga magic with our free reading app! 📚🌟 Inspired by seamless design, it offers limitless creativity. Explore manga effortlessly, anytime, anywhere! 🚀",
         "tags": "next13 express scraping manga",
         "images": [
