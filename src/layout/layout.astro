@@ -1,7 +1,6 @@
 ---
 import { Icon } from "astro-icon";
 import "./../styles/index.css";
-import { ViewTransitions } from "astro:transitions";
 
 const { pathname } = Astro.url;
 
@@ -27,7 +26,6 @@ const paths = [
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
 		/>
 		<title>Kira Aziz {pathname.split("/")[1] && ": " + pathname.split("/")[1]}</title>
-		<ViewTransitions />
 	</head>
 	<body class="h-[100svh] overflow-x-hidden w-screen p-0 m-0 bg-black/95 flex flex-col">
 		<div
