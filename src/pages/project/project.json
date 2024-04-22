@@ -1,5 +1,20 @@
 [
     {
+        "name": "Type AI",
+        "description": "Seamlessly integrate AI with personalized templates, cluster management, and secure API key generation. 🚀 Revolutionize your workflow effortlessly!",
+        "tags": "next13 react postgresql zod mistar-ai huggingface ai",
+        "url": "https://ai-type.vercel.app/",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216265/iuesp7ulxgcgbgcu0sdo.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216263/bhoqzw2x9hd7fgtigife.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216262/rtase1fexqvoo8jfafnd.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216258/loi4mxfrwlzt9obar06v.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216260/rpr3lepflb130x4qrejt.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216262/xpgwifw4gtveiuzkwn3z.webp"
+        ],
+        "md": 11
+    },
+    {
         "name": "Light Ai update",
         "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
         "tags": "next13 react firebase huggingface ai",
@@ -34,7 +49,8 @@
         "url": "https://neoflow.deno.dev/",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379884/portfolio/bhyfnxmqmst6a3kcxu1l.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379890/portfolio/ecj4oeigw2dbzwcdnklc.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217540/wzmu0sgztx9njkh1vfyj.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217546/kwtvs3yp2ma8rqnheyqh.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379885/portfolio/aklmiy1eubzcbgccazta.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379886/portfolio/qqc4jzfxmsqsnosvdgbt.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379887/portfolio/shu1tkd7581zsjwfzoef.webp",
