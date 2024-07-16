@@ -5,14 +5,14 @@
         "children": [
             { "name": "React", "svg": "logo/reactjs-svgrepo-com.svg" },
             { "name": "Svelte Kit", "svg": "logo/svelte-svgrepo-com.svg" },
-            { "name": "Vue", "svg": "logo/vue-svgrepo-com.svg" },
+            { "name": "Vue", "svg": "logo/vue-svgrepo-com.svg" , "style":"padding:2px" },
             { "name": "Tailwindcss", "svg": "logo/tailwind-svgrepo-com.svg" },
-            { "name": "Schadcn", "svg": "/logo/simple-icons--shadcnui.svg" },
-            { "name": "React Router", "svg": "logo/logos--react-router.svg" },
+            { "name": "Schadcn", "svg": "/logo/simple-icons--shadcnui.svg", "style":"padding:10px" },
+            { "name": "React Router", "svg": "logo/devicon--reactrouter.svg" },
             { "name": "Next Js", "svg": "logo/light-next-svgrepo-com.svg" },
             { "name": "Astro", "svg": "logo/astro-svgrepo-com.svg" },
-            { "name": "jQuery", "svg": "/logo/devicon--jquery.svg" },
-            { "name": "Bootstrap", "svg": "/logo/devicon--bootstrap (1).svg" }
+            { "name": "jQuery", "svg": "/logo/devicon--jquery.svg", "style":"padding:5px"  },
+            { "name": "Bootstrap", "svg": "/logo/devicon--bootstrap (1).svg", "style":"padding:2px"  }
         ]
     },
     {
@@ -21,14 +21,14 @@
             { "name": "Node", "svg": "logo/node-svgrepo-com.svg" },
             { "name": "Nest Js", "svg": "logo/nestjs-svgrepo-com.svg" },
             { "name": "Prisma", "svg": "logo/prisma-svgrepo-com.svg" },
-            { "name": "Express", "svg": "logo/simple-icons:express" },
-            { "name": "Mongoose", "svg": 0  },
+            { "name": "Express", "svg": "logo/skill-icons--expressjs-light.svg", "style":"padding:4px"  },
+            { "name": "Mongoose", "svg": "/logo/devicon--mongoose.svg"  },
             { "name": "Mongo", "svg": "logo/mongo-svgrepo-com.svg" },
             { "name": "SQL", "svg": "logo/pgsql-svgrepo-com.svg" },
             { "name": "Firebase", "svg": "logo/firebase-svgrepo-com.svg" },
-            { "name": "Hono", "svg": 4 },
-            { "name": "Flask", "svg": 5 },
-            { "name": "Spring Boot", "svg": 99 }
+            { "name": "Hono", "svg": "/logo/logos--hono.svg" , "style":"padding:4px" },
+            { "name": "Flask", "svg": "/logo/skill-icons--flask-dark.svg" , "style":"padding:4px" },
+            { "name": "Spring Boot", "svg": "/logo/devicon--spring.svg", "style":"padding:4px"  }
         ]
     },
     {
@@ -41,15 +41,15 @@
     {
         "name": "Tools",
         "children": [
-            { "name": "Vercel", "svg": "logo/simple-icons:vercel" },
-            { "name": "Github", "svg":6 },
-            { "name": "HuggingFace", "svg": 7 },
-            { "name": "Neon", "svg": 8 },
-            { "name": "Cockroach", "svg": 9 },
-            { "name": "Cloudinary", "svg": 11 },
+            { "name": "Vercel", "svg": "logo/vscode-icons--file-type-vercel.svg","style":"padding:4px" },
+            { "name": "Github", "svg": "logo/uiw--github.svg" , "style":"padding:4px"},
+            { "name": "HuggingFace", "svg": "logo/logos--hugging-face-icon.svg"  , "style":"padding:4px"},
+            { "name": "Neon", "svg": "logo/logos--neon-icon.svg", "style":"padding:4px" },
+            { "name": "Cockroach", "svg": "logo/simple-icons--cockroachlabs.svg", "style":"padding:4px"  },
+            { "name": "Cloudinary", "svg": "logo/logos--cloudinary-icon.svg"  , "style":"padding:10px"},
 
-            { "name": "Figma", "svg": "logo/logos:figma" },
-            { "name": "Adobe XD", "svg": 10  }
+            { "name": "Figma", "svg": "logo/logos--figma.svg" , "style":"padding:4px" },
+            { "name": "Adobe XD","svg": "logo/logos--adobe-xd.svg" , "style":"padding:4px" }
         ]
     },
     {
@@ -58,8 +58,8 @@
             { "name": "Js", "svg": "logo/js-official-svgrepo-com.svg" },
             { "name": "Ts", "svg": "logo/typescript-official-svgrepo-com.svg" },
             { "name": "Python", "svg": "logo/python-svgrepo-com.svg" },
-            { "name": "Java", "svg": "logo/logos:java" },
-            { "name": "C", "svg": "logo/logos:c" },
+            { "name": "Java", "svg": "logo/devicon--java.svg" },
+            { "name": "C", "svg": "logo/c-program-icon.svg" },
             { "name": "C++", "svg": "logo/cpp3-svgrepo-com.svg" },
             { "name": "Go", "svg": "logo/go-svgrepo-com.svg" },
             { "name": "Kotlin", "svg": "logo/kotlin-svgrepo-com.svg" }

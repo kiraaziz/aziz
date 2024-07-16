@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import Layout from "../layout/layout.astro";
 import project from "./project/project.json";
 import { Icon } from "astro-icon";
-import project_ from "./project/project2.json";
 
 export const useHalfText = (value, size) => {
     if (value.length > size) {
@@ -22,35 +21,35 @@ const primar = [
 ];
 
 export const contact = {
-        "email": {
-            "name": "mailto:kiraaziz2020@gmail.com",
-            "icon": "1",
-        },
-        "phone": {
-            "name": "tel:+216 93 989 486",
-            "icon": "2",
-        },
-        "whatsup": {
-            "name": "https://wa.me/27028711",
-            "icon": "3",
-        },
-        "facebook": {
-            "name": "https://www.facebook.com/aziz.kira.581/",
-            "icon": "4",
-        },
-        "github": {
-            "name": "https://github.com/kiraaziz",
-            "icon": "5",
-        },
-        "linkedin": {
-            "name": "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/",
-            "icon": "6"
-        },
-        "devto": {
-            "name": "https://dev.to/kiraaziz",
-            "icon": "7",
-        }
-    }
+    email: {
+        name: "mailto:kiraaziz2020@gmail.com",
+        icon: "1",
+    },
+    phone: {
+        name: "tel:+216 93 989 486",
+        icon: "2",
+    },
+    whatsup: {
+        name: "https://wa.me/27028711",
+        icon: "3",
+    },
+    facebook: {
+        name: "https://www.facebook.com/aziz.kira.581/",
+        icon: "4",
+    },
+    github: {
+        name: "https://github.com/kiraaziz",
+        icon: "5",
+    },
+    linkedin: {
+        name: "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/",
+        icon: "6",
+    },
+    devto: {
+        name: "https://dev.to/kiraaziz",
+        icon: "7",
+    },
+};
 ---
 
 <Layout>
@@ -114,31 +113,53 @@ export const contact = {
             </div>
             <div class="space-y-2 mt-4">
                 {
-                    project.slice(0, 5).map((p) => (
-                        <div class="w-full p-3 rounded-lg bg-card border flex gap-4">
-                            <img src={`/svg/${p.logo}.svg`} class="h-10 mt-1" />
-                            <div class="flex-1">
-                                <div class="flex gap-2 flex-wrap">
-                                    <h1 class="text-lg font-semibold">
-                                        {p.name}
-                                    </h1>
-                                    {p.tags &&
-                                        p.tags
-                                            .split(" ")
-                                            .splice(0, 3)
-                                            .map((tag) => (
-                                                <div class="hover:cursor-pointer text-xs text-secondary bg-secondary/5 px-2 rounded-full flex items-center justify-center my-auto h-max py-1">
-                                                    {tag}
-                                                </div>
-                                            ))}
-                                </div>
-                                <p class="text-sm font-light text-foreground/60 max-w-md">
-                                    {useHalfText(p.description, 80)}
-                                </p>
-                                <div class="w-full flex items-center justify-end">
-                                    <a href={p.url} class="my-auto">
-                                        <Button className="mt-4 lg:hidden flex items-center justify-center gap-2 bg-primary/10 text-primary">
-                                            visite
+                    project.map(
+                        (p) =>
+                            p.logo && (
+                                <div class="w-full p-3 rounded-lg bg-card border flex gap-4">
+                                    <img
+                                        src={`/svg/${p.logo}.svg`}
+                                        class="h-10 mt-1"
+                                    />
+                                    <div class="flex-1">
+                                        <div class="flex gap-2 flex-wrap mb-1">
+                                            <h1 class="text-lg font-semibold">
+                                                {p.name}
+                                            </h1>
+                                            {p.tags &&
+                                                p.tags
+                                                    .split(" ")
+                                                    .splice(0, 3)
+                                                    .map((tag) => (
+                                                        <div class="hover:cursor-pointer text-xs text-secondary bg-secondary/5 px-2 rounded-full flex items-center justify-center my-auto h-max py-1">
+                                                            {tag}
+                                                        </div>
+                                                    ))}
+                                        </div>
+                                        <p class="text-sm font-light text-foreground/60 max-w-md">
+                                            {useHalfText(p.description, 80)}
+                                        </p>
+                                        <div class="w-full flex items-center justify-end">
+                                            <a href={p.url} class="my-auto">
+                                                <Button className="mt-4 lg:hidden flex items-center justify-center gap-2 bg-primary/10 text-primary">
+                                                    visite
+                                                    <Icon
+                                                        name="lucide:arrow-right"
+                                                        size="20"
+                                                    />
+                                                </Button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a
+                                        href={p.url}
+                                        class="my-auto hidden lg:block"
+                                    >
+                                        <Button
+                                            size="icon"
+                                            variant="outline"
+                                            className="rounded-full transition-all ease-in-out duration-200"
+                                        >
                                             <Icon
                                                 name="lucide:arrow-right"
                                                 size="20"
@@ -146,18 +167,8 @@ export const contact = {
                                         </Button>
                                     </a>
                                 </div>
-                            </div>
-                            <a href={p.url} class="my-auto hidden lg:block">
-                                <Button
-                                    size="icon"
-                                    variant="outline"
-                                    className="rounded-full transition-all ease-in-out duration-200"
-                                >
-                                    <Icon name="lucide:arrow-right" size="20" />
-                                </Button>
-                            </a>
-                        </div>
-                    ))
+                            ),
+                    )
                 }
             </div>
         </div>
@@ -198,37 +209,42 @@ export const contact = {
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-3">
                 {
-                    [...project_].slice(0, 3).map((p: any) => (
-                        <div class=" border rounded-lg overflow-hidden bg-card">
-                            <img
-                                src={p.images[0].replace(
-                                    "upload",
-                                    "upload/w_400",
-                                )}
-                                class="w-full h-40 bg-muted object-cover"
-                            />
-                            <div class="p-4">
-                                <h1 class="text-base font-bold">{p.name}</h1>
-                                <p class="text-sm font-light text-foreground/60">
-                                    {useHalfText(p.description, 70)}
-                                </p>
-                                <div class="w-full flex items-center justify-end mt-5">
-                                    <a href={`/project/${p.md}`}>
-                                        <Button
-                                            className="gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5"
-                                            variant="outline"
-                                        >
-                                            Read more
-                                            <Icon
-                                                name="lucide:arrow-right"
-                                                size="20"
-                                            />
-                                        </Button>
-                                    </a>
+                    project.map(
+                        (p: any, index: any) =>
+                            p.isWork && (
+                                <div class=" border rounded-lg overflow-hidden bg-card">
+                                    <img
+                                        src={p.images[0].replace(
+                                            "upload",
+                                            "upload/w_400",
+                                        )}
+                                        class="w-full h-40 bg-muted object-cover"
+                                    />
+                                    <div class="p-4">
+                                        <h1 class="text-base font-bold">
+                                            {p.name}
+                                        </h1>
+                                        <p class="text-sm font-light text-foreground/60">
+                                            {useHalfText(p.description, 70)}
+                                        </p>
+                                        <div class="w-full flex items-center justify-end mt-5">
+                                            <a href={`/project/${index}`}>
+                                                <Button
+                                                    className="gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5"
+                                                    variant="outline"
+                                                >
+                                                    Read more
+                                                    <Icon
+                                                        name="lucide:arrow-right"
+                                                        size="20"
+                                                    />
+                                                </Button>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    ))
+                            ),
+                    )
                 }
             </div>
         </div>
@@ -240,12 +256,23 @@ export const contact = {
                 information below, and we'll get back to you as soon as
                 possible.
             </p>
-            <div class='overflow-visible p-2 w-max bg-card rounded-full border mx-auto mt-10 flex items-center justify-center gap-2  ease-in-out duration-200'>
-                {Object.keys(contact).map((link) => (
-                    <a href={contact[link].name} class='lg:hover:bg-secondary h-8 w-8 flex items-center justify-center rounded-full lg:hover:mx-3 lg:hover:-translate-y-1 ease-in-out duration-200  lg:hover:shadow-[0px_0px_10px_1px] lg:hover:shadow-secondary'>
-                        <img src={`/contact/${contact[link].icon}.svg`} height={20} width={20}/>
-                    </a>
-                ))}
+            <div
+                class="overflow-visible p-2 w-max bg-card rounded-full border mx-auto mt-10 flex items-center justify-center gap-2 ease-in-out duration-200"
+            >
+                {
+                    Object.keys(contact).map((link) => (
+                        <a
+                            href={contact[link].name}
+                            class="lg:hover:bg-secondary h-8 w-8 flex items-center justify-center rounded-full lg:hover:mx-3 lg:hover:-translate-y-1 ease-in-out duration-200  lg:hover:shadow-[0px_0px_10px_1px] lg:hover:shadow-secondary"
+                        >
+                            <img
+                                src={`/contact/${contact[link].icon}.svg`}
+                                height={20}
+                                width={20}
+                            />
+                        </a>
+                    ))
+                }
             </div>
         </div>
     </div>

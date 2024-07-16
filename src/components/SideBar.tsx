@@ -8,8 +8,8 @@ export default function SideBar({ pathname }: any) {
 
     const paths = [
         { name: "Home", to: "/", icon: "mdi:home" },
-        { name: "Skills", to: "/stack", icon: "mdi:react" },
         { name: "Projects", to: "/project", icon: "mdi:github" },
+        { name: "Skills", to: "/stack", icon: "mdi:react" },
         { name: "Blog", to: "/blog", icon: "mdi:blog" },
         { name: "Contact", to: "/contact", icon: "mdi:gmail" },
     ];

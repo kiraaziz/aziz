@@ -1,5 +1,110 @@
 [
     {
+        "name": "Agria group",
+        "priority": 7,
+        "isWork": true,
+        "url": "https://agriagroup.tn/",
+        "tags": "next13 react postgresql colify shadcn",
+        "description": "🚀 Considered one of my best apps! Built from scratch: a complete CMS for a multi-language website with content management, member tracking, visitor analytics, and a visual editor.",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154015/wtbz9szcodlvucmbnhgp.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154025/abmkfxxmcclzseijtnc4.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154028/yyrpequsomu88nzxid1e.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154016/f9xuv0fugpobqeoom6fi.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154014/vjtdylg7mnqwvh4vehjk.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153947/mzahax0cso64lqm1kker.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153993/wcg0q8w0vgvasrzcnn9b.webp"
+        ]
+    },
+    {
+        "name": "FGMC",
+        "isWork": true,
+        "description": "🌟 Popular website in France, leading in e-commerce. Expertise in migrating from PrestaShop to Next.js for enhanced performance and scalability.",
+        "tags": "next13 react tailwindcss prestashop",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153915/crfjigfnw8nvrwlwvw7k.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153897/u6n6jgq7nrp2ypa2ajdk.webp"
+        ]
+    },
+    {
+        "name": "Elboutic",
+        "isWork": true,
+        "description": "🛍️ Popular Tunisian shopping app with a wide range of products. I redesigned the entire frontend and implemented a powerful admin panel for enhanced efficiency.",
+        "tags": "next13 react express mongo mongoose shadcn",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153931/icw5mhdsonuwvc2wdd0z.webp"
+        ]
+    },
+    {
+        "name": "Etudi",
+        "priority": 7,
+        "description": "📚 An app to find studies, create posts, and manage teaching. Includes a robust admin panel for complete control.",
+        "tags": "next13 react postgresql shadcn",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154003/n0byqdnyo2nlctwfpf3n.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154004/wx4cfgucsjeepm9mwa8t.webp"
+        ]
+    },
+    {
+        "priority": 7,
+        "name": "Maison log",
+        "tags": "next13 react postgresql shadcn",
+        "description": "🏠 Maison Log is a simple app for posting and hosting rental listings without requiring authentication. It supports map filtering and was built in a single day.",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154017/ckejh9x2y1d9wnloobyv.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154008/q2utq3jpe9v62lxgqazm.webp"
+        ]
+    },
+    {
+        "name": "Cool Kira",
+        "priority": 1,
+        "url": "https://cool.rjaziz.com",
+        "tags": "framermotion react",
+        "description": "🎨 Finally mastered Framer Motion! Created my new, elegantly animated portfolio inspired by old European art.",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139152/vamia5rwtqmzrbfevyf0.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139538/jdrpz4m9bbllzzxd7udd.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139762/flqmankmxmvop5td4ksi.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139453/aqjn292somjp09tdq3jx.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139522/wadxe6823yi32izd4nqq.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139489/tfsuv7tvdwjzrbbbcrzb.webp"
+        ]
+    },
+    {
+        "name": "Sparkels",
+        "priority": 6,
+        "tags": "next13 react postgresql shadcn",
+        "description": "🌍 The best SaaS I've built! It's a product and stock management system that supports over 10 languages, allowing you to control workers, sales, and POS operations.",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154010/fgzq5eu2j3osbo3to7p1.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153999/ocbemw3mvjdv3fzdbshl.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154043/wrwhdn3crkryy5xmehxw.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153994/xorcgkarnypk6ob0jwt8.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153992/thih5ejxebbqllqppouh.webp"
+        ]
+    },
+    {
+        "name": "Nsairi Events",
+        "tags": "mobirise",
+        "url": "https://nsairievents.rjaziz.com/",
+        "description": "🌟 Designed a simple yet beautiful static website for RBVRNT using Mobirise, without writing a single line of code—my first experience with web design!",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154042/l9js9o1kwtnepbqnrae8.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154002/db7h7s9vnm1ndkz2eilv.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153993/xejnq9tjpjdlookxa79q.webp"
+        ]
+    },
+    {
+        "name": "Jasser portfolio",
+        "description": "📸 Simple portfolio showcasing the photography services and works of a talented photographer.",
+        "tags": "next13 react postgresql shadcn",
+        "url": "https://jasserhmissi.vercel.app/",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721156295/gu2lf4puheujjpellwrq.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721156429/u9l6p987bq9swnlz7u8b.webp"
+        ]
+    },
+    {
         "logo": "4",
         "name": "Type AI",
         "priority": 2,

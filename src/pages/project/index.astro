@@ -1,12 +1,11 @@
 ---
 import Layout from "../../layout/layout.astro";
-import project_ from "./project2.json";
 import project from "./project.json";
 import { useHalfText } from "../index.astro";
 import { Button } from "@/components/ui/button";
 import { Icon } from "astro-icon";
 
-const sortedProjects = [...project_, ...project].sort((a: any, b: any) => {
+const sortedProjects = [...project].sort((a: any, b: any) => {
     const priorityA = a.priority !== undefined ? a.priority : Infinity; // or a large number like 9999
     const priorityB = b.priority !== undefined ? b.priority : Infinity; // or a large number like 9999
     return priorityA - priorityB;
