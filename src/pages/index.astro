@@ -1,37 +1,176 @@
 ---
-import Layout from "../layout/layout.astro"
-import { Icon } from 'astro-icon'
+import { Button } from "@/components/ui/button";
+import Layout from "../layout/layout.astro";
+import project from "./project/project.json";
+import { Icon } from "astro-icon";
+import project_ from "./project/project2.json";
 
-const facebook = "https://www.facebook.com/aziz.kira.581/"
-const github = "https://github.com/kiraaziz"
-const linkedin = "https://linkedin.com/in/kira-aziz-863a3a278"
-const devto = "https://dev.to/kiraaziz"
+
+export const useHalfText = (value, size) => {
+    if (value.length > size) {
+        return value.slice(0, size) + "...";
+    }
+
+    return value;
+};
+
+const primar = [
+    { name: "Next", icon: "logos:nextjs" },
+    { name: "React", icon: "logos:react" },
+    { name: "Prisma", icon: "simple-icons:prisma" },
+    { name: "Tailwind", icon: "logos:tailwindcss-icon" },
+    { name: "Postgresql", icon: "logos:postgresql" },
+];
 ---
 
 <Layout>
-    <div style="z-index: 1" class="w-full h-full flex items-center justify-center p-4">
-        <div class="w-full max-w-3xl flex items-center justify-center flex-col    ">
+    <!-- <div class="w-full max-w-3xl flex items-center justify-center flex-col    ">
             <h1 class="text-2xl lg:text-5xl text-white font-semibold text-center">
                 👋 Hello There my name is 
                 <span class="underline decoration-purple-600 font-bold">Aziz</span>
             </h1>
             <p class="text-white/90 text-base lg:text-lg mt-0.5 opacity-80 text-center">
                 I am Rjeibi Med Aziz aka KIRA And I am full stack developer
-            </p>
+            </p> -->
 
-            <div class="flex mt-9 gap-2">
-                <a href={github} class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
-                    <Icon name="mdi:github" size="30" class="text-purple-600" />
+    <div class="w-full max-w-3xl mx-auto">
+        <div class="mt-5 lg:mt-20 lg:text-center">
+            <h1 class="text-lg lg:text-4xl mx-auto font-bold">
+                👋 Hello There my name is Aziz
+            </h1>
+            <div class="text-foreground/70 mx-auto mt-2">
+                <p>
+                    I am Rjeibi Med Aziz, also known as KIRA, a full-stack
+                    developer with a year and a half of real experience. With a
+                    collection of fun and useful SaaS and apps that I have
+                    built, I can transform your ideas into <span
+                        class="bg-secondary/10 text-secondary px-1"
+                        >reality 🎉🔥</span
+                    >
+                </p>
+            </div>
+        </div>
+        <div class="w-full mt-3 lg:mt-20">
+            <h1 class="text-xl font-bold">Experience (1year)</h1>
+            <div class="w-full flex items-center justify-between mt-2">
+                <h3
+                    class="text-foreground/90 flex items-center justify-center w-max gap-1"
+                >
+                    <img
+                        class="h-10 w-10 rounded object-cover"
+                        src="/city.jpg"
+                    /> KombasNet Monastir
+                </h3>
+                <p class="text-sm font-light text-foreground/60 hidden lg:block ">
+                    June 2023-Present
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-3">
+                {
+                    [...project_].slice(0, 3).map((p:any) => (
+                        <div class=" border rounded-lg overflow-hidden bg-card">
+                            <img
+                                src={p.images[0].replace(
+                                    "upload",
+                                    "upload/w_400",
+                                )}
+                                class="w-full h-40 bg-muted object-cover"
+                            />
+                            <div class="p-4">
+                                <h1 class="text-base font-bold">{p.name}</h1>
+                                <p class="text-sm font-light text-foreground/60">
+                                    {useHalfText(p.description, 70)}
+                                </p>
+                                <div class="w-full flex items-center justify-end mt-5">
+                                    <a href={`/project/${p.md}`}>
+                                        <Button
+                                            className="gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5"
+                                            variant="outline"
+                                        >
+                                            Read more
+                                            <Icon
+                                                name="lucide:arrow-right"
+                                                size="20"
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+        <div class="w-full mt-3 lg:mt-20">
+            <div class="flex items-center justify-between w-full">
+                <h1 class="text-xl font-bold">Top apps</h1>
+
+                <a
+                    class="text-sm font-light text-foreground/60 gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5 flex items-center justify-center"
+                    href="/project"
+                >
+                    Read more
+                    <Icon name="lucide:arrow-right" size="20" />
                 </a>
-                <a href={devto} class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
-                    <svg class="scale-[2] fill-purple-600" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path class=" fill-purple-600" d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525M19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.473c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3M9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899zm4.045-3.562H11.1v1.544h1.309v1.188H11.1v1.543h2.142v1.188h-2.498a.813.813 0 0 1-.833-.792V9.497a.813.813 0 0 1 .792-.832h2.539zm4.165 4.632c-.531 1.235-1.481.99-1.906 0l-1.548-5.818h1.309l1.193 4.569l1.188-4.569h1.31z"/></svg>
-                </a>
-                <a href={linkedin}  class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
-                    <Icon name="uil:linkedin" size="28" class="text-purple-600" />
-                </a>
-                <a href={facebook} class="h-12 w-12  border-[0.005px] border-purple-600 bg-gray-950 rounded-lg ease-in-out duration-200 flex items-center justify-center hover:scale-110">
-                    <Icon name="mdi:facebook" size="28" class="text-purple-600" />
-                </a>
+            </div>
+            <div class="space-y-2 mt-4">
+                {
+                    project.slice(0, 5).map((p) => (
+                        <div class="w-full p-3 rounded-lg bg-card border flex gap-4">
+                            <img src={`/svg/${p.logo}.svg`} class="h-10 mt-1" />
+                            <div class="flex-1">
+                                <div class="flex gap-2">
+                                    <h1 class="text-lg font-semibold">
+                                        {p.name}
+                                    </h1>
+                                    {p.tags &&
+                                        p.tags
+                                            .split(" ")
+                                            .splice(0, 3)
+                                            .map((tag) => (
+                                                <div class="hover:cursor-pointer text-xs text-secondary bg-secondary/5 px-2 rounded-full flex items-center justify-center my-auto h-max py-1">
+                                                    {tag}
+                                                </div>
+                                            ))}
+                                </div>
+                                <p class="text-sm font-light text-foreground/60 max-w-md">
+                                    {useHalfText(p.description, 80)}
+                                </p>
+                            </div>
+                            <a href={p.url} class="my-auto">
+                                <Button
+                                    size="icon"
+                                    variant="outline"
+                                    className="rounded-full transition-all ease-in-out duration-200"
+                                >
+                                    <Icon name="lucide:arrow-right" size="20" />
+                                </Button>
+                            </a>
+                        </div>
+                    ))
+                }
+            </div>
+            <div class="w-full mt-3 lg:mt-20">
+                <h1 class="text-xl font-bold mx-auto mb-2 w-max">
+                    My primar stack
+                </h1>
+                <div
+                    class="w-max mx-auto grid-cols-3 lg:grid-cols-5 gap-3 grid"
+                >
+                    {
+                        primar.map((p) => (
+                            <div class="flex items-center justify-center rounded-full ease-in-out duration-200 lg:hover:-translate-y-2 lg:hover:scale-110 lg:hover:cursor-pointer">
+                                <div class="p-3 border rounded-full bg-card">
+                                    <Icon
+                                        name={p.icon}
+                                        size="40"
+                                        fill="white"
+                                    />
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     </div>

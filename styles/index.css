@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        --background: 243 53% 3%;
+        --foreground: 243 16% 100%;
+        --muted: 63 38% 9%;
+        --muted-foreground: 63 3% 71%;
+        --popover: 243 53% 4%;
+        --popover-foreground: 0 0% 100%;
+        --card: 243 53% 4%;
+        --card-foreground: 0 0% 100%;
+        --border: 243 14% 15%;
+        --input: 243 14% 15%;
+        --primary: 243 75% 59%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 63 75% 59%;
+        --secondary-foreground: 0 0% 0%;
+        --accent: 63 75% 59%;
+        --accent-foreground: 0 0% 0%;
+        --destructive: 11 83% 49%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 243 75% 59%;
+    }
+}
+
+* {
+    @apply border-input
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+    font-family: Poppins !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1f293700;
+    /* Tailwind gray-900 */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: hsl(63 75% 59%);
+    /* DaisyUI primary purple */
+}
+
+/* Firefox */
+::-moz-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-moz-scrollbar-track {
+    background-color: #1f293700;
+    /* Tailwind gray-900 */
+}
+
+::-moz-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: hsl(63 75% 59%);
+    /* DaisyUI primary purple */
+}
+
+/* IE 11+ */
+::-ms-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-ms-scrollbar-track {
+    background-color: #1f293700;
+    /* Tailwind gray-900 */
+}
+
+::-ms-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #7c3aed;
+    /* DaisyUI primary purple */
+}

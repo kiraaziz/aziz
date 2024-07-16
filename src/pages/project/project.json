@@ -1,10 +1,13 @@
 [
     {
+        "logo": "4",
         "name": "Type AI",
+        "priority": 2,
         "description": "Seamlessly integrate AI with personalized templates, cluster management, and secure API key generation. 🚀 Revolutionize your workflow effortlessly!",
         "tags": "next13 react postgresql zod mistar-ai huggingface ai",
         "url": "https://ai-type.vercel.app/",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139578/wcmalawmnmsopcjt5okf.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216265/iuesp7ulxgcgbgcu0sdo.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216263/bhoqzw2x9hd7fgtigife.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216262/rtase1fexqvoo8jfafnd.webp",
@@ -15,7 +18,9 @@
         "md": 11
     },
     {
-        "name": "Light Ai update",
+        "priority": 4,
+        "logo": "2",
+        "name": "Light Ai 2.0",
         "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
@@ -27,11 +32,33 @@
         "md": 2
     },
     {
+        "logo": "1",
+        "name": "Neoflow",
+        "priority": 5,
+        "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
+        "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
+        "url": "https://neoflow.deno.dev/",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217540/wzmu0sgztx9njkh1vfyj.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379884/portfolio/bhyfnxmqmst6a3kcxu1l.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217546/kwtvs3yp2ma8rqnheyqh.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379885/portfolio/aklmiy1eubzcbgccazta.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379886/portfolio/qqc4jzfxmsqsnosvdgbt.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379887/portfolio/shu1tkd7581zsjwfzoef.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379888/portfolio/wowplwdpsty9nqxjs7up.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379889/portfolio/vkmoqc28tkffz0umshhr.webp"
+        ],
+        "md": 4
+    },
+    {
+        "logo": "3",
         "name": "Schooler",
+        "priority": 2,
         "description": "📚 Dive into collaboration with Schooler – the ultimate document-sharing app for teachers and students! 🚀✨ Explore member management, security rules, and a sleek search feature. Enjoy the flexibility of white and dark modes. Elevate your learning journey with Schooler! 💻📄",
         "tags": "next13 neon prisma shadcn posgresql",
         "url": "https://schooler-delta.vercel.app/",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153958/odjteddjengjwyknhben.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378955/portfolio/pelxo9vzkdogdwfrzkrp.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378959/portfolio/tezacdhvx7bleewixhw7.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378955/portfolio/yftkmdhdgewfq8xolkaa.webp",
@@ -43,24 +70,9 @@
         "md": 3
     },
     {
-        "name": "Neoflow",
-        "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
-        "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
-        "url": "https://neoflow.deno.dev/",
-        "images": [
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379884/portfolio/bhyfnxmqmst6a3kcxu1l.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217540/wzmu0sgztx9njkh1vfyj.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217546/kwtvs3yp2ma8rqnheyqh.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379885/portfolio/aklmiy1eubzcbgccazta.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379886/portfolio/qqc4jzfxmsqsnosvdgbt.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379887/portfolio/shu1tkd7581zsjwfzoef.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379888/portfolio/wowplwdpsty9nqxjs7up.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379889/portfolio/vkmoqc28tkffz0umshhr.webp"
-        ],
-        "md": 4
-    },
-    {
+        "logo": "5",
         "name": "Manga Hook",
+        "priority": 6,
         "url": "http://mangahook.vercel.app/",
         "description": "Dive into a world of manga magic with our free reading app! 📚🌟 Inspired by seamless design, it offers limitless creativity. Explore manga effortlessly, anytime, anywhere! 🚀",
         "tags": "next13 express scraping manga",
@@ -88,6 +100,7 @@
     },
     {
         "name": "Manga Hook Api",
+        "priority": 6,
         "description": "📖 Manga Hook API: Your go-to documentation for fetching manga data effortlessly! 🔍🚀 Explore, search, and discover manga narratives seamlessly. #MangaHookAPI #OpenSourceLibrary",
         "tags": "astro documentation SSG",
         "url": "http://mangahook-api.vercel.app/",
