@@ -1,7 +1,7 @@
 ---
 import SideBar, { ContactTools } from "@/components/SideBar";
 const { pathname } = Astro.url;
-import "./../../styles/index.css";
+import "./index.css";
 
 ---
 
@@ -21,7 +21,7 @@ import "./../../styles/index.css";
       Kira Aziz {pathname.split("/")[1] && ": " + pathname.split("/")[1]}
     </title>
   </head>
-  <body class="">
+  <body class="bg-background text-foreground">
     <div class="flex h-[100svh] w-full flex-col">
       <SideBar client:load pathname={pathname} />
       
