@@ -5,7 +5,7 @@
             { "name": "React", "svg": "logos:react" },
             { "name": "Svelte Kit", "svg": "logos:svelte-icon" },
             { "name": "Vue", "svg": "logos:vue" },
-            { "name": "Tailwindcss", "svg": "logos:tailwindcss-icon" },
+            { "name": "Tailwindcss", "svg": "skill-icons:tailwindcss-light" },
             { "name": "Schadcn", "svg": 1, "off": true },
             { "name": "React Router", "svg": "logos:react-router" },
             { "name": "Next Js", "svg": "vscode-icons:file-type-next" },
