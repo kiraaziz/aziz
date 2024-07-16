@@ -5,7 +5,6 @@ import project from "./project/project.json";
 import { Icon } from "astro-icon";
 import project_ from "./project/project2.json";
 
-
 export const useHalfText = (value, size) => {
     if (value.length > size) {
         return value.slice(0, size) + "...";
@@ -34,7 +33,7 @@ const primar = [
             </p> -->
 
     <div class="w-full max-w-3xl mx-auto">
-        <div class="mt-5 lg:mt-20 lg:text-center">
+        <!-- <div class="mt-5 lg:mt-20 lg:text-center">
             <h1 class="text-lg lg:text-4xl mx-auto font-bold">
                 👋 Hello There my name is Aziz
             </h1>
@@ -49,60 +48,29 @@ const primar = [
                     >
                 </p>
             </div>
-        </div>
-        <div class="w-full mt-3 lg:mt-20">
-            <h1 class="text-xl font-bold">Experience (1year)</h1>
-            <div class="w-full flex items-center justify-between mt-2">
-                <h3
-                    class="text-foreground/90 flex items-center justify-center w-max gap-1"
-                >
-                    <img
-                        class="h-10 w-10 rounded object-cover"
-                        src="/city.jpg"
-                    /> KombasNet Monastir
-                </h3>
-                <p class="text-sm font-light text-foreground/60 hidden lg:block ">
-                    June 2023-Present
-                </p>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-3">
-                {
-                    [...project_].slice(0, 3).map((p:any) => (
-                        <div class=" border rounded-lg overflow-hidden bg-card">
-                            <img
-                                src={p.images[0].replace(
-                                    "upload",
-                                    "upload/w_400",
-                                )}
-                                class="w-full h-40 bg-muted object-cover"
-                            />
-                            <div class="p-4">
-                                <h1 class="text-base font-bold">{p.name}</h1>
-                                <p class="text-sm font-light text-foreground/60">
-                                    {useHalfText(p.description, 70)}
-                                </p>
-                                <div class="w-full flex items-center justify-end mt-5">
-                                    <a href={`/project/${p.md}`}>
-                                        <Button
-                                            className="gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5"
-                                            variant="outline"
-                                        >
-                                            Read more
-                                            <Icon
-                                                name="lucide:arrow-right"
-                                                size="20"
-                                            />
-                                        </Button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    ))
-                }
+        </div> -->
+        <div class="w-full mt-5 lg:mt-20">
+            <div class="flex items-center justify-between gap-3">
+                <div class="flex items-start justify-between w-full flex-col">
+                    <h1 class="text-xl font-bold">About me</h1>
+                    <p class="text- txet-sm text-foreground/60">
+                        Hello! I'm Kira Aziz, a software developer from Tunisia
+                        🇹🇳. I'll graduate next year 🎓 from ISLIAB Beja with a
+                        Computer Science degree, also I have 1.5 years of remote
+                        full-stack development experience with KomabsNet. I
+                        enjoy creating my own apps, including Light AI ✨,
+                        Schooler 📚, and NeoFlow 🔄. Feel free to check them
+                        out! 😊
+                    </p>
+                </div>
+                <img
+                    src="/me.jpg"
+                    class="w-40 rounded-full border hidden lg:block"
+                />
             </div>
         </div>
-        <div class="w-full mt-3 lg:mt-20">
-            <div class="flex items-center justify-between w-full">
+        <div class="w-full mt-5 lg:mt-20">
+            <div class="flex items-center justify-between w-full mt-5 lg:mt-10">
                 <h1 class="text-xl font-bold">Top apps</h1>
 
                 <a
@@ -136,8 +104,21 @@ const primar = [
                                 <p class="text-sm font-light text-foreground/60 max-w-md">
                                     {useHalfText(p.description, 80)}
                                 </p>
+                                <div class="w-full flex items-center justify-end">
+                                    <a href={p.url} class="my-auto">
+                                        <Button
+                                            className="mt-4 lg:hidden flex items-center justify-center gap-2 bg-primary/10 text-primary"
+                                        >
+                                            visite
+                                            <Icon
+                                                name="lucide:arrow-right"
+                                                size="20"
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
                             </div>
-                            <a href={p.url} class="my-auto">
+                            <a href={p.url} class="my-auto hidden lg:block">
                                 <Button
                                     size="icon"
                                     variant="outline"
@@ -150,27 +131,74 @@ const primar = [
                     ))
                 }
             </div>
-            <div class="w-full mt-3 lg:mt-20">
-                <h1 class="text-xl font-bold mx-auto mb-2 w-max">
-                    My primar stack
-                </h1>
-                <div
-                    class="w-max mx-auto grid-cols-3 lg:grid-cols-5 gap-3 grid"
+        </div>
+        <div class="w-full mt-5 lg:mt-20">
+            <h1 class="text-xl font-bold mx-auto mb-2 w-max">
+                My primar stack
+            </h1>
+            <div class="w-max mx-auto grid-cols-3 lg:grid-cols-5 gap-3 grid">
+                {
+                    primar.map((p) => (
+                        <div class="flex items-center justify-center rounded-full ease-in-out duration-200 lg:hover:-translate-y-2 lg:hover:scale-110 lg:hover:cursor-pointer">
+                            <div class="p-3 border rounded-full bg-card">
+                                <Icon name={p.icon} size="40" fill="white" />
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+        <div class="w-full mt-5 lg:mt-20">
+            <h1 class="text-xl font-bold">Experience</h1>
+            <div class="w-full flex items-center justify-between mt-2">
+                <h3
+                    class="text-foreground/90 flex items-center justify-center w-max gap-1"
                 >
-                    {
-                        primar.map((p) => (
-                            <div class="flex items-center justify-center rounded-full ease-in-out duration-200 lg:hover:-translate-y-2 lg:hover:scale-110 lg:hover:cursor-pointer">
-                                <div class="p-3 border rounded-full bg-card">
-                                    <Icon
-                                        name={p.icon}
-                                        size="40"
-                                        fill="white"
-                                    />
+                    <img
+                        class="h-10 w-10 rounded object-cover"
+                        src="/city.jpg"
+                    /> KombasNet Monastir
+                </h3>
+                <p
+                    class="text-sm font-light text-foreground/60 hidden lg:block"
+                >
+                    June 2023-Present
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 mt-3">
+                {
+                    [...project_].slice(0, 3).map((p: any) => (
+                        <div class=" border rounded-lg overflow-hidden bg-card">
+                            <img
+                                src={p.images[0].replace(
+                                    "upload",
+                                    "upload/w_400",
+                                )}
+                                class="w-full h-40 bg-muted object-cover"
+                            />
+                            <div class="p-4">
+                                <h1 class="text-base font-bold">{p.name}</h1>
+                                <p class="text-sm font-light text-foreground/60">
+                                    {useHalfText(p.description, 70)}
+                                </p>
+                                <div class="w-full flex items-center justify-end mt-5">
+                                    <a href={`/project/${p.md}`}>
+                                        <Button
+                                            className="gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5"
+                                            variant="outline"
+                                        >
+                                            Read more
+                                            <Icon
+                                                name="lucide:arrow-right"
+                                                size="20"
+                                            />
+                                        </Button>
+                                    </a>
                                 </div>
                             </div>
-                        ))
-                    }
-                </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     </div>
