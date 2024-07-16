@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Icon } from '@iconify/react/offline';
 import { Menu, Phone, Shell, SquareTerminal } from 'lucide-react';
 import { Button } from './ui/button';
+import { useEffect } from 'react';
 
 export default function SideBar({ pathname }: any) {
 
@@ -13,6 +14,14 @@ export default function SideBar({ pathname }: any) {
         { name: "Blog", to: "/blog", icon: "mdi:blog" },
         { name: "Contact", to: "/contact", icon: "mdi:gmail" },
     ];
+
+    useEffect(() => {
+        // Since the component in this example is basic, the spinner only briefly shows
+        const spinner = document.querySelector(".spinner");
+        if (spinner) {
+            spinner.remove();
+        }
+    }, []);
 
     return (
         <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur">
@@ -83,7 +92,7 @@ export function ContactTools({ pathname }: any) {
                 <div className='lg:flex-col overflow-visible p-2 w-max bg-card rounded-full border flex items-center justify-center gap-2  ease-in-out duration-200'>
                     {Object.keys(contact).map((link) => (
                         <a href={contact[link].name} className='lg:hover:bg-primary h-8 w-8 flex items-center justify-center rounded-full lg:hover:my-3 lg:hover:-translate-yx-1 ease-in-out duration-200  lg:hover:shadow-[0px_0px_10px_1px] lg:hover:shadow-primary'>
-                            <Icon icon={contact[link].icon} height={20} width={20}/>
+                            <Icon icon={contact[link].icon} height={20} width={20} />
                         </a>
                     ))}
                 </div>

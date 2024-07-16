@@ -2,7 +2,7 @@
 import SideBar, { ContactTools } from "@/components/SideBar";
 const { pathname } = Astro.url;
 import "./index.css";
-
+import { Loader2 } from "lucide-react";
 ---
 
 <html lang="en">
@@ -24,10 +24,15 @@ import "./index.css";
   <body class="bg-background text-foreground">
     <div class="flex h-[100svh] w-full flex-col">
       <SideBar client:load pathname={pathname} />
-      
-      <main class=" flex h-[calc(100vh_-_4rem)] overflow-auto  p-5 lg:p-10 flex-col">
+
+      <main
+        class="flex h-[calc(100vh_-_4rem)] overflow-auto p-5 lg:p-10 flex-col"
+      >
+        <div class="flex items-center justify-center spinner h-[100svh] w-full bg-background fixed top-0 right-0 z-50">
+          <Loader2 className="text-primary animate-spin" />
+        </div>
         <slot />
-        <div class="w-full h-20 " ></div>
+        <div class="w-full h-20"></div>
       </main>
     </div>
   </body>
