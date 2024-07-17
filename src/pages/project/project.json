@@ -1,5 +1,6 @@
 [
     {
+        "index": "8",
         "name": "Agria group",
         "priority": 7,
         "isWork": true,
@@ -18,6 +19,7 @@
     },
     {
         "name": "FGMC",
+        "index": "11",
         "isWork": true,
         "description": "🌟 Popular website in France, leading in e-commerce. Expertise in migrating from PrestaShop to Next.js for enhanced performance and scalability.",
         "tags": "next13 react tailwindcss prestashop",
@@ -28,6 +30,7 @@
     },
     {
         "name": "Elboutic",
+        "index": "12",
         "isWork": true,
         "description": "🛍️ Popular Tunisian shopping app with a wide range of products. I redesigned the entire frontend and implemented a powerful admin panel for enhanced efficiency.",
         "tags": "next13 react express mongo mongoose shadcn",
