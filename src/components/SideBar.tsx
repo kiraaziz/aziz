@@ -10,6 +10,7 @@ export default function SideBar({ pathname }: any) {
     const paths = [
         { name: "Home", to: "/", icon: "mdi:home" },
         { name: "Projects", to: "/project", icon: "mdi:github" },
+        { name: "Demo", to: "/demo", icon: "mdi:react" },
         { name: "Skills", to: "/stack", icon: "mdi:react" },
         { name: "Blog", to: "/blog", icon: "mdi:blog" },
         { name: "Contact", to: "/contact", icon: "mdi:gmail" },

@@ -16,7 +16,7 @@ import { contact } from "../index.astro";
                 Object.keys(contact).map((link) => (
                     <a
                         href={contact[link].name}
-                        class="flex lg:hover:text-foreground lg:hover:font-bold ease-in-out duration-200 lg:hover:scale-105 gap-3 p-4 bg-card rounded-lg border w-full text-sm last:items-center last:justify-center text-foreground/70 last:col-span-full"
+                        class="flex lg:hover:text-foreground lg:hover:font-bold ease-in-out duration-200 lg:hover:scale-105 gap-3 p-4 bg-card rounded-lg border w-full text-sm lg:last:items-center lg:last:justify-center text-foreground/70 lg:last:col-span-2"
                     >
                         <img
                             src={`/contact/${contact[link].icon}.svg`}

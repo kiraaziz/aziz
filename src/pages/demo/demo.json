@@ -1,0 +1,55 @@
+[
+    {
+        "logo": "1",
+        "name": "Neoflow",
+        "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
+        "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
+        "url": "https://neoflow.deno.dev/",
+        "demo": "https://www.youtube.com/embed/Yh4lONl_MYQ?si=yzBP06PoTigGi_V6"
+    },
+    {
+        "priority": 4,
+        "logo": "2",
+        "demo": "https://www.youtube.com/embed/jtmYK7AI9ho?si=_1s7zhC7W9GfMVnJ",
+        "name": "Light Ai 2.0",
+        "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
+        "tags": "next13 react firebase huggingface ai",
+        "url": "https://light-ai.vercel.app"
+    },
+    {
+        "logo": "3",
+        "demo": "https://www.youtube.com/embed/YUUuWDU8-0E?si=YKr-PWQpLgZ-aLhR",
+        "name": "Type AI",
+        "description": "Seamlessly integrate AI with personalized templates, cluster management, and secure API key generation. 🚀 Revolutionize your workflow effortlessly!",
+        "tags": "next13 react postgresql zod mistar-ai huggingface ai",
+        "url": "https://ai-type.vercel.app/"
+    },
+    {
+        "name": "Sparkels",
+        "tags": "next13 react postgresql shadcn",
+        "demo": "https://www.youtube.com/embed/fWDNigbsDA4?si=4dMQNqn2UOviBRTo",
+        "description": "🌍 The best SaaS I've built! It's a product and stock management system that supports over 10 languages, allowing you to control workers, sales, and POS operations."
+    },
+    {
+        "logo": "5",
+        "demo": "https://www.youtube.com/embed/jx0eD0S_8FM?si=nKaYMsO7Fm_2X-Wr",
+        "name": "Manga Hook",
+        "url": "http://mangahook.vercel.app/",
+        "description": "Dive into a world of manga magic with our free reading app! 📚🌟 Inspired by seamless design, it offers limitless creativity. Explore manga effortlessly, anytime, anywhere! 🚀",
+        "tags": "next13 express scraping manga"
+    },
+    {
+        "name": "Cool Kira",
+        "priority": 2,
+        "demo": "https://www.youtube.com/embed/5kGvsb1-3-E?si=JSRL24rLqAIQwery",
+        "url": "https://cool.rjaziz.com",
+        "tags": "framermotion react",
+        "description": "🎨 Finally mastered Framer Motion! Created my new, elegantly animated portfolio inspired by old European art."
+    },
+    {
+        "name": "Maison log",
+        "demo": "https://www.youtube.com/embed/WzD2L45SPhA?si=JGMqx9LpzWeNuO5H",
+        "tags": "next13 react postgresql shadcn",
+        "description": "🏠 Maison Log is a simple app for posting and hosting rental listings without requiring authentication. It supports map filtering and was built in a single day."
+    }
+]
