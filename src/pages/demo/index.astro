@@ -7,10 +7,14 @@ import Icon from "astro-icon";
 ---
 
 <Layout>
-    <div class="w-full mt-5 lg:mt-20 space-y-4 max-w-4xl mx-auto">
+    <div class="w-full mt-5 lg:mt-20  max-w-4xl mx-auto">
         {
-            demo.map((v, index) => (
-                <div class="w-full overflow-hidden border bg-card rounded-lg flex-col lg:flex-row flex">
+            demo.map((v, index: any) => (
+                <div class="h-4" id={index} />
+                <div
+                    
+                    class="w-full overflow-hidden border bg-card rounded-lg flex-col lg:flex-row flex"
+                >
                     <iframe
                         class="w-full h-52 lg:h-96 bg-primary/10"
                         src={v.demo}
