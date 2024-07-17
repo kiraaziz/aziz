@@ -50,8 +50,9 @@ import Icon from "astro-icon";
                                 {useHalfText(v.description, 150)}
                             </p>
                             <div class="h-5" />
-                            <a href={v.url} class="w-max ">
+                            <a href={v.url ? v.url : "#"} class="w-max ">
                                 <Button
+                                    disabled={!v.url}
                                     variant="secondary"
                                     className="text-primary bg-primary/10 hover:text-black ease-in-out duration-200 transition-all gap-2 lg:hover:gap-5"
                                 >

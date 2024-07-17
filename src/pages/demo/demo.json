@@ -48,6 +48,7 @@
     },
     {
         "name": "Maison log",
+        "url": "https://maisonloc.vercel.app/",
         "demo": "https://www.youtube.com/embed/WzD2L45SPhA?si=JGMqx9LpzWeNuO5H",
         "tags": "next13 react postgresql shadcn",
         "description": "🏠 Maison Log is a simple app for posting and hosting rental listings without requiring authentication. It supports map filtering and was built in a single day."
