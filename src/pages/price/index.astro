@@ -94,19 +94,20 @@ import { Input } from "./../../components/ui/input";
         >
             <div class="">
                 <label>Client name</label>
-                <Input name="name" placeholder="Name" />
+                <Input required={true} name="name" placeholder="Name" />
             </div>
             <div class="">
                 <label>Email</label>
-                <Input name="email" placeholder="Email" />
+                <Input required={true} name="email" placeholder="Email" />
             </div>
             <div class="">
                 <label>Phone number</label>
-                <Input name="phone" placeholder="Phone" />
+                <Input required={true} name="phone" placeholder="Phone" />
             </div>
             <div class="">
                 <label>Service price</label>
-                <Input
+                <Input 
+                required={true}
                     type="number"
                     min="0"
                     name="price"
@@ -115,11 +116,11 @@ import { Input } from "./../../components/ui/input";
             </div>
             <div class="">
                 <label>Work duration</label>
-                <Input name="duration" placeholder="duration days" />
+                <Input required={true} name="duration" placeholder="duration days" />
             </div>
             <div class="col-span-full">
                 <label>Details</label>
-                <Textarea name="details" placeholder="more information about the request" />
+                <Textarea required={true} name="details" placeholder="more information about the request" />
             </div>
             <div class="col-span-full flex items-center justify-end">
                 <Button type="submit" variant="secondary"> Send </Button>

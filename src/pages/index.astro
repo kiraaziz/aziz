@@ -400,9 +400,9 @@ export const contact = {
                 action="https://usebasin.com/f/e5127a235c57"
                 method="POST"
             >
-                <Input name="name" placeholder="Name" />
-                <Input name="email" placeholder="Email" />
-                <Textarea name="message" placeholder="Message" />
+                <Input required={true} name="name" placeholder="Name" />
+                <Input required={true} name="email" placeholder="Email" />
+                <Textarea required={true} name="message" placeholder="Message" />
                 <Button type="submit" variant="secondary"> Send </Button>
             </form>
         </div>
