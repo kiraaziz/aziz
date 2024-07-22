@@ -28,10 +28,10 @@ export default function SideBar({ pathname }: any) {
     return (
         <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur">
 
-            <h1 className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
+            <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
                 <SquareTerminal size={23} className='text-primary' />
                 Kira Aziz
-            </h1>
+            </a>
             <div className='hidden lg:flex items-center justify-center w-full gap-6'>
                 {paths.map((p) => (
                     <a href={p.to} className={cn(pathname === p.to ? "font-medium" : "lg:hover:text-foreground text-foreground/60", "ease-in-out duration-200 text-sm group")}>
