@@ -11,6 +11,7 @@ export default function SideBar({ pathname }: any) {
         { name: "Home", to: "/", icon: "mdi:home" },
         { name: "Projects", to: "/project", icon: "mdi:github" },
         { name: "Demo", to: "/demo", icon: "mdi:react" },
+        { name: "Pricing", to: "/price", icon: "mdi:github" },
         { name: "Skills", to: "/stack", icon: "mdi:react" },
         { name: "Blog", to: "/blog", icon: "mdi:blog" },
         { name: "Contact", to: "/contact", icon: "mdi:gmail" },

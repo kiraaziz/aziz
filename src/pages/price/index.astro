@@ -1,0 +1,125 @@
+---
+import Layout from "../../layout/layout.astro";
+import { Button } from "./../../components/ui/button";
+import { Textarea } from "./../../components/ui/textarea";
+import { Input } from "./../../components/ui/input";
+---
+
+<Layout>
+    <div class="w-full mt-5 lg:mt-16 max-w-3xl mx-auto">
+        <div class="w-full">
+            <h1 class="text-2xl font-bold mx-auto w-max mb-5">Pricing</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
+                <div
+                    class="w-full bg-primary/5 rounded-lg border border-prbg-primary overflow-hidden"
+                >
+                    <div class="w-full p-3 border-b bg-primary text-center">
+                        <h1 class="font-bold">Basic</h1>
+                        <p class="font-light text-sm text-foreground/80">
+                            static webiste
+                        </p>
+                    </div>
+                    <div class="p-4">
+                        <h1
+                            class="mx-auto mb-3 font-bold w-max p-3 text-lg bg-primary text-bxackground px-6 py-1 rounded-full"
+                        >
+                            100$
+                        </h1>
+                        <ul
+                            class="text- font-light text-foreground/70 flex items-center justify-center flex-col mb-3"
+                        >
+                            <li>showcase</li>
+                            <li>max 5 pages</li>
+                            <li>3 days of work</li>
+                            <li>20 day free fix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-full bg-primary/5 rounded-lg border overflow-hidden lg:scale-110 lg:z-5 lg:backdrop-blur-lg"
+                >
+                    <div class="w-full p-3 border-b bg-secondary text-center">
+                        <h1 class="font-bold">Custom</h1>
+                        <p class="font-light text-sm text-foreground/80">
+                            software as service
+                        </p>
+                    </div>
+                    <div class="p-4">
+                        <h1
+                            class="mx-auto mb-3 font-bold w-max p-3 text-lg bg-secondary text-bxackground px-6 py-1 rounded-full"
+                        >
+                            from 2500$
+                        </h1>
+                        <ul
+                            class="text- font-light text-foreground/70 flex items-center justify-center flex-col mb-3"
+                        >
+                            <li>saas</li>
+                            <li>ai intergration</li>
+                            <li>3 to 12 month of work</li>
+                            <li>1 year free fix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="w-full bg-primary/5 rounded-lg border border-prbg-primary overflow-hidden"
+                >
+                    <div class="w-full p-3 border-b bg-primary text-center">
+                        <h1 class="font-bold">Pro</h1>
+                        <p class="font-light text-sm text-foreground/80">
+                            dynamic webiste
+                        </p>
+                    </div>
+                    <div class="p-4">
+                        <h1
+                            class="mx-auto mb-3 font-bold w-max p-3 text-lg bg-primary text-bxackground px-6 py-1 rounded-full"
+                        >
+                            from 500$
+                        </h1>
+                        <ul
+                            class="text- font-light text-foreground/70 flex items-center justify-center flex-col mb-3"
+                        >
+                            <li>e-commerce</li>
+                            <li>managment system</li>
+                            <li>60 days of work</li>
+                            <li>90 day free fix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form
+            class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 py-1 flex-col gap-3 mt-7 lg:mt-20"
+            action="https://usebasin.com/f/e5127a235c57"
+            method="POST"
+        >
+            <div class="">
+                <label>Client name</label>
+                <Input name="name" placeholder="Name" />
+            </div>
+            <div class="">
+                <label>Email</label>
+                <Input name="email" placeholder="Email" />
+            </div>
+            <div class="">
+                <label>Service price</label>
+                <Input
+                    type="number"
+                    min="0"
+                    name="price"
+                    placeholder="price"
+                />
+            </div>
+            <div class="">
+                <label>Work duration</label>
+                <Input name="duration" placeholder="duration days" />
+            </div>
+            <div class="col-span-full">
+                <label>Details</label>
+                <Textarea name="details" placeholder="more information about the request" />
+            </div>
+            <div class="col-span-full flex items-center justify-end">
+                <Button type="submit" variant="secondary"> Send </Button>
+            </div>
+        </form>
+    </div>
+</Layout>
