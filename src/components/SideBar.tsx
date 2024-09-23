@@ -3,9 +3,9 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Icon } from '@iconify/react/offline';
 import { Menu, Phone, Shell, SquareTerminal } from 'lucide-react';
 import { Button } from './ui/button';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function SideBar({ pathname }: any) {
+export default function SideBar({ pathname, sortedProjects }: any) {
 
     const paths = [
         { name: "Home", to: "/", icon: "mdi:home" },
@@ -25,37 +25,64 @@ export default function SideBar({ pathname }: any) {
         }
     }, []);
 
-    return (
-        <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur">
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [fadeIn, setFadeIn] = useState(true);
 
-            <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
-                <SquareTerminal size={23} className='text-primary' />
-                Kira Aziz
-            </a>
-            <div className='hidden lg:flex items-center justify-center w-full gap-6'>
-                {paths.map((p) => (
-                    <a href={p.to} className={cn(pathname === p.to ? "font-medium" : "lg:hover:text-foreground text-foreground/60", "ease-in-out duration-200 text-sm group")}>
-                        {p.name}
-                        <div className={cn(p.to === pathname ? "scale-x-100" : "scale-x-0  group-hover:scale-x-100", 'ease-in-out duration-200 w-2/3 mx-auto h-1 shadow-[0px_0px_10px_px] shadow-primary rounded-full bg-primary')}></div>
-                    </a>
-                ))}
-            </div>
-            <div className='flex-1' />
-            <Sheet >
-                <SheetTrigger asChild>
-                    <Button variant='outline' size='icon' className='flex lg:hidden hover:bg-primary'>
-                        <Menu size={19} />
-                    </Button>
-                </SheetTrigger>
-                <SheetContent side="right" className='p-4 flex flex-col gap-2'>
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setFadeIn(false); // Start fade out
+    //         setTimeout(() => {
+    //             // Change the image after the fade out
+    //             setCurrentIndex((prevIndex) =>
+    //                 prevIndex === sortedProjects.length - 1 ? 0 : prevIndex + 1
+    //             );
+    //             setFadeIn(true); // Start fade in
+    //         }, 1500); // Match the fade out time (500ms in this case)
+    //     }, 4000); // Change image every 3 seconds
+
+    //     return () => clearInterval(interval); // Cleanup interval on unmount
+    // }, [sortedProjects.length]);
+
+    return (
+        <>
+            <img
+                className={`absolute top-0 left-0 -z-40 h-screen w-screen ease-in-out duration-1000 ${fadeIn ? "opacity-20 blur-3xl" : "opacity-0 blur"
+                    }`}
+                src={sortedProjects[currentIndex].images[0].replace("upload", "upload/w_400")}
+                alt="Background"
+            />
+            {/* <img className="absolute top-0 -z-40 h-screen w-screen left-0 blur-3xl opacity-20" src={sortedProjects[0].images[0].replace("upload", "upload/w_400")} /> */}
+            <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur-3xl ">
+
+                <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
+                    <SquareTerminal size={23} className='text-primary' />
+                    Kira Aziz
+                </a>
+                <div className='hidden lg:flex items-center justify-center w-full gap-6'>
                     {paths.map((p) => (
                         <a href={p.to} className={cn(pathname === p.to ? "font-medium" : "lg:hover:text-foreground text-foreground/60", "ease-in-out duration-200 text-sm group")}>
                             {p.name}
+                            <div className={cn(p.to === pathname ? "scale-x-100" : "scale-x-0  group-hover:scale-x-100", 'ease-in-out duration-200 w-2/3 mx-auto h-1 shadow-[0px_0px_10px_px] shadow-primary rounded-full bg-primary')}></div>
                         </a>
                     ))}
-                </SheetContent>
-            </Sheet>
-        </header>
+                </div>
+                <div className='flex-1' />
+                <Sheet >
+                    <SheetTrigger asChild>
+                        <Button variant='outline' size='icon' className='flex lg:hidden hover:bg-primary'>
+                            <Menu size={19} />
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent side="right" className='p-4 flex flex-col gap-2'>
+                        {paths.map((p) => (
+                            <a href={p.to} className={cn(pathname === p.to ? "font-medium" : "lg:hover:text-foreground text-foreground/60", "ease-in-out duration-200 text-sm group")}>
+                                {p.name}
+                            </a>
+                        ))}
+                    </SheetContent>
+                </Sheet>
+            </header>
+        </>
     )
 }
 

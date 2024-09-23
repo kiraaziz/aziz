@@ -14,16 +14,16 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
 
 <Layout>
     <div
-        class="w-full max-w-5xl mx-auto grid-cols-1 lg:grid-cols-3 lg:mt-10 gap-2 grid"
+        class="w-full max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-10 gap-2 grid"
     >
         {
             sortedProjects.map((v: any, index) => (
-                <div class="w-full border bg-card overflow-hidden rounded-lg">
+                <div class="w-full border bg-card/40 rounded-lg overflow-hidden">
                     <img
                         src={v.images[0].replace("upload", "upload/w_400")}
-                        class="h-40 border-b w-full object-cover"
+                        class="h-40 border-b w-full object-cover bg-primary/20"
                     />
-                    <div class="p-4">
+                    <div class="p-4 relative">
                         <div class="w-full flex items-center justify-center gap-2">
                             {v.logo && (
                                 <img
@@ -35,7 +35,14 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
                                 {useHalfText(v.name, 20)}
                             </h1>
                             <div class="flex-1 flex items-center justify-end">
-                                {v.url && <a href={v.url} class="text-sm underline text-foreground/60 hover:text-foreground">visite</a>}
+                                {v.url && (
+                                    <a
+                                        href={v.url}
+                                        class="text-sm underline text-foreground/60 hover:text-foreground"
+                                    >
+                                        visite
+                                    </a>
+                                )}
                             </div>
                         </div>
                         <div class="flex gap-2 flex-wrap mb-2">
@@ -50,7 +57,7 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
                                     ))}
                         </div>
                         <p class="text-sm font-light text-foreground/60 max-w-md">
-                            {useHalfText(v.description, 70)}
+                            {useHalfText(v.description, 60)}
                         </p>
                         <div class="w-full mt-3 flex items-center justify-between">
                             <a href={`/project/${index}`} class="w-full">
@@ -63,6 +70,10 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
                                 </Button>
                             </a>
                         </div>
+                        <img
+                            src={v.images[0].replace("upload", "upload/w_400")}
+                            class="-z-10 opacity-30 h-full border-b w-full object-cover  bg-primary absolute top-0 blur-3xl -translate-x-4"
+                        />
                     </div>
                 </div>
             ))

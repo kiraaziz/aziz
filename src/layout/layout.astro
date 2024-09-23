@@ -3,6 +3,15 @@ import SideBar, { ContactTools } from "@/components/SideBar";
 const { pathname } = Astro.url;
 import "./index.css";
 import { Loader2 } from "lucide-react";
+
+import project from "./../pages/project/project.json";
+
+const sortedProjects = [...project].sort((a: any, b: any) => {
+    const priorityA = a.priority !== undefined ? a.priority : Infinity; // or a large number like 9999
+    const priorityB = b.priority !== undefined ? b.priority : Infinity; // or a large number like 9999
+    return priorityA - priorityB;
+});
+
 ---
 
 <html lang="en">
@@ -23,8 +32,7 @@ import { Loader2 } from "lucide-react";
   </head>
   <body class="bg-background text-foreground">
     <div class="flex h-[100svh] w-full flex-col">
-      <SideBar client:load pathname={pathname} />
-
+      <SideBar client:load sortedProjects={sortedProjects} pathname={pathname} />
       <main
         class="flex h-[calc(100vh_-_4rem)] overflow-auto p-5 lg:p-10 flex-col"
       >
