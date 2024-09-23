@@ -45,13 +45,12 @@ export default function SideBar({ pathname, sortedProjects }: any) {
 
     return (
         <>
-            <img
+            {/* <img
                 className={`absolute top-0 left-0 -z-40 h-screen w-screen ease-in-out duration-1000 ${fadeIn ? "opacity-20 blur-3xl" : "opacity-0 blur"
                     }`}
                 src={sortedProjects[currentIndex].images[0].replace("upload", "upload/w_400")}
                 alt="Background"
-            />
-            {/* <img className="absolute top-0 -z-40 h-screen w-screen left-0 blur-3xl opacity-20" src={sortedProjects[0].images[0].replace("upload", "upload/w_400")} /> */}
+            /> */}
             <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur-3xl ">
 
                 <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
