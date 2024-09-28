@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react/offline';
 import { Menu, Phone, Shell, SquareTerminal } from 'lucide-react';
 import { Button } from './ui/button';
 import { useEffect, useState } from 'react';
+import { Input } from './ui/input';
 
 export default function SideBar({ pathname, sortedProjects }: any) {
 
@@ -43,19 +44,20 @@ export default function SideBar({ pathname, sortedProjects }: any) {
     //     return () => clearInterval(interval); // Cleanup interval on unmount
     // }, [sortedProjects.length]);
 
+
     return (
         <>
-            {/* <img
+         <img
                 className={`absolute top-0 left-0 -z-40 h-screen w-screen ease-in-out duration-1000 ${fadeIn ? "opacity-20 blur-3xl" : "opacity-0 blur"
                     }`}
                 src={sortedProjects[currentIndex].images[0].replace("upload", "upload/w_400")}
                 alt="Background"
-            /> */}
+            /> 
             <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur-3xl ">
 
                 <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
                     <SquareTerminal size={23} className='text-primary' />
-                    Kira Aziz
+                    Kira Aziz  
                 </a>
                 <div className='hidden lg:flex items-center justify-center w-full gap-6'>
                     {paths.map((p) => (

@@ -21,7 +21,7 @@ import { Input } from "./../../components/ui/input";
                 Object.keys(contact).map((link) => (
                     <a
                         href={contact[link].name}
-                        class="flex lg:hover:text-foreground lg:hover:font-bold ease-in-out duration-200 lg:hover:scale-105 gap-3 p-4 bg-card rounded-lg border w-full text-sm lg:last:items-center lg:last:justify-center text-foreground/70 lg:last:col-span-2"
+                        class="flex lg:hover:text-foreground lg:hover:font-bold ease-in-out duration-200 lg:hover:scale-105 gap-3 p-4 bg-card/20 backdrop-blur rounded-lg border w-full text-sm lg:last:items-center lg:last:justify-center text-foreground/70 lg:last:col-span-2"
                     >
                         <img
                             src={`/contact/${contact[link].icon}.svg`}
@@ -45,9 +45,9 @@ import { Input } from "./../../components/ui/input";
             action="https://usebasin.com/f/e5127a235c57"
             method="POST"
         >
-            <Input name="name" placeholder="Name" />
-            <Input name="email" placeholder="Email" />
-            <Textarea name="message" placeholder="Message" />
+            <Input  className="bg-card/20 backdrop-blur"  name="name" placeholder="Name" />
+            <Input  className="bg-card/20 backdrop-blur" name="email" placeholder="Email" />
+            <Textarea  className="bg-card/20 backdrop-blur" name="message" placeholder="Message" />
             <Button type="submit" variant="secondary"> Send </Button>
         </form>
     </div>

@@ -5,7 +5,6 @@ import "./index.css";
 import { Loader2 } from "lucide-react";
 
 import project from "./../pages/project/project.json";
-import PersistentVideo from "./PersistentVideo.astro";
 
 const sortedProjects = [...project].sort((a: any, b: any) => {
   const priorityA = a.priority !== undefined ? a.priority : Infinity; // or a large number like 9999
@@ -32,14 +31,14 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
   </head>
   <body class="bg-background text-foreground">
     <div class="flex h-[100svh] w-full flex-col">
-      <PersistentVideo client:load /> 
       <SideBar
+        navigation:persist
         client:load
         sortedProjects={sortedProjects}
         pathname={pathname}
       />
       <main
-        class="flex h-[calc(100vh_-_4rem)] overflow-auto p-5 lg:p-10 flex-col"
+        class="flex h-[calc(100svh_-_4rem)] overflow-auto p-5 lg:p-10 flex-col"
       >
         <div
           class="flex items-center justify-center spinner h-[100svh] w-full bg-background fixed top-0 right-0 z-50"

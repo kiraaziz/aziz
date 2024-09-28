@@ -11,7 +11,7 @@ import { Input } from "./../../components/ui/input";
             <h1 class="text-2xl font-bold mx-auto w-max mb-5">Pricing</h1>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
                 <div
-                    class="w-full bg-primary/5 rounded-lg border border-prbg-primary overflow-hidden"
+                    class="w-full bg-primary/5 rounded-lg border border-prbg-primary overflow-hidden "
                 >
                     <div class="w-full p-3 border-b bg-primary text-center">
                         <h1 class="font-bold">Basic</h1>
@@ -36,7 +36,7 @@ import { Input } from "./../../components/ui/input";
                     </div>
                 </div>
                 <div
-                    class="w-full bg-primary/5 rounded-lg border overflow-hidden lg:scale-110 lg:z-5 lg:backdrop-blur-lg"
+                    class="w-full bg-primary/5 rounded-lg border overflow-hidden lg:scale-110 lg:z-5 lg:backdrop-blur-lg order-2 lg:order-1"
                 >
                     <div class="w-full p-3 border-b bg-secondary text-center">
                         <h1 class="font-bold">Custom</h1>
@@ -61,7 +61,7 @@ import { Input } from "./../../components/ui/input";
                     </div>
                 </div>
                 <div
-                    class="w-full bg-primary/5 rounded-lg border border-prbg-primary overflow-hidden"
+                    class="w-full bg-primary/5 rounded-lg border border-prbg-primary overflow-hidden order-1 lg:order-2"
                 >
                     <div class="w-full p-3 border-b bg-primary text-center">
                         <h1 class="font-bold">Pro</h1>
@@ -94,19 +94,35 @@ import { Input } from "./../../components/ui/input";
         >
             <div class="">
                 <label>Client name</label>
-                <Input required={true} name="name" placeholder="Name" />
+                <Input
+                    className="bg-card/20 backdrop-blur"
+                    required={true}
+                    name="name"
+                    placeholder="Name"
+                />
             </div>
             <div class="">
                 <label>Email</label>
-                <Input required={true} name="email" placeholder="Email" />
+                <Input
+                    className="bg-card/20 backdrop-blur"
+                    required={true}
+                    name="email"
+                    placeholder="Email"
+                />
             </div>
             <div class="">
                 <label>Phone number</label>
-                <Input required={true} name="phone" placeholder="Phone" />
+                <Input
+                    className="bg-card/20 backdrop-blur"
+                    required={true}
+                    name="phone"
+                    placeholder="Phone"
+                />
             </div>
             <div class="">
                 <label>Service price</label>
                 <Input
+                    className="bg-card/20 backdrop-blur"
                     required={true}
                     type="number"
                     min="0"
@@ -117,6 +133,7 @@ import { Input } from "./../../components/ui/input";
             <div class="">
                 <label>Work duration</label>
                 <Input
+                    className="bg-card/20 backdrop-blur"
                     required={true}
                     name="duration"
                     placeholder="duration days"
@@ -125,6 +142,7 @@ import { Input } from "./../../components/ui/input";
             <div class="col-span-full">
                 <label>Details</label>
                 <Textarea
+                    className="bg-card/20 backdrop-blur"
                     required={true}
                     name="details"
                     placeholder="more information about the request"
