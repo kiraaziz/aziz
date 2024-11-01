@@ -29,7 +29,8 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
       Kira Aziz {pathname.split("/")[1] && ": " + pathname.split("/")[1]}
     </title>
   </head>
-  <body class="bg-background text-foreground">
+  <body class="bg-background relative text-foreground">
+    <img class="absolute top-0 right-0 h-full -z-50 blur-3xl w-screen opacity-20" src="https://res.cloudinary.com/dqfvbunr2/image/upload/w_400/v1721139152/vamia5rwtqmzrbfevyf0.webp" />
     <div class="flex h-[100svh] w-full flex-col">
       <SideBar
         navigation:persist
