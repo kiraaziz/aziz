@@ -3,7 +3,7 @@
         "index": "40",
         "name": "Eyebase",
         "priority": 1,
-        "isWork": true,
+        "isWork": false,
         "tags": "next13 react postgresql shadcn",
         "description": "🚀 The first headless backend that lets you easily add and manage your data, connecting seamlessly with API .",
         "images": [
