@@ -12,6 +12,21 @@
         ]
     },
     {
+        "index": "40",
+        "name": "My father website",
+        "priority": 1,
+        "isWork": false,
+        "url": "https://bachir-art.vercel.app/",
+        "tags": "astri react tailwind",
+        "description": "🌟 A dedicated website for my father to showcase his works and products, along with additional information.",
+        "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/h97zsoz9tme5khtilgww.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/haqucxszfr3j29y4ktg2.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/dfgjhjyt2mea2pvbfouq.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/y1k78x9mihwmfkchacqz.webp"
+        ]
+    },
+    {
         "index": "8",
         "name": "Agria group",
         "priority": 7,
