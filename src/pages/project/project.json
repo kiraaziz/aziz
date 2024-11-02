@@ -17,7 +17,7 @@
         "priority": 1,
         "isWork": false,
         "url": "https://bachir-art.vercel.app/",
-        "tags": "astri react tailwind",
+        "tags": "astro react tailwind",
         "description": "🌟 A dedicated website for my father to showcase his works and products, along with additional information.",
         "images": [
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/h97zsoz9tme5khtilgww.webp",
