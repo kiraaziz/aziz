@@ -104,3 +104,10 @@ body {
     background-color: #7c3aed;
     /* DaisyUI primary purple */
 }
+
+svg > g>text{
+}
+
+.react-activity-calendar > *{
+    @apply text-foreground/50
+}
