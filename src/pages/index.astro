@@ -128,9 +128,13 @@ const activity = await response.json();
                                 <div class="w-full p-3 rounded-lg bg-card/40  backdrop-blur-3xl border flex gap-4">
                                     <img
                                         src={`/svg/${p.logo}.svg`}
-                                        class="h-10 mt-1"
+                                        class="h-10 mt-1 lg:block hidden"
                                     />
                                     <div class="flex-1">
+                                        <img
+                                            src={`/svg/${p.logo}.svg`}
+                                            class="h-10 mt-1 mb-5 mx-auto block lg:hidden"
+                                        />
                                         <div class="flex gap-2 flex-wrap mb-1">
                                             <h1 class="text-lg font-semibold">
                                                 {p.name}
@@ -149,8 +153,8 @@ const activity = await response.json();
                                             {useHalfText(p.description, 80)}
                                         </p>
                                         <div class="w-full flex items-center justify-end">
-                                            <a href={p.url} class="my-auto">
-                                                <Button className="mt-4 lg:hidden flex items-center justify-center gap-2 bg-primary/10 text-primary ">
+                                            <a href={p.url} class="my-auto w-full">
+                                                <Button className="mt-4 lg:hidden flex items-center justify-center gap-2 bg-primary/10 text-primary  w-full">
                                                     visite
                                                     <Icon
                                                         name="lucide:arrow-right"
