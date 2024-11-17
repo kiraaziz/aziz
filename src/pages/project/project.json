@@ -2,13 +2,18 @@
     {
         "index": "40",
         "name": "Eyebase",
+        "logo": "6.png",
+        "url": "https://eyebase.vercel.app",
         "priority": 1,
         "isWork": false,
         "tags": "next13 react postgresql shadcn",
         "description": "🚀 The first headless backend that lets you easily add and manage your data, connecting seamlessly with API .",
         "images": [
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730484079/portfolio/xq268eq88qxjglm79tca.webp",
-            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730484079/portfolio/vhjimahnkbwsvm4npsku.webp"
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/pywcjpzggychhseeg5hx.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/xfzb1jgype2cmkyt2tvx.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/a8flzi6rbmoewoe5f0yv.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/z1e0ukwvwlgehafs5hbi.webp",
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/mmvgjfgdymemuzqtb2kj.webp"
         ]
     },
     {
@@ -135,7 +140,7 @@
         ]
     },
     {
-        "logo": "4",
+        "logo": "4.svg",
         "name": "Type AI",
         "priority": 2,
         "description": "Seamlessly integrate AI with personalized templates, cluster management, and secure API key generation. 🚀 Revolutionize your workflow effortlessly!",
@@ -154,7 +159,7 @@
     },
     {
         "priority": 4,
-        "logo": "2",
+        "logo": "2.svg",
         "name": "Light Ai 2.0",
         "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
         "tags": "next13 react firebase huggingface ai",
@@ -167,7 +172,7 @@
         "md": 2
     },
     {
-        "logo": "1",
+        "logo": "1.svg",
         "name": "Neoflow",
         "priority": 5,
         "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
@@ -186,7 +191,7 @@
         "md": 4
     },
     {
-        "logo": "3",
+        "logo": "3.svg",
         "name": "Schooler",
         "priority": 2,
         "description": "📚 Dive into collaboration with Schooler – the ultimate document-sharing app for teachers and students! 🚀✨ Explore member management, security rules, and a sleek search feature. Enjoy the flexibility of white and dark modes. Elevate your learning journey with Schooler! 💻📄",
@@ -205,7 +210,7 @@
         "md": 3
     },
     {
-        "logo": "5",
+        "logo": "5.svg",
         "name": "Manga Hook",
         "priority": 6,
         "url": "http://mangahook.vercel.app/",

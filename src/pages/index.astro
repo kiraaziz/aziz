@@ -127,8 +127,8 @@ const activity = await response.json();
                             p.logo && (
                                 <div class="w-full p-3 rounded-lg bg-card/40  backdrop-blur-3xl border flex gap-4">
                                     <img
-                                        src={`/svg/${p.logo}.svg`}
-                                        class="h-10 mt-1 lg:block hidden"
+                                        src={`/svg/${p.logo}`}
+                                        class={`${p.logo.includes("png")? "h-8" : "h-10"}  mt-1 lg:block hidden`}
                                     />
                                     <div class="flex-1">
                                         <img
