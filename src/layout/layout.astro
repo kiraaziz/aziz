@@ -4,7 +4,7 @@ const { pathname } = Astro.url;
 import "./index.css";
 import { Loader2 } from "lucide-react";
 
-import project from "./../pages/project/project.json";
+import project from "@/lib/json/project.json";
 
 const sortedProjects = [...project].sort((a: any, b: any) => {
   const priorityA = a.priority !== undefined ? a.priority : Infinity; // or a large number like 9999
@@ -21,6 +21,10 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
       name="google-site-verification"
       content="XrMtRnC_cvsvQFEGE5FMyzEZOuCtjfMyDScEvfJz6rU"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -35,7 +39,11 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
     <!-- <img class="absolute hidden lg:blockhidden lg:block blur-2xl bottom-0 left-52 -z-10 opacity-20 translate-y-24 scale-[2] " src="https://monesize.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspring.cf1cfdf2.png&w=384&q=100" /> -->
     <!-- <img class="absolute blur-2xl hidden lg:block top-0 right-52 -z-10 opacity-10 translate-y-24 scale-[2] " src="https://monesize.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspring.cf1cfdf2.png&w=384&q=100" /> -->
     <!-- <img class="absolute top-0 right-0 h-full -z-50 blur-3xl w-screen opacity-0 hidden lg:flex " src="https://res.cloudinary.com/dqfvbunr2/image/upload/w_400/v1721139152/vamia5rwtqmzrbfevyf0.webp" /> -->
-    
+    <div
+      class="fixed top-0 right-0 translate-x-[28svw] -z-50 hidden lg:block -rotate-45 h-28 opacity-20 w-[70svw] bg-primary m-auto blur-3xl rounded-full"
+    >
+    </div>
+
     <div class="flex h-[100svh] w-full flex-col">
       <SideBar
         navigation:persist

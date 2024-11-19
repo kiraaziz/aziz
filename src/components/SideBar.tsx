@@ -30,7 +30,7 @@ export default function SideBar({ pathname, sortedProjects }: any) {
 
     return (
         <>
-            <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur-3xl ">
+            <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur-3xl bg-muted/30 ">
 
                 <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
                     <SquareTerminal size={23} className='text-primary' />

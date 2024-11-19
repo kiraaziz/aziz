@@ -193,7 +193,7 @@
     {
         "logo": "3.svg",
         "name": "Schooler",
-        "priority": 2,
+        "priority": 5,
         "description": "📚 Dive into collaboration with Schooler – the ultimate document-sharing app for teachers and students! 🚀✨ Explore member management, security rules, and a sleek search feature. Enjoy the flexibility of white and dark modes. Elevate your learning journey with Schooler! 💻📄",
         "tags": "next13 neon prisma shadcn posgresql",
         "url": "https://schooler-delta.vercel.app/",
