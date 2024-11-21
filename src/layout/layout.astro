@@ -1,16 +1,9 @@
 ---
-import SideBar, { ContactTools } from "@/components/SideBar";
-const { pathname } = Astro.url;
-import "./index.css";
+import SideBar from "@/components/SideBar";
 import { Loader2 } from "lucide-react";
+import "./../lib/style/index.css";
 
-import project from "@/lib/json/project.json";
-
-const sortedProjects = [...project].sort((a: any, b: any) => {
-  const priorityA = a.priority !== undefined ? a.priority : Infinity; // or a large number like 9999
-  const priorityB = b.priority !== undefined ? b.priority : Infinity; // or a large number like 9999
-  return priorityA - priorityB;
-});
+const { pathname } = Astro.url;
 ---
 
 <html lang="en">
@@ -34,23 +27,13 @@ const sortedProjects = [...project].sort((a: any, b: any) => {
     </title>
   </head>
   <body class="bg-background relative text-foreground">
-    <!-- <img class="hidden lg:block absolute -translate-x-20 translate-y-10 -z-10 h-auto" src="https://monesize.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstar.c6520da8.png&w=384&q=100" /> -->
-    <!-- <img class="absolute hidden lg:block translate-x-10 translate-y-10 -z-10 h-auto bottom-0 right-0" src="https://monesize.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspring.cf1cfdf2.png&w=384&q=100" /> -->
-    <!-- <img class="absolute hidden lg:blockhidden lg:block blur-2xl bottom-0 left-52 -z-10 opacity-20 translate-y-24 scale-[2] " src="https://monesize.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspring.cf1cfdf2.png&w=384&q=100" /> -->
-    <!-- <img class="absolute blur-2xl hidden lg:block top-0 right-52 -z-10 opacity-10 translate-y-24 scale-[2] " src="https://monesize.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspring.cf1cfdf2.png&w=384&q=100" /> -->
-    <!-- <img class="absolute top-0 right-0 h-full -z-50 blur-3xl w-screen opacity-0 hidden lg:flex " src="https://res.cloudinary.com/dqfvbunr2/image/upload/w_400/v1721139152/vamia5rwtqmzrbfevyf0.webp" /> -->
     <div
       class="fixed top-0 right-0 translate-x-[28svw] -z-50 hidden lg:block -rotate-45 h-28 opacity-20 w-[70svw] bg-primary m-auto blur-3xl rounded-full"
     >
     </div>
 
     <div class="flex h-[100svh] w-full flex-col">
-      <SideBar
-        navigation:persist
-        client:load
-        sortedProjects={sortedProjects}
-        pathname={pathname}
-      />
+      <SideBar navigation:persist client:load pathname={pathname} />
       <main
         class="flex h-[calc(100svh_-_4rem)] overflow-auto p-5 lg:p-10 flex-col"
       >

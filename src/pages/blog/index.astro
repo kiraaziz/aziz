@@ -2,16 +2,15 @@
 import Layout from "../../layout/layout.astro";
 import { Icon } from "astro-icon";
 import { Button } from "@/components/ui/button";
+import { useHalfText } from "../index.astro";
 
 const articleReq = await fetch(`https://dev.to/api/articles?username=kiraaziz`);
 const article = await articleReq.json();
 
 function extractURL(text) {
-    // Find the position of the double "https" and extract everything from the second "https"
     const startIndex = text.indexOf("https%3A%2F%2F");
     if (startIndex === -1) return null;
 
-    // Decode the URL-encoded part and remove unnecessary encoding characters
     const encodedPart = text.substring(startIndex);
     const decodedURL = decodeURIComponent(encodedPart);
 
@@ -25,16 +24,16 @@ function extractURL(text) {
     >
         {
             article.map((val) => (
-                <div class="p-3 rounded-lg border bg-card/20 backdrop-blur flex gap-4 flex-col lg:flex-row">
+                <div class="p-3 rounded-lg border bg-muted/20 backdrop-blur flex gap-4 flex-col lg:flex-row">
                     <img
                         src={extractURL(val.cover_image)}
-                        class="h-40 lg:h-16 rounded object-cover "
+                        class="h-40 lg:h-16 min-w-40 bg-primary/20 rounded object-cover "
                     />
                     <div class="flex-1">
-                        <h1 class="font-bold">{val.title}</h1>
+                        <h1 class="font-bold">{useHalfText(val.title, 40)}</h1>
                         <div class="lg:mb-2 flex flex-wrap gap-2">
                             {val.tags.split(", ").map((val) => (
-                                <button class="text-xs text-secondary bg-secondary/10 px-3 py-1 rounded-full">
+                                <button class="text-xs text-foreground/60 border bg-background/60 px-3 py-1 rounded-full">
                                     {val}
                                 </button>
                             ))}

@@ -1,18 +1,12 @@
 ---
+import { projects } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import project from "@/lib/json/project.json";
 import { useHalfText } from "@/pages/index.astro";
 import { Icon } from "astro-icon";
-import { ChevronLeft, ChevronRight, Compass } from "lucide-react";
-
-export const sortedProjects = [...project].sort((a: any, b: any) => {
-    const priorityA = a.priority !== undefined ? a.priority : Infinity;
-    const priorityB = b.priority !== undefined ? b.priority : Infinity;
-    return priorityA - priorityB;
-});
+import { Compass } from "lucide-react";
 ---
 
-<div class="w-full mt-5 lg:mt-20">
+<div class="w-full mt-14 lg:mt-20">
     <div class="flex items-center justify-between w-full mt-5 lg:mt-10">
         <h1 class="text-xl font-bold">Top apps</h1>
         <a
@@ -25,13 +19,10 @@ export const sortedProjects = [...project].sort((a: any, b: any) => {
     </div>
     <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-2">
         {
-            sortedProjects.map(
+            projects.map(
                 (p, index) =>
                     p.logo && (
-                        <a
-                            class="bg-muted/40 border w-full rounded h-full overflow-hidden relative"
-                            href={`project/${index}`}
-                        >
+                        <div class="bg-muted/30  border w-full rounded-md h-full overflow-hidden relative">
                             <div class="w-full mb-4 border-b overflow-hidden flex items-center justify-center">
                                 {p.images.map(
                                     (i, index) =>
@@ -47,35 +38,43 @@ export const sortedProjects = [...project].sort((a: any, b: any) => {
                                 )}
                             </div>
                             <div class="px-5 gap-1 flex w-max items-center justify-center">
-                                <img
-                                    src={`/svg/${p.logo}`}
-                                    class={`${p.logo.includes("png") ? "h-7 -translate-y-0.5 " : "h-8"} `}
-                                />
+                                <div class="h-10 w-10 flex items-center justify-center overflow-visible relative">
+                                    <img
+                                        src={`/svg/${p.logo}`}
+                                        class={`${p.logo.includes("png") ? "h-7 -translate-y-0.5 " : "h-8"} `}
+                                    />
+                                    <img
+                                        src={`/svg/${p.logo}`}
+                                        class={`${p.logo.includes("png") ? "h-7 -translate-y-0.5 " : "h-8"} hidden lg:block absolute blur-xl `}
+                                    />
+                                </div>
                                 <h1 class="font-bold mr-2 ml-1">{p.name}</h1>
-                                <div class="max-w-full w-max flex flex-wrap gap-1">
+                                {/* <div class="max-w-full w-max flex flex-wrap gap-1">
                                     {p.tags
                                         .split(" ")
-                                        .slice(0, 3)
+                                        .slice(0, 2)
                                         .map((t) => (
                                             <div class="w-max text-xs bg-muted px-2 py-0.5 rounded-full text-foreground/50 m-auto">
                                                 {t}
                                             </div>
                                         ))}
-                                </div>
+                                </div> */}
                             </div>
                             <p class="mt-2 text-sm px-5 mb-3 font-light text-foreground/70">
                                 {useHalfText(p.description, 85)}
                             </p>
-                            <div class="w-full p-2">
-                                <Button
-                                    variant="outline"
-                                    className="w-full gap-2 bg-muted border-none text-muted-foreground"
-                                >
-                                    <Compass size={18} />
-                                    Explore
-                                </Button>
+                            <div class="w-full p-2 flex items-center justify-between gap-2">
+                                <a href={`/project/${index}`} class="w-full">
+                                    <Button
+                                        variant="outline"
+                                        className="overflow-hidden w-full gap-2 bg-muted border-none text-muted-foreground"
+                                    >
+                                        <Compass size={18} />
+                                        Explore
+                                    </Button>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     ),
             )
         }

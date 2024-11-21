@@ -1,9 +1,9 @@
 ---
-import { sortedProjects } from "@/components/static/TopProjects.astro";
+import { projects } from "@/lib/data";
 import Layout from "../../../layout/layout.astro";
 
 const { id } = Astro.params;
-const page = sortedProjects.find((page, i) => i == (id as any));
+const page = projects.find((page, i) => i == (id as any));
 if (!page) return Astro.redirect("/404");
 const data = page;
 

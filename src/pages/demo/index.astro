@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Layout from "../../layout/layout.astro";
 import { useHalfText } from "../index.astro";
-import demo from "./demo.json";
+import demo from "@/lib/json/demo.json";
 import Icon from "astro-icon";
 import { Loader, Loader2 } from "lucide-react";
 ---
@@ -53,7 +53,7 @@ import { Loader, Loader2 } from "lucide-react";
                                             .split(" ")
                                             .splice(0, 3)
                                             .map((tag) => (
-                                                <div class="hover:cursor-pointer text-xs text-secondary bg-secondary/5 px-2 rounded-full flex items-center justify-center my-auto h-max py-1">
+                                                <div class="hover:cursor-pointer text-xs text-foreground/60 bg-background/60 border px-2 rounded-full flex items-center justify-center my-auto h-max py-1">
                                                     {tag}
                                                 </div>
                                             ))}
