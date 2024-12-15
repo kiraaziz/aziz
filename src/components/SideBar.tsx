@@ -1,11 +1,11 @@
 import { cn } from '@/lib/utils';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Icon } from '@iconify/react/offline';
-import { Menu, SquareTerminal } from 'lucide-react';
+import { Facebook, Github, Mail, Menu, SquareTerminal } from 'lucide-react';
 import { Button } from './ui/button';
 import { useEffect } from 'react';
 
-export default function SideBar({ pathname, sortedProjects }: any) {
+export default function SideBar({ pathname }: any) {
 
     const paths = [
         { name: "Home", to: "/", icon: "mdi:home" },
@@ -25,18 +25,25 @@ export default function SideBar({ pathname, sortedProjects }: any) {
         }
     }, []);
 
+    const contact = [
+        {
+            icon: Github,
+            path: ""
+        },
+    ]
 
 
 
     return (
         <>
-            <header className="sticky top-0 flex h-16 items-center gap-4 border-b px-4 md:px-6 backdrop-blur-3xl bg-muted/30 ">
+            <header className="sticky top-0 flex h-16 border-b bg-muted/20 items-center gap-4 border-bx px-4 md:px-6 backdrop-blur-3xl  ">
 
                 <a href='/' className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold'>
                     <SquareTerminal size={23} className='text-primary' />
                     Kira Aziz
                 </a>
-                <div className='hidden lg:flex items-center justify-center w-full gap-6'>
+                <div className='flex-1' ></div>
+                <div className='hidden lg:flex items-center justify-center w-full gap-6 flex-1 '>
                     {paths.map((p) => (
                         <a href={p.to} className={cn(pathname === p.to ? "font-medium" : "lg:hover:text-foreground text-foreground/60", "ease-in-out duration-200 text-sm group")}>
                             {p.name}
@@ -44,7 +51,18 @@ export default function SideBar({ pathname, sortedProjects }: any) {
                         </a>
                     ))}
                 </div>
-                <div className='flex-1' />
+                {/* <div className='flex items-center justify-center gap-3 px-7'>
+                    {contact.map((link) => (
+                        <a href={link.path} >
+                            <link.icon size={20} />
+                        </a>
+                    ))}
+                </div> */}
+                <div className='flex-1' ></div>
+                <div  className='lg:ml-10 flex items-center justify-center gap-2 text-foreground text-nowrap font-bold opacity-0'>
+                    <SquareTerminal size={23} className='text-primary' />
+                    Kira Aziz
+                </div>
                 <Sheet >
                     <SheetTrigger asChild>
                         <Button variant='outline' size='icon' className='flex lg:hidden hover:bg-primary'>

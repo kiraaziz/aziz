@@ -4,18 +4,32 @@ import Layout from "../../layout/layout.astro";
 import { useHalfText } from "../index.astro";
 import { Button } from "@/components/ui/button";
 import { Icon } from "astro-icon";
+import { Sparkles } from "lucide-react";
 ---
 
 <Layout>
     <div
         class="w-full max-w-5xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-10 gap-2 grid"
     >
+    <div
+    class="flex text-2xl  font-medium tracking-wide items-start justify-center flex-col w-max mb-5 col-span-full"
+>
+    <div class="w-full col-span-3 gap-2 lg:gap-4 flex items-center justify-start  text-lg lg:text-2xl text-foreground/60 font-semibold">
+        Projects  
+    </div>
+    <div
+        class="flex h-5 overflow-visible items-center justify-start relative"
+    >
+        <img src="/image/sin.svg" class="w-40" />
+        <img src="/image/sin.svg" class="blur-lg absolute w-40" />
+    </div>
+</div>
         {
             projects.map((v: any, index) => (
                 <div class="w-full border bg-muted/20 rounded-lg overflow-hidden">
                     <img
                         src={v.images[0].replace("upload", "upload/w_400")}
-                        class="h-40 border-b w-full object-cover bg-primary/20"
+                        class="h-40 border-b w-full object-cover object-left-top bg-primary/20"
                     />
                     <div class="p-4 pb-3 relative">
                         <div class="w-full flex items-center justify-center gap-2">
