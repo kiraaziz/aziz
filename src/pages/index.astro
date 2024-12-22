@@ -12,6 +12,8 @@ import Stack from "@/components/static/v2/CurrentTech.astro";
 import Experiance from "@/components/static/v2/Experience.astro";
 import Price from "@/components/static/Price.astro";
 import { Dock, Send } from "lucide-react";
+import { projects } from "@/lib/data";
+import Epic from "@/components/static/v2/Epic.astro";
 
 export const useHalfText = (value, size) => {
     if (value.length > size) {
@@ -70,17 +72,23 @@ export const contact = {
         <About />
     </div>
     <div class="w-full max-w-6xl mx-auto mt-14 lg:mt-20 mb-10">
-        <div class=" w-full grid grid-cols-1 lg:grid-cols-3 gap-2 backdrop-blur-3xl">
-            <div class="lg:order-1 order-1 lg:border col-span-2 h-full lg:p-5 rounded bg-card/0 lg:shadow">
+        <div
+            class="w-full grid grid-cols-1 lg:grid-cols-3 gap-2 backdrop-blur-3xl"
+        >
+            <div
+                class="lg:order-1 order-1 lg:border col-span-2 h-full lg:p-5 rounded bg-card/0 lg:shadow"
+            >
                 <Activity />
             </div>
             <div
-                class="lg:order-1 order-3 l:gborder lg:mt-0 mt-14   lg:px-10 flex items-center justify-center rounded lg:bg-muted/20 lg:shadow"
+                class="lg:order-1 order-3 l:gborder lg:mt-0 mt-14 lg:px-10 flex items-center justify-center rounded lg:bg-muted/15 lg:shadow"
             >
                 <Stack />
             </div>
 
-            <div class="lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded lg:shadow relative">
+            <div
+                class="lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded lg:shadow relative"
+            >
                 <div
                     class="absolute -right-1 hidden top-0 z-10 -translate-y-1/2 translate-x-1/2 h-14 w-14 rounded-full bg-background border"
                 >
@@ -167,4 +175,6 @@ export const contact = {
             </form>
         </div> -->
     </div>
+    <Epic />
+
 </Layout>

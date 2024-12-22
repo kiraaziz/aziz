@@ -1,9 +1,7 @@
 ---
-import { projects } from "@/lib/data";
-import { Button } from "@/components/ui/button";
-import { useHalfText } from "@/pages/index.astro";
-import { Icon } from "astro-icon";
-import { Compass } from "lucide-react";
+import { epicProjects } from "@/lib/data"
+import { useHalfText } from "@/pages/index.astro"
+import { Icon } from "astro-icon"
 ---
 
 <div class="w-full">
@@ -19,7 +17,7 @@ import { Compass } from "lucide-react";
     </div>
     <div class="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-2">
         {
-            projects.map(
+            epicProjects.map(
                 (p, index) =>
                     p.logo && (
                         <a
@@ -42,7 +40,7 @@ import { Compass } from "lucide-react";
                                         {p.name}
                                     </h1>
                                     <p class="text-sm text-foreground/60 w-full">
-                                        {useHalfText(p.description, 30)}
+                                        {useHalfText(p.short, 30)}
                                     </p>
                                 </div>
                             </div>

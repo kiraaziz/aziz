@@ -9,6 +9,8 @@
         "tags": "next13 react postgresql shadcn",
         "description": "🚀 The first headless backend that lets you easily add and manage your data, connecting seamlessly with API .",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/hsqxkw8ayt0wbzjqqals.webp",
+
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/pywcjpzggychhseeg5hx.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/xfzb1jgype2cmkyt2tvx.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1730583800/a8flzi6rbmoewoe5f0yv.webp",
@@ -40,6 +42,7 @@
         "tags": "next13 react postgresql colify shadcn",
         "description": "🚀 Considered one of my best apps! Built from scratch: a complete CMS for a multi-language website with content management, member tracking, visitor analytics, and a visual editor.",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/re19ghceyhsjh3anvxmp.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154015/wtbz9szcodlvucmbnhgp.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154025/abmkfxxmcclzseijtnc4.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721154028/yyrpequsomu88nzxid1e.webp",
@@ -147,6 +150,8 @@
         "tags": "next13 react postgresql zod mistar-ai huggingface ai",
         "url": "https://ai-type.vercel.app/",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/g4ry1fcdksl7dm7urhji.webp",
+
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721139578/wcmalawmnmsopcjt5okf.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216265/iuesp7ulxgcgbgcu0sdo.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713216263/bhoqzw2x9hd7fgtigife.webp",
@@ -158,13 +163,14 @@
         "md": 11
     },
     {
-        "priority": 4,
+        "priority": 0,
         "logo": "2.svg",
         "name": "Light Ai 2.0",
         "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
         "tags": "next13 react firebase huggingface ai",
         "url": "https://light-ai.vercel.app",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/xsd1lzsrxyyatf2ndj5c.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378898/portfolio/khiiu5v8r6sukrka2duv.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378898/portfolio/ydpfy7izfpllnfnnvwv3.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378897/portfolio/zmddv7efhcdtlaer5d6g.webp"
@@ -174,11 +180,12 @@
     {
         "logo": "1.svg",
         "name": "Neoflow",
-        "priority": 5,
+        "priority": 6,
         "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
         "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
         "url": "https://neoflow.deno.dev/",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/cz1twr07q1auzwm2huvz.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217540/wzmu0sgztx9njkh1vfyj.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709379884/portfolio/bhyfnxmqmst6a3kcxu1l.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1713217546/kwtvs3yp2ma8rqnheyqh.webp",
@@ -198,6 +205,8 @@
         "tags": "next13 neon prisma shadcn posgresql",
         "url": "https://schooler-delta.vercel.app/",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/po2jxtgbkym5quotohg2.webp",
+
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1721153958/odjteddjengjwyknhben.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378955/portfolio/pelxo9vzkdogdwfrzkrp.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378959/portfolio/tezacdhvx7bleewixhw7.webp",
@@ -217,6 +226,7 @@
         "description": "Dive into a world of manga magic with our free reading app! 📚🌟 Inspired by seamless design, it offers limitless creativity. Explore manga effortlessly, anytime, anywhere! 🚀",
         "tags": "next13 express scraping manga",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/yiujh0kpxmu5pz13qkqb.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378358/portfolio/ogxaava310j3ndvk14xi.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378356/portfolio/xg9lhnzwufpwdmg3urdx.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378356/portfolio/mwvvg48whnksrnokviat.webp",
@@ -245,6 +255,7 @@
         "tags": "astro documentation SSG",
         "url": "http://mangahook-api.vercel.app/",
         "images": [
+            "https://res.cloudinary.com/dqfvbunr2/image/upload/v1734896921/epic/yiujh0kpxmu5pz13qkqb.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378905/portfolio/wzmsi8blha5pjjaaw1wn.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378906/portfolio/abookfnygkbavpyjdkhp.webp",
             "https://res.cloudinary.com/dqfvbunr2/image/upload/v1709378906/portfolio/kmh9uz5ccs8ughshdlqp.webp"
