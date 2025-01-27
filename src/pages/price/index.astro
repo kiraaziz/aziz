@@ -1,86 +1,62 @@
 ---
-import Layout from "../../layout/layout.astro";
-import { Button } from "./../../components/ui/button";
-import { Textarea } from "./../../components/ui/textarea";
-import { Input } from "./../../components/ui/input";
-import { Send } from "lucide-react";
-import Price from "@/components/static/Price.astro";
+import Layout from '../../layout/layout.astro'
+import { Button } from './../../components/ui/button'
+import { Textarea } from './../../components/ui/textarea'
+import { Input } from './../../components/ui/input'
+import { Send } from 'lucide-react'
 ---
 
 <Layout>
-    <div class="w-full mt-5 lg:mt-16 max-w-3xl mx-auto">
-        <Price />
-        <form
-            class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 py-1 flex-col gap-3 mt-7 lg:mt-20"
-            action="https://usebasin.com/f/e5127a235c57"
-            method="POST"
-        >
-            <div class="">
-                <label>Client name</label>
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="name"
-                    placeholder="Name"
-                />
+    <div class="w-full mt-5 max-w-3xl mx-auto min-h-[65vh] lg:flex flex-col items-center justify-center">
+        <div class="w-full">
+            <h1 class="text-2xl font-bold mx-auto w-max mb-5">Pricing</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:mt-10">
+                <div class="w-full bg-muted/0 rounded-xl shadow overflow-hidden border">
+                    <div class="w-full p-3 border-b bg-muted/30 text-center">
+                        <h1 class="font-bold">Basic</h1>
+                        <p class="font-light text-sm text-foreground/80">static webiste</p>
+                    </div>
+                    <div class="p-4">
+                        <h1 class="mx-auto mb-3 font-bold w-max p-3 text-lg bg-muted/20 px-6 py-1 rounded-full">250$</h1>
+                        <ul class="text- font-light text-foreground/70 flex items-center justify-center flex-col mb-3">
+                            <li class="text-sm font-light">showcase</li>
+                            <li class="text-sm font-light">max 5 pages</li>
+                            <li class="text-sm font-light">3 days of work</li>
+                            <li class="text-sm font-light">20 day free fix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full bg-muted/0 rounded-xl border shadow overflow-hidden lg:scale-[1.14] lg:z-5 lg:backdrop-blur-lg order-2 lg:order-1 lg:!border-primary">
+                    <div class="w-full p-3 border-b lg:bg-primary/5 text-center lg:!border-primary">
+                        <h1 class="font-bold lg:text-primary">Custom</h1>
+                        <p class="font-light text-sm lg:text-primary/80 text-foreground/80">software as service</p>
+                    </div>
+                    <div class="p-4">
+                        <h1 class="mx-auto mb-3 font-bold w-max p-3 text-lg bg-muted/40 text-bxackground px-6 py-1 rounded-full">from 4000$</h1>
+                        <ul class="text- font-light text-foreground/70 flex items-center justify-center flex-col mb-3">
+                            <li class="text-sm font-light">saas</li>
+                            <li class="text-sm font-light">ai intergration</li>
+                            <li class="text-sm font-light">3 to 12 month of work</li>
+                            <li class="text-sm font-light">1 year free fix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full bg-muted/0 rounded-xl border shadow overflow-hidden order-1 lg:order-2">
+                    <div class="w-full p-3 border-b bg-muted/30 text-center">
+                        <h1 class="font-bold">Pro</h1>
+                        <p class="font-light text-sm text-foreground/80">dynamic webiste</p>
+                    </div>
+                    <div class="p-4">
+                        <h1 class="mx-auto mb-3 font-bold w-max p-3 text-lg bg-muted/20 text-bxackground px-6 py-1 rounded-full">from 750$</h1>
+                        <ul class="text- font-light text-foreground/70 flex items-center justify-center flex-col mb-3">
+                            <li class="text-sm font-light">e-commerce</li>
+                            <li class="text-sm font-light">managment system</li>
+                            <li class="text-sm font-light">60 days of work</li>
+                            <li class="text-sm font-light">90 day free fix</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="">
-                <label>Email</label>
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="email"
-                    placeholder="Email"
-                />
-            </div>
-            <div class="">
-                <label>Phone number</label>
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="phone"
-                    placeholder="Phone"
-                />
-            </div>
-            <div class="">
-                <label>Service price</label>
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    type="number"
-                    min="0"
-                    name="price"
-                    placeholder="price"
-                />
-            </div>
-            <div class="">
-                <label>Work duration</label>
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="duration"
-                    placeholder="duration days"
-                />
-            </div>
-            <div class="col-span-full">
-                <label>Details</label>
-                <Textarea
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="details"
-                    placeholder="more information about the request"
-                />
-            </div>
-            <div class="col-span-full flex items-center justify-end">
-                <Button
-                    type="submit"
-                    variant="default"
-                    className="gap-4 px-8 text-primary bg-primary/10 hover:text-primary hover:bg-primary/10 lg:hover:gap-6 ease-in-out duration-200 transition-all "
-                >
-                    Send
-                    <Send size={20} />
-                </Button>
-            </div>
-        </form>
+        </div>
     </div>
 </Layout>

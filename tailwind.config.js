@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx,astro}',
-    './components/**/*.{ts,tsx,astro}',
-    './app/**/*.{ts,tsx,astro}',
-    './src/**/*.{ts,tsx,astro}',
-    '@/**/*.{ts,tsx,astro}',
+    "./pages/**/*.{ts,tsx,astro}",
+    "./components/**/*.{ts,tsx,astro}",
+    "./app/**/*.{ts,tsx,astro}",
+    "./src/**/*.{ts,tsx,astro}",
+    "@/**/*.{ts,tsx,astro}",
   ],
   prefix: "",
   theme: {
@@ -75,4 +75,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

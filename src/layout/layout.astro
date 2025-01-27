@@ -1,50 +1,37 @@
 ---
-import SideBar from "@/components/SideBar";
-import { Loader2 } from "lucide-react";
-import "./../lib/style/index.css";
+import SideBar from '@/components/SideBar'
+import { Loader2 } from 'lucide-react'
+import Footer from '@/components/static/v2/Footer.astro'
+import './../lib/style/index.css'
 
-const { pathname } = Astro.url;
+const { pathname } = Astro.url
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta
-      name="google-site-verification"
-      content="XrMtRnC_cvsvQFEGE5FMyzEZOuCtjfMyDScEvfJz6rU"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <title>
-      Kira Aziz {pathname.split("/")[1] && ": " + pathname.split("/")[1]}
-    </title>
-  </head>
-  <body class="bg-background relative text-foreground">
-    <!-- <div
-      class="fixed top-0 right-0 translate-x-[28svw] -z-50 hidden lg:block -rotate-45 h-28 opacity-20 w-[70svw] bg-primary m-auto blur-3xl rounded-full"
-    >
-    </div> -->
-
-    <div class="flex h-[100svh] w-full flex-col">
-      <SideBar navigation:persist client:load pathname={pathname} />
-      <main
-        class="flex h-[calc(100svh_-_4rem)] overflow-auto p-5 lg:p-10 flex-col"
-      >
-        <div
-          class="flex items-center justify-center spinner h-[100svh] w-full bg-background fixed top-0 right-0 z-50"
-        >
-          <Loader2 className="text-primary animate-spin" />
+    <head>
+        <meta charset="utf-8" />
+        <link rel="sitemap" href="/sitemap-index.xml" />
+        <meta name="google-site-verification" content="XrMtRnC_cvsvQFEGE5FMyzEZOuCtjfMyDScEvfJz6rU" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>
+            Kira Aziz {pathname.split('/')[1] && ': ' + pathname.split('/')[1]}
+        </title>
+    </head>
+    <body class="bg-background relative text-foreground">
+        <div class="flex items-center justify-center spinner h-[100svh] w-full bg-background fixed top-0 right-0 z-50">
+            <Loader2 className="text-primary animate-spin" />
         </div>
-        <slot />
-        <div class="w-full h-20"></div>
-      </main>
-    </div>
-  </body>
+        <div class="h-screen w-screen bg fixed top-0 right-0 z-0"></div>
+        <div class="flex h-[100svh] w-full flex-col z-10">
+            <SideBar navigation:persist client:load pathname={pathname} />
+            <main class="overflow-auto h-[calc(100svh_-_4rem)] z-10">
+                <div class="h-max p-5 lg:p-10">
+                    <slot />
+                    <div class="w-full h-20"></div>
+                </div>
+                <Footer />
+            </main>
+        </div>
+    </body>
 </html>

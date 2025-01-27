@@ -1,6 +1,6 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import vercel from '@astrojs/vercel/serverless';
+import vercel from "@astrojs/vercel/serverless";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import sentry from "@sentry/astro";
@@ -18,7 +18,16 @@ const dynamicUrls = generateDynamicUrls();
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://kiraaziz.vercel.app/',
+  plugins: ["prettier-plugin-astro"],
+  overrides: [
+    {
+      files: "*.astro",
+      options: {
+        parser: "astro",
+      },
+    },
+  ],
+  site: "https://kiraaziz.vercel.app/",
   integrations: [
     tailwind(),
     sitemap({
@@ -33,7 +42,10 @@ export default defineConfig({
       },
     }),
   ],
-  output: 'server',
+  output: "server",
+  devToolbar: {
+    enabled: false,
+  },
   adapter: vercel({
     webAnalytics: {
       enabled: true,

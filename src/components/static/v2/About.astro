@@ -1,69 +1,34 @@
 ---
-import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { Button } from '@/components/ui/button'
+import { ArrowDown } from 'lucide-react'
 ---
 
 <div class="w-full h-full">
     <div class="flex h-full items-center justify-between lg:pl-10">
-        <div
-            class="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5"
-        >
-            <h1 class="text-lg lg:text-3xl font-bold">Hi, I’m Kira Aziz</h1>
+        <div class="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5">
+            <h1 class="text-lg lg:text-4xl font-bold">Hi, I’m Kira Aziz</h1>
             <p class="font-light text-sm text-foreground/60">
-                A Tunisian 🇹🇳 full-stack developer with 1.5 years of experience
-                and over 30,000 total reads on
-                <a
-                    href="https://dev.to/kiraaziz"
-                    class="text-primary hover:underline mx-1"
-                    target="_blank">dev.to</a
-                >. I create apps like
-                <a
-                    href="https://light-ai.vercel.app/"
-                    class="text-primary hover:underline mx-1"
-                    target="_blank">Light AI ✨</a
-                >,
-                <a
-                    href="https://eyebase.vercel.app/"
-                    class="text-primary hover:underline mx-1"
-                    target="_blank">Eyebase 🎉</a
-                >,
-                <a
-                    href=/project/3"
-                    class="text-primary hover:underline mx-1"
-                    target="_blank">Type Ai 🤖</a
-                >, and
-                <a
-                    href="/project/5"
-                    class="text-primary hover:underline mx-1"
-                    target="_blank">NeoFlow 🪢</a
-                >. Check them out! 🚀
+                A Tunisian 🇹🇳 full-stack developer with 1.5 years of experience and over 30,000 total reads on
+                <a href="https://dev.to/kiraaziz" class="text-primary hover:underline mx-1" target="_blank"> dev.to </a>
+                . I create apps like
+                <a href="https://light-ai.vercel.app/" class="text-primary hover:underline mx-1" target="_blank"> Light AI ✨ </a>,
+                <a href="https://eyebase.vercel.app/" class="text-primary hover:underline mx-1" target="_blank"> Eyebase 🎉 </a>,
+                <a href="/project/3" class="text-primary hover:underline mx-1" target="_blank"> Type Ai 🤖 </a>, and
+                <a href="/project/5" class="text-primary hover:underline mx-1" target="_blank"> NeoFlow 🪢 </a>
+                . Check them out! 🚀
             </p>
             <a href="/cv.pdf" target="_blank">
-                <Button
-                    className="group bg-primary/10 rounded-full gap-3 mt-2 lg:mt-4 text-primary  overflow-visible hover:text-black"
-                >
+                <Button className="group bg-primary/10 rounded-full gap-3 mt-2 lg:mt-4 text-primary overflow-visible hover:text-black">
                     Download cv
-                    <ArrowDown
-                        className=" lg:group-hover:translate-y-2 ease-in-out duration-200"
-                        size="20"
-                    />
+                    <ArrowDown className="lg:group-hover:translate-y-2 ease-in-out duration-200" size="20" />
                 </Button>
             </a>
         </div>
         <div class="flex items-end justify-end relative h-full">
             <img src="/image/avatarNo.png" class="w-72 hidden lg:block" />
-            <img
-                src="/image/avatarNo.png"
-                class="absolute blur-lg -z-10 opacity-60"
-            />
-            <img
-                src="/image/sin.svg"
-                class="absolute bottom-0 translate-y-1/2"
-            />
-            <img
-                src="/image/sin.svg"
-                class="absolute bottom-0 blur translate-y-1/2"
-            />
+            <img src="/image/avatarNo.png" class="absolute blur-lg -z-10 opacity-40" />
+            <img src="/image/sin.svg" class="absolute bottom-0 translate-y-1/2" />
+            <img src="/image/sin.svg" class="absolute bottom-0 blur translate-y-1/2" />
         </div>
     </div>
 </div>

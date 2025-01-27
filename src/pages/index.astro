@@ -1,70 +1,13 @@
 ---
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Input } from "@/components/ui/input";
-import Layout from "../layout/layout.astro";
-import ExperienceOld from "@/components/static/Experience.astro";
-import About from "@/components/static/v2/About.astro";
-import Activity from "@/components/static/v2/Activity.astro";
-import TopProjects from "@/components/static/v2/TopProjects.astro";
-import TopProjectsDetails from "@/components/static/v2/TopProjectsDetail.astro";
-import Stack from "@/components/static/v2/CurrentTech.astro";
-import Experiance from "@/components/static/v2/Experience.astro";
-import Price from "@/components/static/Price.astro";
-import { Dock, Send } from "lucide-react";
-import { projects } from "@/lib/data";
-import Epic from "@/components/static/v2/Epic.astro";
-
-export const useHalfText = (value, size) => {
-    if (value.length > size) {
-        return value.slice(0, size) + "...";
-    }
-
-    return value;
-};
-
-export const contact = {
-    email: {
-        title: "Email",
-        name: "mailto:kiraaziz2020@gmail.com",
-        icon: "1",
-    },
-    phone: {
-        title: "Phone",
-        name: "tel:+216 93 989 486",
-        icon: "2",
-    },
-    whatsup: {
-        title: "Whats app",
-        name: "https://wa.me/27028711",
-        icon: "3",
-    },
-    github: {
-        title: "Github",
-        name: "https://github.com/kiraaziz",
-        icon: "5",
-    },
-    facebook: {
-        title: "Facebook",
-        name: "https://www.facebook.com/aziz.kira.581/",
-        icon: "4",
-    },
-    Instagram: {
-        title: "Instagram",
-        name: "https://www.instagram.com/kira_can_code/",
-        icon: "8",
-    },
-    linkedin: {
-        title: "Linkedin",
-        name: "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/",
-        icon: "6",
-    },
-    devto: {
-        title: "DEV.to",
-        name: "https://dev.to/kiraaziz",
-        icon: "7",
-    },
-};
+import Layout from '../layout/layout.astro'
+import About from '@/components/static/v2/About.astro'
+import Activity from '@/components/static/v2/Activity.astro'
+import TopProjects from '@/components/static/v2/TopProjects.astro'
+import Stack from '@/components/static/v2/CurrentTech.astro'
+import Experiance from '@/components/static/v2/Experience.astro'
+import Epic from '@/components/static/v2/Epic.astro'
+import ExperienceDetail from '@/components/static/v2/ExperienceDetail.astro'
+import DesignSystem from '@/components/static/v2/DesignSystem.astro'
 ---
 
 <Layout>
@@ -72,109 +15,29 @@ export const contact = {
         <About />
     </div>
     <div class="w-full max-w-6xl mx-auto mt-14 lg:mt-20 mb-10">
-        <div
-            class="w-full grid grid-cols-1 lg:grid-cols-3 gap-2 backdrop-blur-3xl"
-        >
-            <div
-                class="lg:order-1 order-1 lg:border col-span-2 h-full lg:p-5 rounded bg-card/0 lg:shadow"
-            >
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div class="lg:order-1 order-1 lg:border col-span-2 h-full lg:p-5 rounded-xl relative">
+                <!-- <div class="absolute w-96 h-96 overflow-y-visible overflow-x-hidden top-0 -translate-y-full">
+                    <div class="h-full w-full blur-xl">
+                        <div class="h-[calc(100%_-_0.75rem)] w-3 bg-primary max-w-full  ml-24"></div>
+                        <div class="h-3 w-4/5 bg-primary max-w-full mx-auto rounded-t-full"></div>
+                    </div>
+                </div> -->
                 <Activity />
             </div>
-            <div
-                class="lg:order-1 order-3 l:gborder lg:mt-0 mt-14 lg:px-10 flex items-center justify-center rounded lg:bg-muted/15 lg:shadow"
-            >
+            <div class="lg:order-1 order-3 l:gborder lg:mt-0 mt-14 lg:px-10 hidden lg:flex items-center justify-center rounded-xl border">
                 <Stack />
             </div>
-
-            <div
-                class="lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded lg:shadow relative"
-            >
-                <div
-                    class="absolute -right-1 hidden top-0 z-10 -translate-y-1/2 translate-x-1/2 h-14 w-14 rounded-full bg-background border"
-                >
-                </div>
+            <div class="lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded-xl border hidden lg:flex">
+                <div class="absolute -right-1 hidden top-0 z-10 -translate-y-1/2 translate-x-1/2 h-14 w-14 rounded-full bg-background border"></div>
                 <Experiance />
             </div>
-            <div
-                class="lg:order-1 order-2 lg:border mt-14 lg:mt-0 lg:p-5 relative overflow-hidden col-span-2 lg:rounded bg-card/0 lg:shadow"
-            >
+            <div class="lg:order-1 order-2 lg:border mt-14 lg:mt-0 lg:p-5 relative overflow-hidden col-span-2 rounded-xl border hidden lg:flex">
                 <TopProjects />
             </div>
         </div>
-        <!-- <TopProjectsDetails />
-        <div class="w-full max-w-3xl mx-auto">
-            <ExperienceOld />
-        </div>
-        <div class="w-full mt-10 lg:mt-20 max-w-3xl mx-auto">
-            <Price />
-        </div>
-        <div class="w-full mt-14 lg:mt-20">
-            <h1 class="text-2xl font-bold mx-auto mb-2 w-max">Get in Touch</h1>
-            <p class="text-center max-w-2xl mx-auto text- text-foreground/60">
-                Have a question, feedback, or just want to say hello? We'd love
-                to hear from you! Feel free to reach out using the contact
-                information below, and we'll get back to you as soon as
-                possible.
-            </p>
-            <div
-                class="overflow-visible p-2 w-max bg-card/20 backdrop-blur rounded-full border mx-auto mt-10 flex items-center justify-center gap-2 ease-in-out duration-200"
-            >
-                {
-                    Object.keys(contact).map((link) => (
-                        <a
-                            href={contact[link].name}
-                            class="lg:hover:bg-primary/70 h-8 w-8 flex items-center justify-center rounded-full lg:hover:mx-3 lg:hover:-translate-y-1 ease-in-out duration-200  lg:hover:shadow-[0px_0px_10px_1px] lg:hover:shadow-primary"
-                        >
-                            <img
-                                src={`/contact/${contact[link].icon}.svg`}
-                                height={20}
-                                width={20}
-                            />
-                        </a>
-                    ))
-                }
-            </div>
-            <div
-                class="w-full flex gap-2 items-center justify-center my-5 lg:my-10"
-            >
-                <div class="w-full border-b"></div>
-                <h1 class="">OR</h1>
-                <div class="w-full border-b"></div>
-            </div>
-            <form
-                class="w-full mx-auto max-w-lg py-1 flex flex-col gap-3"
-                action="https://usebasin.com/f/e5127a235c57"
-                method="POST"
-            >
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="name"
-                    placeholder="Name"
-                />
-                <Input
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="email"
-                    placeholder="Email"
-                />
-                <Textarea
-                    className="bg-card/20 backdrop-blur"
-                    required={true}
-                    name="message"
-                    placeholder="Message"
-                />
-                <Button
-                    type="submit"
-                    variant="default"
-                    className="gap-4 px-8 text-primary bg-primary/10 hover:text-primary hover:bg-primary/10 lg:hover:gap-6 ease-in-out duration-200 transition-all "
-                >
-                    Send
-                    <Send size={20} />
-                </Button>
-            </form>
-        </div> -->
     </div>
     <Epic />
-
+    <DesignSystem />
+    <ExperienceDetail />
 </Layout>
