@@ -4,6 +4,7 @@ import { Icon, Menu, SquareTerminal } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect } from "react";
 import contact from "@/lib/json/contact.json";
+import { PopupWidget } from "react-calendly";
 
 export default function SideBar({ pathname }: any) {
   const paths = [

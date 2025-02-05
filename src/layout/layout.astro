@@ -2,6 +2,7 @@
 import SideBar from '@/components/SideBar'
 import { Loader2 } from 'lucide-react'
 import Footer from '@/components/static/v2/Footer.astro'
+import Calendly from "@/components/Calendly" 
 import './../lib/style/index.css'
 
 const { pathname } = Astro.url
@@ -25,13 +26,14 @@ const { pathname } = Astro.url
         <div class="h-screen w-screen bg fixed top-0 right-0 z-0"></div>
         <div class="flex h-[100svh] w-full flex-col z-10">
             <SideBar navigation:persist client:load pathname={pathname} />
-            <main class="overflow-auto h-[calc(100svh_-_4rem)] z-10">
+            <main id="root" class="overflow-auto h-[calc(100svh_-_4rem)] z-10">
                 <div class="h-max p-5 lg:p-10">
                     <slot />
                     <div class="w-full h-20"></div>
                 </div>
                 <Footer />
             </main>
+            <Calendly client:only />
         </div>
     </body>
 </html>
