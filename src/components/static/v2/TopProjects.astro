@@ -1,7 +1,8 @@
 ---
-import { epicProjects } from '@/lib/data'
-import { useHalfText } from '@/lib/functions/useHelfText'
+import { epicProjects, projects } from '@/lib/data'
+import ProjectDetails from '@/components/ProjectDetails'
 import { Icon } from 'astro-icon'
+import { useHalfText } from '@/lib/functions/useHelfText'
 ---
 
 <div class="w-full">
@@ -17,18 +18,15 @@ import { Icon } from 'astro-icon'
             epicProjects.map(
                 (p, index) =>
                     p.logo && (
-                        <a href={`/project/${index}`} class="w-full flex-col flex  bg-muted/20 p-2  border rounded-md">
-                            <div class="gap-1 flex items-center justify-center w-full">
-                                <div class="h-10 w-10 flex items-center justify-center overflow-visible relative">
-                                    <img src={`/svg/${p.logo}`} class={`${p.logo.includes('png') ? 'h-7 -translate-y-0.5 ' : 'h-8'} `} />
-                                    <img src={`/svg/${p.logo}`} class={`${p.logo.includes('png') ? 'h-7 -translate-y-0.5 ' : 'h-8'} hidden lg:block absolute blur-xl `} />
-                                </div>
-                                <div class="w-full flex-1">
-                                    <h1 class="font-bold mr-2 ml-1 text-foreground/80">{p.name}</h1>
-                                    <p class="text-sm text-foreground/60 w-full">{useHalfText(p.short, 30)}</p>
-                                </div>
-                            </div>
-                        </a>
+                        <ProjectDetails
+                            data={{
+                                ...projects.filter((i) => {
+                                    return i.name === p.name
+                                })[0],
+                                short: p.short
+                            }}
+                            isShort={true}
+                            client:load />
                     ),
             )
         }

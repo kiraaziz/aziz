@@ -80,7 +80,7 @@ body {
   height: 200vh;
   background: url(https://indieground.net/wp-content/uploads/2023/01/noise-01.png) repeat;
   background-repeat: repeat;
-  opacity: 0.6;
+  opacity: .8;
   visibility: visible;
   pointer-events: none;
   display: block;

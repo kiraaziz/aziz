@@ -2,7 +2,6 @@
 import SideBar from '@/components/SideBar'
 import { Loader2 } from 'lucide-react'
 import Footer from '@/components/static/v2/Footer.astro'
-import Calendly from "@/components/Calendly" 
 import './../lib/style/index.css'
 
 const { pathname } = Astro.url
@@ -33,7 +32,6 @@ const { pathname } = Astro.url
                 </div>
                 <Footer />
             </main>
-            <Calendly client:only />
         </div>
     </body>
 </html>

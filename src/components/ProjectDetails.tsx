@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/carousel"
 import demo from "@/lib/json/demo.json"
 
-export default function DrawerDialogDemo({ data }: any) {
+export default function DrawerDialogDemo({ data, isShort = false }: any) {
     const [open, setOpen] = React.useState(false)
     const [isDesktop, setIsDesktop] = React.useState(false);
 
@@ -44,9 +44,20 @@ export default function DrawerDialogDemo({ data }: any) {
         return (
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
-                    <div className="w-full h-full">
+                    {isShort ? <div className="w-full flex-col flex  bg-muted/20 p-2  border rounded-md hover:cursor-pointer">
+                        <div className="gap-1 flex items-center justify-center w-full">
+                            <div className="h-10 w-10 flex items-center justify-center overflow-visible relative">
+                                <img src={`/svg/${data.logo}`} className={`${data.logo.includes('png') ? 'h-7 -translate-y-0.5 ' : 'h-8'} `} />
+                                <img src={`/svg/${data.logo}`} className={`${data.logo.includes('png') ? 'h-7 -translate-y-0.5 ' : 'h-8'} hidden lg:block absolute blur-xl `} />
+                            </div>
+                            <div className="w-full flex-1">
+                                <h1 className="font-bold mr-2 ml-1 text-foreground/80">{data.name}</h1>
+                                <p className="text-sm text-foreground/60 w-full">{useHalfText(data.short, 30)}</p>
+                            </div>
+                        </div>
+                    </div> : <div className="w-full h-full">
                         <Card data={data} />
-                    </div>
+                    </div>}
                 </DialogTrigger>
                 <DialogContent className="min-w-xl max-w-4xl">
                     <Details data={data} />
@@ -58,9 +69,20 @@ export default function DrawerDialogDemo({ data }: any) {
     return (
         <Drawer open={open} onOpenChange={setOpen}>
             <DrawerTrigger>
-                <div className="w-full h-full">
+                {isShort ? <div className="w-full flex-col flex  bg-muted/20 p-2  border rounded-md hover:cursor-pointer">
+                    <div className="gap-1 flex items-center justify-center w-full">
+                        <div className="h-10 w-10 flex items-center justify-center overflow-visible relative">
+                            <img src={`/svg/${data.logo}`} className={`${data.logo.includes('png') ? 'h-7 -translate-y-0.5 ' : 'h-8'} `} />
+                            <img src={`/svg/${data.logo}`} className={`${data.logo.includes('png') ? 'h-7 -translate-y-0.5 ' : 'h-8'} hidden lg:block absolute blur-xl `} />
+                        </div>
+                        <div className="w-full flex-1">
+                            <h1 className="font-bold mr-2 ml-1 text-foreground/80">{data.name}</h1>
+                            <p className="text-sm text-foreground/60 w-full">{useHalfText(data.short, 30)}</p>
+                        </div>
+                    </div>
+                </div> : <div className="w-full h-full">
                     <Card data={data} />
-                </div>
+                </div>}
             </DrawerTrigger>
             <DrawerContent className="w-full p-3">
                 <Details data={data} />

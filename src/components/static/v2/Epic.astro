@@ -1,60 +1,23 @@
 ---
-import { epicProjects } from "@/lib/data";
-import { useHalfText } from '@/lib/functions/useHelfText'
+import { epicProjects, projects } from '@/lib/data'
+import ProjectDetails from '@/components/ProjectDetails'
 ---
 
 <div class="w-full max-w-3xl mx-auto mt-14 lg:mt-20 mb-10 grid gap-3 grid-cols-1 lg:grid-cols-2">
     <div class="col-span-full w-full items-center justify-center flex-col mx-auto max-w-2xl lg:text-center mb-2">
-        <h1 class="text-lg lg:text-3xl font-bold  w-full ">
-            Check out my latest work
-        </h1>
-        <p class="text-foreground/60 hidden lg:flex">
-            I've worked on a variety of projects, from simple websites to
-            complex web applications. Here are a few of my favorites.
-        </p>
+        <h1 class="text-lg lg:text-3xl font-bold w-full">Check out my latest work</h1>
+        <p class="text-foreground/60 hidden lg:flex">I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.</p>
     </div>
     {
         epicProjects.slice(0, 6).map((v: any, index) => (
-            <div class="w-full border bg-muted/20 rounded-lg overflow-hidden">
-                <img src={v.images[0].replace("upload", "upload/w_600")} class="h-40 border-b w-full object-cover object-left-top bg-primary/20" />
-                <div class="p-4 pb-3 relative">
-                    <div class="w-full flex items-center justify-center gap-2">
-                       
-                            <div class={`h-9 flex items-center justify-center overflow-visible relative ${v.logo? "w-9": "w-0"}`}>
-                                {v.logo && (<img src={`/svg/${v.logo}`} class={`${v.logo.includes("png") ? "h-6 -translate-y-0.5 " : "h-7"} `} />
-                                <img src={`/svg/${v.logo}`} class={`${v.logo.includes("png") ? "h-6 -translate-y-0.5 " : "h-7"} hidden lg:block absolute blur-xl `} /> )}
-                            </div>
-                       
-                        <h1 class="text-lg font-semibold">
-                            {useHalfText(v.name, 20)}
-                        </h1>
-                        <div class="flex-1 flex items-center justify-end">
-                            {v.url && (
-                                <a
-                                    href={v.url}
-                                    class="text-sm underline text-foreground/60 hover:text-foreground"
-                                >
-                                    visite
-                                </a>
-                            )}
-                        </div>
-                    </div>
-                    <div class="flex gap-1.5 flex-wrap mb-2">
-                        {v.tags &&
-                            v.tags
-                                .split(" ")
-                                .splice(0, 4)
-                                .map((tag) => (
-                                    <div class="hover:cursor-pointer border text-xs text-foreground/60 bg-background/60 px-2 rounded-full flex items-center justify-center my-auto h-max py-1">
-                                        {tag}
-                                    </div>
-                                ))}
-                    </div>
-                    <p class="text-sm  font-light text-foreground/50 max-w-md">
-                        {useHalfText(v.description, 150)}
-                    </p>
-                </div>
-            </div>
+            <ProjectDetails
+                data={
+                    projects.filter((i) => {
+                        return i.name === v.name
+                    })[0]
+                }
+                client:load
+            />
         ))
     }
 </div>
