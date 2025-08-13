@@ -55,13 +55,15 @@ export const Github = () => {
 
   return (
     <div className={`lg:order-1 order-1 lg:border col-span-2 h-full rounded-xl relative ${!scroll && " lg:p-0"}`}>
-      <div className={`w-full  ${scroll ? "animate-pulse !opacity-30 h-[15.25rem]": "h-[15.25rem]"} p-5`}>
+      <div className={`w-full  ${scroll ? "animate-pulse !opacity-30 h-[15.25rem]": "h-[15.25rem]"} lg:p-5`}>
         {!scroll && <div className="flex items-center justify-between w-full mb-4">
-          <h1 className="text-lg lg:text-xl font-bold">Last activities</h1>
+          <h1 className="text-lg lg:text-xl font-bold hidden lg:flex">Last activities</h1>
+          <h1 className="text-lg lg:text-xl font-bold lg:hidden flex ">Activities</h1>
           <a
             className="text-sm font-light text-foreground/60 gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5 flex items-center justify-center lg:bg-muted/20 px-4 py-2  lg:border rounded-xl"
             href={'https://github.com/kiraaziz'}>
-            Explore Github
+            <span className="hidden lg:flex">Explore Github</span>
+            <span className="lg:hidden flex ">Explore</span>
             <ArrowRight size={20} />
           </a>
         </div>}
