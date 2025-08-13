@@ -8,40 +8,42 @@ const articleReq = await fetch(`https://dev.to/api/articles?username=kiraaziz`)
 const article = await articleReq.json()
 
 function extractURL(text) {
-    const startIndex = text.indexOf('https%3A%2F%2F')
-    if (startIndex === -1) return null
+  const startIndex = text.indexOf('https%3A%2F%2F')
+  if (startIndex === -1) return null
 
-    const encodedPart = text.substring(startIndex)
-    const decodedURL = decodeURIComponent(encodedPart)
+  const encodedPart = text.substring(startIndex)
+  const decodedURL = decodeURIComponent(encodedPart)
 
-    return decodedURL
+  return decodedURL
 }
 ---
 
 <Layout>
-    <div class="grid grid-cols-1 lg:grid-cols-1 w-full lg:py-10 gap-2 mx-auto max-w-3xl">
-        {
-            article.map((val) => (
-                <div class="p-3 rounded-2xl border bg-muted/10 flex gap-4 flex-col lg:flex-row">
-                    <img src={val.social_image} class="lg:rounded-xl lg:border h-40 lg:h-full lg:w-40 min-w-40 bg-primary/20 rounded object-cover " />
-                    <div class="flex-1">
-                        <h1 class="font-bold">{useHalfText(val.title, 40)}</h1>
-                        <div class="lg:mb-2 flex flex-wrap gap-1 mt-1">
-                            {val.tags.split(', ').map((val) => (
-                                <button class="text-xs text-foreground/60 border bg-muted/20 px-3 py-1 rounded-full">{val}</button>
-                            ))}
-                        </div>
-                        <p class="text-xs font-light text-foreground/50"> {val.description}</p>
-                    </div>
-                    <div class="w-full lg:w-max flex items-end justify-end">
-                        <a class="text-sm font-light text-foreground/60 gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5 flex items-center justify-center lg:bg-muted/20 px-4 lg:py-2 py-3 bg-muted/20 border rounded-xl w-full lg:w-max" href={val.url}>
-                            Read more
-                            <Icon name="lucide:arrow-right" size="20" />
-                        </a>
-                    </div>
-                </div>
-            ))
-        }
-        <div class="h-10 w-full"></div>
-    </div>
+  <div class="grid grid-cols-1 lg:grid-cols-1 w-full lg:py-10 gap-2 mx-auto max-w-3xl">
+    {
+      article.map((val) => (
+        <div class="p-3 rounded-2xl border bg-muted/10 flex gap-4 flex-col lg:flex-row">
+          <img src={val.social_image} class="lg:rounded-xl lg:border h-40 lg:h-full lg:w-40 min-w-40 bg-primary/20 rounded object-cover " />
+          <div class="flex-1">
+            <h1 class="font-bold">{useHalfText(val.title, 40)}</h1>
+            <div class="lg:mb-2 flex flex-wrap gap-1 mt-1">
+              {val.tags.split(', ').map((val) => (
+                <button class="text-xs text-foreground/60 border bg-muted/20 px-3 py-1 rounded-full">{val}</button>
+              ))}
+            </div>
+            <p class="text-xs font-light text-foreground/50"> {val.description}</p>
+          </div>
+          <div class="w-full lg:w-max flex items-end justify-end">
+            <a
+              class="text-sm font-light text-foreground/60 gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5 flex items-center justify-center lg:bg-muted/20 px-4 lg:py-2 py-3 bg-muted/20 border rounded-xl w-full lg:w-max"
+              href={val.url}>
+              Read more
+              <Icon name="lucide:arrow-right" size="20" />
+            </a>
+          </div>
+        </div>
+      ))
+    }
+    <div class="h-10 w-full"></div>
+  </div>
 </Layout>

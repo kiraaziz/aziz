@@ -1,43 +1,35 @@
 ---
 import Layout from '../layout/layout.astro'
 import About from '@/components/static/v2/About.astro'
-import Activity from '@/components/static/v2/Activity.astro'
 import TopProjects from '@/components/static/v2/TopProjects.astro'
 import Stack from '@/components/static/v2/CurrentTech.astro'
 import Experiance from '@/components/static/v2/Experience.astro'
 import Epic from '@/components/static/v2/Epic.astro'
 import ExperienceDetail from '@/components/static/v2/ExperienceDetail.astro'
 import DesignSystem from '@/components/static/v2/DesignSystem.astro'
+import { Github } from '@/components/Github'
 ---
 
 <Layout>
-    <div class="w-full lg:p-5 max-w-4xl mx-auto">
-        <About />
+  <div class="w-full lg:p-5 max-w-4xl mx-auto to-start-animation">
+    <About />
+  </div>
+  <div class="w-full max-w-6xl mx-auto mt-14 lg:mt-20 mb-10">
+    <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-5 to-start-animation">
+      <Github  client:load />
+      <div class="lg:order-1 order-3 l:gborder lg:mt-0 mt-14 lg:px-10 hidden lg:flex items-center justify-center rounded-xl border to-start-animation">
+        <Stack />
+      </div>
+      <div class="lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded-xl border hidden lg:flex to-start-animation">
+        <div class="absolute -right-1 hidden top-0 z-10 -translate-y-1/2 translate-x-1/2 h-14 w-14 rounded-full bg-background border"></div>
+        <Experiance />
+      </div>
+      <div class="lg:order-1 order-2 lg:border mt-14 lg:mt-0 lg:p-5 relative overflow-hidden col-span-2 rounded-xl border hidden lg:flex to-start-animation">
+        <TopProjects />
+      </div>
     </div>
-    <div class="w-full max-w-6xl mx-auto mt-14 lg:mt-20 mb-10">
-        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
-            <div class="lg:order-1 order-1 lg:border col-span-2 h-full lg:p-5 rounded-xl relative">
-                <!-- <div class="absolute w-96 h-96 overflow-y-visible overflow-x-hidden top-0 -translate-y-full">
-                    <div class="h-full w-full blur-xl">
-                        <div class="h-[calc(100%_-_0.75rem)] w-3 bg-primary max-w-full  ml-24"></div>
-                        <div class="h-3 w-4/5 bg-primary max-w-full mx-auto rounded-t-full"></div>
-                    </div>
-                </div> -->
-                <Activity />
-            </div>
-            <div class="lg:order-1 order-3 l:gborder lg:mt-0 mt-14 lg:px-10 hidden lg:flex items-center justify-center rounded-xl border">
-                <Stack />
-            </div>
-            <div class="lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded-xl border hidden lg:flex">
-                <div class="absolute -right-1 hidden top-0 z-10 -translate-y-1/2 translate-x-1/2 h-14 w-14 rounded-full bg-background border"></div>
-                <Experiance />
-            </div>
-            <div class="lg:order-1 order-2 lg:border mt-14 lg:mt-0 lg:p-5 relative overflow-hidden col-span-2 rounded-xl border hidden lg:flex">
-                <TopProjects />
-            </div>
-        </div>
-    </div>
-    <Epic />
-    <DesignSystem />
-    <ExperienceDetail />
+  </div>
+  <Epic />
+  <DesignSystem /> 
+    <ExperienceDetail /> 
 </Layout>

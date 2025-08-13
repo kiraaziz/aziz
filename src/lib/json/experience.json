@@ -1,57 +1,30 @@
 {
-    "title": "Work Experience",
-    "description": "Since 2023, I've worked with various companies and clients, constantly seeking new challenges.",
-    "jobs": [
-        {
-            "title": "Software Engineer ",
-            "company": "Better Player Win ",
-            "description": "I started my journey as a software engineer at Better Player Win, where I was responsible for maintaining a production-ready application that has been used by thousands of users.",
-            "date": "Jan 2025 - Present (Montreal, Canada)",
-            "image": "/image/better.svg",
-            "tech": [
-                "firebase",
-                "react",
-                "vite",
-                "scss"
-            ]
-        },
-        {
-            "title": "Software Engineer ",
-            "company": "Capyxis ",
-            "description": "I worked at Capyxis as a mobile developer, where I built a mobile app with significant growth potential and other exciting applications. It was here that I learned the importance of AI and how to incorporate it into my projects.",
-            "date": "July 2024 - Present (Paris, France)",
-            "image": "/image/capyxis.png",
-            "tech": [
-                "next js",
-                "tailwind",
-                "openai api",
-                "express",
-                "prisma",
-                "postgresql",
-                "firebase",
-                "electron",
-                "expo"
-            ]
-        },
-        {
-            "title": "Software Engineer ",
-            "company": "Kombas Net ",
-            "description": "This is where I started my journey as a software engineer. My first project involved migrating a PrestaShop website to a Next.js website. I also built projects and apps from scratch, including e-commerce platforms, content management systems, and more.",
-            "date": "July 2023 - July 2024 (Monastir, Tunisia)",
-            "image": "/image/kombas.png",
-            "tech": [
-                "next js",
-                "tailwind",
-                "react native",
-                "express",
-                "prisma",
-                "postgresql",
-                "firebase",
-                "electron",
-                "expo",
-                "prestashop",
-                "mongo"
-            ]
-        }
-    ]
+  "title": "Work Experience",
+  "description": "Since 2023, I've worked with various companies and clients, constantly seeking new challenges.",
+  "jobs": [
+    {
+      "title": "Software Engineer ",
+      "company": "Better Player Win ",
+      "description": "I started my journey as a software engineer at Better Player Win, where I was responsible for maintaining a production-ready application that has been used by thousands of users.",
+      "date": "Jan 2025 - Present (Montreal, Canada)",
+      "image": "/image/better.svg",
+      "tech": ["firebase", "react", "vite", "scss"]
+    },
+    {
+      "title": "Software Engineer ",
+      "company": "Capyxis ",
+      "description": "I worked at Capyxis as a mobile developer, where I built a mobile app with significant growth potential and other exciting applications. It was here that I learned the importance of AI and how to incorporate it into my projects.",
+      "date": "July 2024 - Present (Paris, France)",
+      "image": "/image/capyxis.png",
+      "tech": ["next js", "tailwind", "openai api", "express", "prisma", "postgresql", "firebase", "electron", "expo"]
+    },
+    {
+      "title": "Software Engineer ",
+      "company": "Kombas Net ",
+      "description": "This is where I started my journey as a software engineer. My first project involved migrating a PrestaShop website to a Next.js website. I also built projects and apps from scratch, including e-commerce platforms, content management systems, and more.",
+      "date": "July 2023 - July 2024 (Monastir, Tunisia)",
+      "image": "/image/kombas.png",
+      "tech": ["next js", "tailwind", "react native", "express", "prisma", "postgresql", "firebase", "electron", "expo", "prestashop", "mongo"]
+    }
+  ]
 }

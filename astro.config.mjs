@@ -1,33 +1,33 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
-import sitemap from "@astrojs/sitemap";
-import react from "@astrojs/react";
-import sentry from "@sentry/astro";
+import { defineConfig } from 'astro/config'
+import tailwind from '@astrojs/tailwind'
+import vercel from '@astrojs/vercel/serverless'
+import sitemap from '@astrojs/sitemap'
+import react from '@astrojs/react'
+import sentry from '@sentry/astro'
 
 // Generate the static list of dynamic URLs
 const generateDynamicUrls = () => {
-  const urls = [];
+  const urls = []
   for (let id = 0; id <= 32; id++) {
-    urls.push(`/project/${id}`);
+    urls.push(`/project/${id}`)
   }
-  return urls;
-};
+  return urls
+}
 
-const dynamicUrls = generateDynamicUrls();
+const dynamicUrls = generateDynamicUrls()
 
 // https://astro.build/config
 export default defineConfig({
-  plugins: ["prettier-plugin-astro"],
+  plugins: ['prettier-plugin-astro'],
   overrides: [
     {
-      files: "*.astro",
+      files: '*.astro',
       options: {
-        parser: "astro",
+        parser: 'astro',
       },
     },
   ],
-  site: "https://kiraaziz.vercel.app/",
+  site: 'https://kiraaziz.vercel.app/',
   integrations: [
     tailwind(),
     sitemap({
@@ -35,14 +35,14 @@ export default defineConfig({
     }),
     react(),
     sentry({
-      dsn: "https://afc04dbf255d37b0840183c89396dfee@o4507629142278144.ingest.de.sentry.io/4507646489133136",
+      dsn: 'https://afc04dbf255d37b0840183c89396dfee@o4507629142278144.ingest.de.sentry.io/4507646489133136',
       sourceMapsUploadOptions: {
-        project: "javascript-astro",
+        project: 'javascript-astro',
         authToken: process.env.SENTRY_AUTH_TOKEN,
       },
     }),
   ],
-  output: "server",
+  output: 'server',
   devToolbar: {
     enabled: false,
   },
@@ -54,4 +54,4 @@ export default defineConfig({
       enabled: true,
     },
   }),
-});
+})

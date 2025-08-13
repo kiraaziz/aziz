@@ -1,8 +1,0 @@
----
-import { Github } from '@/components/Github'
-
-const response = await fetch('https://github-contributions-api.jogruber.de/v4/kiraaziz?y=last')
-const activity = await response.json()
----
-
-<Github activity={activity.contributions} client:load />
