@@ -9,7 +9,7 @@ import experience from '@/lib/json/experience.json'
   <div class="w-full h-full p-5 space-y-3 bg-gradient-to-t from-muted/10 via-transparent">
     {
       experience.jobs.slice(0, 2).map((item, index) => (
-        <div class="w-full flex justify-between items-end to-start-animation">
+        <div class="w-full flex justify-between items-end">
           <div class="flex items-center justify-center gap-2">
             <div class="w-12 h-12 bg-muted/20 border flex items-center justify-center rounded-full p-1.5">
               <img class="filter invert w-full opacity-60" src={item.image} />
