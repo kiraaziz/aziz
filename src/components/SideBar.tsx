@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Menu, SquareTerminal } from 'lucide-react'
 import { Button } from './ui/button'
 import contact from '@/lib/json/contact.json'
+import { useEffect } from 'react'
 
 export default function SideBar({ pathname }: any) {
   const paths = [
@@ -13,6 +14,14 @@ export default function SideBar({ pathname }: any) {
     { name: 'Pricing', to: '/price', icon: 'mdi:github' },
     { name: 'Contact', to: '/contact', icon: 'mdi:gmail' },
   ]
+
+  useEffect(() => {
+    const spinner = document.querySelector(".spinner");
+    if (spinner) {
+      spinner.remove();
+    }
+  }, []);
+
 
   return (
     <>

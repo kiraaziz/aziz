@@ -24,13 +24,6 @@ export const Github = () => {
   }, [])
 
   useEffect(() => {
-    const spinner = document.querySelector(".spinner");
-    if (spinner) {
-      spinner.remove();
-    }
-  }, []);
-
-  useEffect(() => {
     const calendarContainer: any = document.querySelector(
       ".react-activity-calendar__scroll-container",
     );
@@ -56,7 +49,7 @@ export const Github = () => {
   return (
     <div className={`lg:order-1 order-1 lg:border col-span-2 h-full rounded-xl relative ${!scroll && " lg:p-0"}`}>
       <div className={`w-full  ${scroll ? "animate-pulse !opacity-30 h-[15.25rem]": "h-[15.25rem]"} lg:p-5`}>
-        {!scroll && <div className="flex items-center justify-between w-full mb-4">
+        {!scroll && <div className="to-start-animation flex items-center justify-between w-full mb-4">
           <h1 className="text-lg lg:text-xl font-bold hidden lg:flex">Last activities</h1>
           <h1 className="text-lg lg:text-xl font-bold lg:hidden flex ">Activities</h1>
           <a
@@ -67,7 +60,7 @@ export const Github = () => {
             <ArrowRight size={20} />
           </a>
         </div>}
-        <div className={`w-full  relative overflow-hidden ${!scroll ? "opacity-100" : "opacity-0"}`}>
+        <div className={`to-start-animation w-full  relative overflow-hidden ${!scroll ? "opacity-100" : "opacity-0"}`}>
           <div className="absolute -left-5 top-0 w-28 -translate-x-1/2  h-full bg-background blur-xl" />
           <ActivityCalendar
             data={activity}
