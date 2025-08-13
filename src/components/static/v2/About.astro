@@ -34,15 +34,15 @@ import RippleGrid from './../../ui/RippleGrid'
     </div>
   </div>
 
-  <div class="relative col-span-full rounded-3xl border p-4 !border-primary/20 overflow-hidden bg-primary/5">
-    <div class="absolute opacity-40 h-full w-full top-0 left-0 -z-10 overflow-hidden">
+  <div class="to-start-animation relative col-span-full rounded-3xl border p-4 !border-primary/20 overflow-hidden bg-primary/5">
+    <div class="hidden lg:flex absolute opacity-40 h-full w-full top-0 left-0 -z-10 overflow-hidden">
       <RippleGrid client:load enableRainbow={false} gridColor="#ffffff" rippleIntensity={0.3} gridSize={10} gridThickness={5} opacity={0.5} />
     </div>
-    <span class="text-xs font-semibold rounded-full bg-primary/10 text-primary border !border-primary/20 px-3">New Announcement</span>
-    <h2 class="text-lg font-bold">We’ve just launched our brand new blog—check it out!</h2>
+    <span class="to-start-animation text-xs font-semibold rounded-full bg-primary/10 text-primary border !border-primary/20 px-3">New Announcement</span>
+    <h2 class="to-start-animation text-lg font-bold">We’ve just launched our brand new blog—check it out!</h2>
     <p class="text-sm text-foreground/60 mt-1 font-light">Welcome to my digital playground—where I share my coding journey, creative projects, and lessons learned. Let’s explore and grow together!</p>
     <a href="https://blog.kiraaziz.club" target="_blank" rel="noopener">
-      <Button className="mt-2 rounded-full bg-muted/20 flex items-center justify-center gap-1 hover:gap-3 ease-in-out duration-300 transition-all" variant="outline">
+      <Button className="to-start-animation mt-2 rounded-full bg-muted/20 flex items-center justify-center gap-1 hover:gap-3 ease-in-out duration-300 transition-all" variant="outline">
         Get Started
         <ArrowRight size={20} />
       </Button>
