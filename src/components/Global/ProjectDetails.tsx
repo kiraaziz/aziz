@@ -171,7 +171,13 @@ const Details = ({ data }: any) => {
             </Button>
           </DrawerClose>
           {data.url && (
-            <a href={data.url} onClick={(e) => e.stopPropagation()} className="w-full h-full">
+            <a 
+              href={data.url} 
+              onClick={(e) => e.stopPropagation()} 
+              className="w-full h-full"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <Button className="w-full gap-3 mt-3 rounded-xl bg-muted/20" variant="outline">
                 Visite
                 <ArrowUpRight size={20} />
@@ -197,7 +203,13 @@ const Card = ({ data }: any) => {
           <h1 className="to-start-animation text-lg font-semibold">{useHalfText(data.name, 20)}</h1>
           <div className="flex-1 flex items-center justify-end">
             {data.url && (
-              <a href={data.url} onClick={(e) => e.stopPropagation()} className="to-start-animation text-sm underline text-foreground/60 hover:text-foreground pointer-events-auto">
+              <a
+                href={data.url}
+                onClick={(e) => e.stopPropagation()}
+                className="to-start-animation text-sm underline text-foreground/60 hover:text-foreground pointer-events-auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 visite
               </a>
             )}

@@ -11,17 +11,24 @@ export default function Footer() {
                 <div>
                     <ul className="flex space-x-4">
                         {["instagram", "github", "linkedin"].map((social: any) => (
-                            <li>
-                                <a href={(metaData as any).contact[social].name} className="hover:text-primary transition duration-200">
-                                    <img src={`/contact/${(metaData as any).contact[social].title.toLowerCase().replace(" ", "")}.svg`} className="h-5 w-5" />
+                            <li key={social}>
+                                <a
+                                    href={(metaData as any).contact[social].name}
+                                    className="hover:text-primary transition duration-200"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        src={`/contact/${(metaData as any).contact[social].title.toLowerCase().replace(" ", "")}.svg`}
+                                        className="h-5 w-5"
+                                        alt={`${(metaData as any).contact[social].title} icon`}
+                                    />
                                 </a>
                             </li>
-                        ))
-                        }
+                        ))}
                     </ul>
                 </div>
             </div>
         </footer>
-
     )
 }

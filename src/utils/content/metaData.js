@@ -18,7 +18,10 @@ export const metaData = {
     about: {
       title: "Hi, I’m Kira Aziz",
       description: [
-        "A Tunisian 🇹🇳 full-stack developer with a <span class=\"font-medium\">Bachelor's degree in Computer Science</span> and 2.5 years of experience. I have over 55,000 total reads on <a href=\"https://dev.to/kiraaziz\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">dev.to</a> and create apps like <a href=\"https://light-ai.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Light AI ✨</a>, <a href=\"https://eyebase.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Eyebase 🎉</a>, <a href=\"/project/3\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Type AI 🤖</a>, and <a href=\"/project/5\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">NeoFlow 🪢</a>. <br />I&apos;ve also built enterprise apps from scratch and shipped features to products with 100k+ users! 🚀"
+        "🚀 I'm Kira, a software developer with a CS degree, now studying engineering.",
+        `<br /> 3+ years' experience and 60k+ <a href="https://dev.to/kiraaziz" class="text-primary hover:underline mx-1" target="_blank" rel="noopener noreferrer">dev.to</a> reads.`,
+        "<br /> I build apps like <a href=\"https://light-ai.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Light AI 💡</a>, <a href=\"https://eyebase.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Eyebase 👁️</a>, <a href=\"https://healthybase.cloud\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">HealthyBase 🛟</a>, and <a href=\"https://neoflow-kira.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">NeoFlow 🪢</a>.",
+        "<br /> At work, I build apps from scratch and have helped scale products to over 200k active users! 📈",
       ],
       avatarImages: [
         { src: "/images/globals/avatarNoBg.png", className: "w-72 hidden lg:block", alt: "avatar" },
@@ -87,28 +90,28 @@ export const metaData = {
         text: "A selection of my most important and impactful work, demonstrating key accomplishments and cutting-edge technology."
       },
       old: {
-        title: "Older Work",
-        text: "Some older projects that reflect my journey and growth in software development, from foundational to unique undertakings."
+        title: "Other Work",
+        text: "Some other projects that reflect my journey and growth in software development, from foundational to unique undertakings."
       }
     }
   },
   experience: {
     "title": "Work Experience",
-    "description": "Since 2023, I've worked with various companies and clients, constantly seeking new challenges.",
+    "description": "Since 2023, I've worked with various companies and clients, embracing opportunities to grow and make an impact.",
     "active": [0, 1],
     "jobs": [
       {
-        "title": "Software Engineer ",
+        "title": "Software Engineer",
         "company": "Délib",
-        "description": "I started my journey as a software engineer at Better Player Win, where I was responsible for maintaining a production-ready application that has been used by thousands of users.",
+        "description": "Built the first demo version of the Délib application, transitioned to maintaining the product, and now responsible for the production version used by customers.",
         "date": "Oct 2025 - Present (Paris, France)",
         "image": "/experience/delib.svg",
-        "tech": ["firebase", "react", "vite", "scss"]
+        "tech": ["scraping", "ai", "python", "next js", "postgresql"]
       },
       {
         "title": "Software Engineer ",
         "company": "Capyxis ",
-        "description": "I worked at Capyxis as a mobile developer, where I built a mobile app with significant growth potential and other exciting applications. It was here that I learned the importance of AI and how to incorporate it into my projects.",
+        "description": "I started at Capyxis as a mobile developer, building a mobile app with significant growth potential and contributing to various innovative applications. Later, as a software engineer, I learned to harness the power of AI and integrate it into real-world projects.",
         "date": "July 2024 - Present (Paris, France)",
         "image": "/experience/capyxis.png",
         "tech": ["next js", "tailwind", "openai api", "express", "prisma", "postgresql", "firebase", "electron", "expo"]
@@ -116,10 +119,10 @@ export const metaData = {
       {
         "title": "Software Engineer ",
         "company": "Better Player Win",
-        "description": "I started my journey as a software engineer at Better Player Win, where I was responsible for maintaining a production-ready application that has been used by thousands of users.",
+        "description": "My journey as a software engineer at Better Player Win involved maintaining a production-ready application that has been used by thousands of users.",
         "date": "Jan 2025 - Sept 2025 (Montreal, Canada)",
         "image": "/experience/better.svg",
-        "tech": ["firebase", "react", "vite", "scss"]
+        "tech": ["firebase", "react", "vite", "scss", "mongo", "redis", "express"]
       },
       {
         "title": "Software Engineer ",
@@ -189,7 +192,7 @@ export const metaData = {
     },
     "linkedin": {
       "title": "Linkedin",
-      "name": "https://www.linkedin.com/in/med-aziz-rjeibi-3b07832a5/",
+      "name": "https://www.linkedin.com/in/med-aziz-rjeibi/",
     },
     "devto": {
       "title": "DEV.to",

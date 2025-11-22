@@ -603,7 +603,7 @@ export const projects = [
     "description": "🌐 Dive into diagram magic with Neoflow! 🚀✨ Powered by AI, it effortlessly creates stunning class, flow, and sequence diagrams. Plus, enjoy team management and gorgeous design! 💻📊 #Neoflow #DiagramCreation ",
     "short": "Design & Diagram",
     "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
-    "url": "https://neoflow.deno.dev/",
+    "url": "https://neoflow-kira.vercel.app",
     "main": true,
     "demo": "https://www.youtube.com/embed/Yh4lONl_MYQ?si=yzBP06PoTigGi_V6",
     "images": [
