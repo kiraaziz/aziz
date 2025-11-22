@@ -1,0 +1,230 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: hsl(229 41% 4%);
+  --foreground: hsl(229 23% 99%);
+  --muted: hsl(229 12% 14%);
+  --muted-foreground: hsl(229 10% 63%);
+  --popover: hsl(229 41% 5%);
+  --popover-foreground: hsl(0 0% 100%);
+  --card: hsl(229 41% 5%);
+  --card-foreground: hsl(0 0% 100%);
+  --border: hsl(215 27.9% 16.9%);
+  --input: hsl(215 27.9% 16.9%);
+  --primary: hsl(210 98.39% 52.23%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(229 14% 8%);
+  --secondary-foreground: hsl(229 14% 68%);
+  --accent: hsl(229 23% 17%);
+  --accent-foreground: hsl(229 23% 77%);
+  --destructive: hsl(3 89% 54%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --ring: hsl(229 100% 62%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 150%;
+  height: 200vh;
+  background: url(/images/globals/noise.jpg) repeat;
+  background-repeat: repeat;
+  opacity: 0.06;
+  visibility: visible;
+  pointer-events: none;
+  display: block;
+}
+
+.react-activity-calendar>* {
+  @apply text-foreground/50!;
+}
+
+button {
+  @apply cursor-pointer
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.background');
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.muted', #e2e8f0);
+  border-radius: 6px;
+  border: 2px solid theme('colors.background');
+  min-height: 40px;
+  transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.muted.foreground', #cbd5e1);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: theme('colors.background');
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: theme('colors.muted', #334155);
+  border: 2px solid theme('colors.background');
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.muted.foreground', #64748b);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.muted', #e2e8f0) theme('colors.background');
+}
+
+.dark * {
+  scrollbar-color: theme('colors.muted', #334155) theme('colors.background');
+}
+
+
+.animate-pulse {
+  position: relative;
+  overflow: hidden;
+  background-color: hsl(var(--muted));
+  @apply backdrop-blur opacity-100 dark:opacity-40;
+}
+
+.animate-pulse::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(255, 255, 255, 0.05) 20%,
+      rgba(255, 255, 255, 0.1) 60%,
+      rgba(0, 0, 0, 0));
+  animation: shimmer 2s infinite;
+  ;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.to-start-animation {
+  opacity: 0;
+  filter: blur(12px);
+  transform: scale(1.08) translateY(30px) rotate(-2deg);
+  transition:
+    opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1),
+    filter 1.5s cubic-bezier(0.77, 0, 0.175, 1),
+    transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.animate-element {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1) translateY(0) rotate(0);
+  transition:
+    opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1),
+    filter 1.5s cubic-bezier(0.77, 0, 0.175, 1),
+    transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+} 
+
+.loader {
+  position: relative;
+  width: 120px;
+  height: 140px;
+  background-image: radial-gradient(circle 30px, #fff 100%, transparent 0),
+  radial-gradient(circle 5px, #fff 100%, transparent 0),
+  radial-gradient(circle 5px, #fff 100%, transparent 0),
+  linear-gradient(#FFF 20px, transparent 0);
+  background-position: center 127px , 94px 102px , 16px 18px, center 114px;
+  background-size: 60px 60px, 10px 10px , 10px 10px , 4px 14px;
+  background-repeat: no-repeat;
+  z-index: 10;
+  perspective: 500px;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  border: 3px solid #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%) rotate(-45deg);
+  border-right-color: transparent;
+  box-sizing: border-box;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  transform: translate(-50%, -55%) rotate(-45deg) rotateY(0deg) ;
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  border: 7px solid var(--primary);
+  border-radius:50%;
+  animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+to{transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)   }
+}
+  

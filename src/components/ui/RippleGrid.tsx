@@ -1,3 +1,4 @@
+"use client"
 import { useRef, useEffect } from "react";
 import { Renderer, Program, Triangle, Mesh } from "ogl";
 
@@ -40,7 +41,7 @@ const RippleGrid: React.FC<Props> = ({
         if (!containerRef.current) return;
 
         const hexToRgb = (hex: string): [number, number, number] => {
-            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            const result: any = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
             return result
                 ? [
                     parseInt(result[1], 16) / 255,
@@ -266,7 +267,7 @@ void main() {
         if (!uniformsRef.current) return;
 
         const hexToRgb = (hex: string): [number, number, number] => {
-            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            const result: any = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
             return result
                 ? [
                     parseInt(result[1], 16) / 255,
