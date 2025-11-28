@@ -1,45 +1,10 @@
 export const projects = [
   {
-    "name": "kirablog",
-    "url": "https://healthybase.cloud",
-    "tags": "next15 react postgresql shadcn coolify",
-    "description": "Automatic snapshots, secure encryption, and daily restore. Set it once and sleep easy — we keep your Postgres data safe and compliant.",
-    "short": "Backup your DB",
-    "main": true,
-    "images": [
-      {
-        "original": "/images/projects/kirablog/jabd15c8r5s/original.webp",
-        "high": "/images/projects/kirablog/jabd15c8r5s/high.webp",
-        "medium": "/images/projects/kirablog/jabd15c8r5s/medium.webp",
-        "small": "/images/projects/kirablog/jabd15c8r5s/small.webp",
-        "xs": "/images/projects/kirablog/jabd15c8r5s/xs.webp"
-      }
-    ]
-  },
-  {
-    "name": "Web Whale",
-    "logo": "webwhale.svg",
-    "url": "https://eyebase.vercel.app",
-    "tags": "next15 electron grapesjs",
-    "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
-    "short": "Website builder",
-    "main": true,
-    "images": [
-      {
-        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
-        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
-        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
-        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
-        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
-      }
-    ]
-  },
-  {
     "name": "Healthybase",
     "logo": "healthybase.svg",
     "url": "https://healthybase.cloud",
     "tags": "next15 react postgresql shadcn coolify",
-    "description": "Automatic snapshots, secure encryption, and daily restore. Set it once and sleep easy — we keep your Postgres data safe and compliant.",
+    "description": "Automatic snapshots, secure encryption, and daily restore for PostgreSQL. Set it once and sleep easy — we keep your PostgreSQL data safe and compliant.",
     "short": "Backup your DB",
     "main": true,
     "images": [
@@ -59,7 +24,6 @@ export const projects = [
       }
     ]
   },
-
   {
     "name": "Eyebase",
     "logo": "eyebase.svg",
@@ -113,11 +77,45 @@ export const projects = [
       }
     ]
   },
-
+  {
+    "name": "kirablog",
+    "url": "https://blog.kiraaziz.club",
+    "tags": "next15 react postgresql shadcn coolify",
+    "description": "Dive into a world of code, creativity, and community. Here, I share my journey through technology, from frontend finesse to backend brilliance, and everything in between. Let's build, learn, and inspire together!",
+    "short": "Personal blog",
+    "main": true,
+    "images": [
+      {
+        "original": "/images/projects/kirablog/jabd15c8r5s/original.webp",
+        "high": "/images/projects/kirablog/jabd15c8r5s/high.webp",
+        "medium": "/images/projects/kirablog/jabd15c8r5s/medium.webp",
+        "small": "/images/projects/kirablog/jabd15c8r5s/small.webp",
+        "xs": "/images/projects/kirablog/jabd15c8r5s/xs.webp"
+      }
+    ]
+  },
+  {
+    "name": "Web Whale",
+    "logo": "webwhale.svg",
+    "url": "https://github.com/kiraaziz/web-whale",
+    "tags": "next15 electron grapesjs",
+    "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
+    "short": "Website builder",
+    "main": true,
+    "images": [
+      {
+        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
+        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
+        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
+        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
+        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
+      }
+    ]
+  },
   {
     "logo": "lightai.svg",
     "name": "Light Ai 2.0",
-    "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 2500+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
+    "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 6000+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
     "short": "AI text to image",
     "tags": "next13 react firebase huggingface ai",
     "url": "https://light-ai.vercel.app",
@@ -154,12 +152,11 @@ export const projects = [
         "xs": "/images/projects/light-ai-2-0/tmw5urpgy6c/xs.webp"
       }
     ],
-    "md": 2
   },
 
   {
     "name": "Cool Kira",
-    "url": "https://cool.rjaziz.com",
+    "url": "coolkira.vercel.app",
     "demo": "https://www.youtube.com/embed/5kGvsb1-3-E?si=JSRL24rLqAIQwery",
     "tags": "framermotion react",
     "description": "🎨 Finally mastered Framer Motion! Created my new, elegantly animated portfolio inspired by old European art.",
@@ -336,7 +333,6 @@ export const projects = [
         "xs": "/images/projects/story-ai/q6gfgc2ohkq/xs.webp"
       }
     ],
-    "md": 1
   },
   {
     "name": "My father website",
