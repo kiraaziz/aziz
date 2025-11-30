@@ -13,7 +13,7 @@ export default function HomePage() {
       <div className="to-start-animation w-full lg:p-5 max-w-4xl mx-auto">
         <About />
       </div>
-      <div className="w-full max-w-6xl mx-auto mt-10 lg:mt-20 mb-10">
+      <div className="w-full max-w-5xl mx-auto mt-10 lg:mt-14">
         <div className="to-start-animation w-full grid grid-cols-1 lg:grid-cols-3 gap-3">
           <Github />
           <div className="lg:order-1 order-2 space-y-3 lg:mb-0 rounded-3xl ">
@@ -38,7 +38,7 @@ export default function HomePage() {
           <div className="to-start-animation lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border lg:col-span-1 rounded-3xl border hidden lg:flex">
             <Experiance />
           </div>
-          <div className="to-start-animation bg-muted/10 lg:order-1 order-2 lg:border mt-14 lg:mt-0 lg:p-5 relative overflow-hidden col-span-2 rounded-3xl border hidden lg:flex">
+          <div className="to-start-animation bg-muted/10 lg:order-1 order-2 lg:border mt-14 lg:mt-0 relative overflow-hidden col-span-2 rounded-3xl border hidden lg:flex">
             <TopProjects />
           </div>
         </div>

@@ -7,7 +7,7 @@ import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel'
 import { useHalfText } from '@/utils/global'
 
-export default function ProjectDetails({ data, isShort = false }: any) {
+export default function ProjectDetails({ data, isShort = false , i}: any) {
 
   const [open, setOpen] = React.useState(false)
   const [isDesktop, setIsDesktop] = React.useState(false)
@@ -37,7 +37,7 @@ export default function ProjectDetails({ data, isShort = false }: any) {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
           {isShort ? (
-            <div className="w-full flex-col flex  bg-muted/20 p-2  border rounded-2xl hover:cursor-pointer to-start-animation">
+            <div className={`w-full flex-col flex  bg-muted/20 p-2 hover:cursor-pointer to-start-animation border-t ${![4, 19].includes(i) && "border-r"}`}>
               <div className="gap-1 flex items-center justify-center w-full">
                 {data.logo && <div className="h-10 w-10 flex items-center justify-center overflow-visible relative">
                   <img src={`/svg/app/${data.logo}`} className={`h-8`} />

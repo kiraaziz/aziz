@@ -7,7 +7,7 @@ export default function DesignSystem() {
   const [current, setCurrent] = useState(0)
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-14 lg:mt-28 mb-10 grid gap-3">
+    <div className="w-full max-w-5xl mx-auto mt-14 lg:mt-28 lg:pt-10 mb-10 grid gap-3">
       <div className=" max-w-xl mb-2 to-start-animation">
         <h1 className="text-lg lg:text-3xl font-bold">{metaData.design.title}</h1>
         <p className="text-foreground/60 max-w-xl hidden lg:flex font-light text-sm">{metaData.design.text}</p>
