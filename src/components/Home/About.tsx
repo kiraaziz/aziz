@@ -9,7 +9,7 @@ export default function About() {
         <div className="w-full h-full lg:pl-10 space-y-5">
             <div className="max-w-4xl flex h-full items-center justify-between">
                 <div className="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5">
-                    <h1 className="text-xl lg:text-4xl font-bold to-start-animation">
+                    <h1 className="text-xl lg:text-4xl font-bold to-start-animation mb-1.5">
                         {metaData.home.about.title}
                     </h1>
                     <p className="font-light text-sm text-foreground/60 to-start-animation"
