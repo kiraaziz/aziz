@@ -10,16 +10,16 @@ import { metaData } from "@/utils/content/metaData";
 export default function HomePage() {
   return (
     <main className="relative">
-      <div className="w-full max-w-5xl mx-auto lg:border-x">
+      <div className="to-start-animation w-full max-w-5xl mx-auto lg:border-x">
         <div className="to-start-animation w-full lg:px-5 max-w-4xl mx-auto pb-10 lg:!py-10">
           <About />
         </div>
       </div>
-      <div className="h-5 border-t w-full overflow-hidden hidden lg:flex items-center justify-center">
+      <div className="to-start-animation h-5 border-t w-full overflow-hidden hidden lg:flex items-center justify-center">
         <div className="container opacity-40 scale-125"></div>
       </div>
       <div className="w-full lg:border-y">
-        <div className="w-full max-w-5xl mx-auto">
+        <div className="to-start-animation w-full max-w-5xl mx-auto">
           <div className="to-start-animation w-full grid grid-cols-1 lg:grid-cols-3">
             <Github />
             <div className="lg:order-1 order-2 lg:mb-0 space-y-3 lg:space-y-0">
@@ -50,7 +50,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="h-5 border-b w-full overflow-hidden hidden lg:flex items-center justify-center">
+      <div className="to-start-animation h-5 border-b w-full overflow-hidden hidden lg:flex items-center justify-center">
         <div className="container opacity-40 scale-125"></div>
       </div>
       <TopProjectsDetail />
