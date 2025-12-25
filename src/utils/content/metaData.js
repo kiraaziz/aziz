@@ -18,7 +18,7 @@ export const metaData = {
     about: {
       title: "Hi, I’m Kira Aziz",
       description: [
-        "🚀 I'm Kira, a software developer with a CS degree, now studying engineering.",
+        "🚀 I'm Kira, a Tunisian software developer with a CS degree, now studying engineering.",
         `<br /> 3+ years' experience and 60k+ <a href="https://dev.to/kiraaziz" class="text-primary hover:underline mx-1" target="_blank" rel="noopener noreferrer">dev.to</a> reads.`,
         "<br /> I build apps like <a href=\"https://light-ai.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Light AI 💡</a>, <a href=\"https://eyebase.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">Eyebase 👁️</a>, <a href=\"https://healthybase.cloud\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">HealthyBase 🛟</a>, and <a href=\"https://neoflow-kira.vercel.app/\" class=\"text-primary hover:underline mx-1\" target=\"_blank\" rel=\"noopener noreferrer\">NeoFlow 🪢</a>.",
         `<br />  Now working on my own startup, <a href="https://lymoun.agency" class="text-primary hover:underline mx-1" target="_blank" rel="noopener noreferrer">Lymoun 🍋</a>.`,
