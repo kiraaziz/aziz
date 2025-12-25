@@ -18,7 +18,7 @@ export default function HomePage() {
       <div className="to-start-animation h-5 border-t w-full overflow-hidden hidden lg:flex items-center justify-center">
         <div className="container opacity-40 scale-125"></div>
       </div>
-      <div className="w-full lg:border-y">
+      <div className="to-start-animation w-full lg:border-y">
         <div className="to-start-animation w-full max-w-5xl mx-auto">
           <div className="to-start-animation w-full grid grid-cols-1 lg:grid-cols-3">
             <Github />
