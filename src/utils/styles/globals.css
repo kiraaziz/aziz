@@ -163,7 +163,7 @@ button {
   }
 }
 
-.to-start-animation {
+/* .to-start-animation {
   opacity: 0;
   filter: blur(12px);
   transform: scale(1.08) translateY(30px) rotate(-2deg);
@@ -181,16 +181,16 @@ button {
     opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1),
     filter 1.5s cubic-bezier(0.77, 0, 0.175, 1),
     transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
-} 
+}  */
 
 .loader {
   position: relative;
-  width: 120px;
+  width: 110px;
   height: 140px;
   background-image: radial-gradient(circle 30px, #fff 100%, transparent 0),
   radial-gradient(circle 5px, #fff 100%, transparent 0),
   radial-gradient(circle 5px, #fff 100%, transparent 0),
-  linear-gradient(#FFF 20px, transparent 0);
+  linear-gradient(#FFF 10px, transparent 0);
   background-position: center 127px , 94px 102px , 16px 18px, center 114px;
   background-size: 60px 60px, 10px 10px , 10px 10px , 4px 14px;
   background-repeat: no-repeat;
@@ -228,3 +228,33 @@ button {
 to{transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)   }
 }
   
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    var(--color-muted) 25%,
+    var(--color-background) 25%,
+    var(--color-background) 50%,
+    var(--color-muted) 50%,
+    var(--color-muted) 75%,
+    var(--color-background) 75%,
+    var(--color-background)
+  );
+  background-size: 10px 10px;
+
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10px 10px;
+  }
+}

@@ -1,12 +1,11 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import { ArrowDown, ArrowRight } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import { metaData } from '@/utils/content/metaData'
-import Link from 'next/link'
 
 export default function About() {
     return (
-        <div className="w-full h-full lg:pl-10 space-y-5">
+        <div className="w-full h-full space-y-5">
             <div className="max-w-4xl flex h-full items-center justify-between">
                 <div className="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5">
                     <h1 className="text-xl lg:text-4xl font-bold to-start-animation mb-1.5">

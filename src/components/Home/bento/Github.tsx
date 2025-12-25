@@ -42,14 +42,14 @@ const Github = () => {
   }, [activity])
 
   if (!activity || loading) {
-    return <div className="lg:order-1 order-2 lg:border col-span-2 h-full rounded-3xl relative overflow-hidden">
+    return <div className="lg:order-1 order-2 lg:border-l col-span-2 h-full relative overflow-hidden">
       <div className="w-full h-56 lg:h-61 animate-pulse opacity-30!">
       </div>
     </div>
   }
 
   return (
-    <div className={`lg:bg-muted/20 lg:order-1 order-2 lg:border col-span-2 h-full rounded-3xl relative ${!scroll && " lg:p-0"}`}>
+    <div className={`lg:order-1 order-2 lg:border-l col-span-2 h-full relative ${!scroll && " lg:p-0"}`}>
       <div className={`w-full  ${scroll ? "animate-pulse opacity-30! h-61" : "h-61"} lg:p-5`}>
         {!scroll && <div className="to-start-animation flex items-center justify-between w-full mb-4">
           <h1 className="text-lg lg:text-xl font-medium hidden lg:flex">{metaData.bento.github.title}</h1>

@@ -39,7 +39,7 @@ export default function RootLayout({
           <Animator />
           <main id="root" className="  h-[calc(100svh-4rem)] z-10 overflow-x-hidden">
             <div className="bgs" />
-            <div className="h-max p-5 lg:p-10 min-h-[calc(100svh-11rem)]">
+            <div className="h-max p-5 lg:p-0 min-h-[calc(100svh-11rem)]">
               {children}
               <div className="w-full h-20"></div>
             </div>
