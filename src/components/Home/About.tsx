@@ -5,7 +5,7 @@ import { metaData } from '@/utils/content/metaData'
 
 export default function About() {
     return (
-        <div className="w-full h-full space-y-5">
+        <div className="w-full h-full space-y-5 my-3">
             <div className="max-w-4xl flex h-full items-center justify-between">
                 <div className="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5">
                     <h1 className="text-xl lg:text-4xl font-bold to-start-animation mb-1.5">
