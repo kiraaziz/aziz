@@ -32,7 +32,7 @@ export default function Animator() {
         },
         {
           threshold: 0,
-          rootMargin: '0px 0px -30px 0px',
+          rootMargin: '0px 0px -10px 0px',
         },
       )
 
