@@ -20,11 +20,11 @@ export default function HomePage() {
       </div>
       <div className="to-start-animation w-full lg:border-y">
         <div className="to-start-animation w-full max-w-5xl mx-auto">
-          <div className="to-start-animation w-full grid grid-cols-1 lg:grid-cols-3">
+          <div className="to-start-animation w-full grid grid-cols-1 lg:grid-cols-3 lg:border-x">
             <Github />
-            <div className="lg:order-1 order-2 lg:mb-0 space-y-3 lg:space-y-0">
+            <div className="lg:order-1 order-2 lg:mb-0 space-y-3 lg:space-y-0 lg:border-b">
               {metaData.home.about.announcements.map((ad, i) => (
-                <a target="_blank" rel="noopener" href={ad.button.href} className={`to-start-animation relative h-1/2 lg:border-y-0 border-y border-x ${i === 0 && "border-b!"} rounded-3xl lg:rounded-none p-4 overflow-hidden bg-muted/10 justify-center flex flex-col`}>
+                <a target="_blank" rel="noopener" href={ad.button.href} className={`to-start-animation relative h-1/2 lg:border-y-0 border-y border-l ${i === 0 && "border-b!"} rounded-3xl lg:rounded-none p-4 overflow-hidden bg-muted/10 justify-center flex flex-col`}>
                   {ad.icon && <div className='absolute bottom-2 right-2'>
                     <div className='relative h-10 w-10'>
                       <img src={ad.icon} className='h-10 absolute' />
@@ -41,10 +41,10 @@ export default function HomePage() {
                 </a>
               ))}
             </div>
-            <div className="to-start-animation lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:border-l lg:border-t lg:col-span-1 hidden lg:flex">
+            <div className="to-start-animation lg:order-1 order-4 mt-8 lg:mt-0 col-span-full lg:col-span-1 hidden lg:flex">
               <Experiance />
             </div>
-            <div className="to-start-animation bg-muted/10 lg:order-1 order-2 mt-14 lg:mt-0 relative border-b-0 overflow-hidden col-span-2 border hidden lg:flex">
+            <div className="lg:border-l to-start-animation bg-muted/10 lg:order-1 order-2 mt-14 lg:mt-0 relative overflow-hidden col-span-2 hidden lg:flex">
               <TopProjects />
             </div>
           </div>
