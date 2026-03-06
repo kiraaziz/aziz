@@ -1,9 +1,25 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { ArrowDown } from 'lucide-react'
 import { metaData } from '@/utils/content/metaData'
 
 export default function About() {
+    const [sw, setSw] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+    useEffect(() => {
+        function handleResize() {
+            setSw(window.innerWidth / 100);
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
     return (
         <div className="w-full h-full space-y-5 my-3">
             <div className="max-w-4xl flex h-full items-center justify-between">
@@ -21,12 +37,28 @@ export default function About() {
                         </Button>
                     </a>
                 </div>
-                <div className="flex items-end justify-end relative h-full to-start-animation">
+                <div className="flex items-end justify-end relative h-full to-start-animation translate-y-1.5">
                     {metaData.home.about.avatarImages.map((img, i) => (
                         <img key={i} src={img.src} className={img.className} alt={img.alt} />
                     ))}
                 </div>
             </div>
+            {sw < 19.3 && (
+                <>
+                    <svg className='absolute top-75 left-165 w-svw overflow-visible -z 2xl:block hidden' viewBox="0 0 100 50">
+                        <path className="drawing-path" d="M 8 0 L 8 2 L 25 2 L 25 16 L 0 16" />
+                        <path className="drawing-path delay-500!" d="M 7 0 L 7 3 L 24 3 L 24 9 L 0 9 " />
+                        <path className="drawing-path delay-200!" d="M 5 0 L 5 2 L -50 2 L -50 27 L -20 27" />
+                        <path className="drawing-path delay-900!" d="M 6 0 L 6 3 L -49 3 L -49 12 L -20 12" />
+                    </svg>
+                    <svg className='absolute top-75 left-165 w-svw overflow-visible blur-xs -z 2xl:block hidden' viewBox="0 0 100 50">
+                        <path className="drawing-path" d="M 8 0 L 8 2 L 25 2 L 25 16 L 0 16" />
+                        <path className="drawing-path delay-500!" d="M 7 0 L 7 3 L 24 3 L 24 9 L 0 9 " />
+                        <path className="drawing-path delay-200!" d="M 5 0 L 5 2 L -50 2 L -50 27 L -20 27" />
+                        <path className="drawing-path delay-900!" d="M 6 0 L 6 3 L -49 3 L -49 12 L -20 12" />
+                    </svg>
+                </>
+            )}
         </div>
     )
 }

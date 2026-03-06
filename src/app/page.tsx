@@ -11,20 +11,21 @@ export default function HomePage() {
   return (
     <main className="relative">
       <div className="to-start-animation w-full max-w-5xl mx-auto lg:border-x">
-        <div className="to-start-animation w-full lg:px-5 max-w-4xl mx-auto pb-10 lg:!py-10">
+        <div className="to-start-animation w-full lg:px-5 max-w-4xl mx-auto pb-10 lg:py-10!">
           <About />
         </div>
       </div>
       <div className="to-start-animation h-5 border-t w-full overflow-hidden hidden lg:flex items-center justify-center">
-        <div className="container opacity-40 scale-125"></div>
+        <div className="container opacity-35 scale-150"></div>
       </div>
       <div className="to-start-animation w-full lg:border-y">
-        <div className="to-start-animation w-full max-w-5xl mx-auto">
+        <div className="to-start-animation w-full max-w-5xl mx-auto lg:bg-background lg:overflow-hidden">
+          <div className="hidden! lg:block! bg" />
           <div className="to-start-animation w-full grid grid-cols-1 lg:grid-cols-3 lg:border-x">
             <Github />
             <div className="lg:order-1 order-2 lg:mb-0 space-y-3 lg:space-y-0 lg:border-b">
               {metaData.home.about.announcements.map((ad, i) => (
-                <a target="_blank" rel="noopener" href={ad.button.href} className={`to-start-animation relative h-1/2 lg:border-y-0 border-y border-l ${i === 0 && "border-b!"} rounded-3xl lg:rounded-none p-4 overflow-hidden bg-muted/10 justify-center flex flex-col`}>
+                <a target="_blank" rel="noopener" href={ad.button.href} className={`to-start-animation relative h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r ${i === 0 && "border-b!"} rounded-3xl lg:rounded-none p-4 overflow-hidden bg-muted/10 justify-center flex flex-col`}>
                   {ad.icon && <div className='absolute bottom-2 right-2'>
                     <div className='relative h-10 w-10'>
                       <img src={ad.icon} className='h-10 absolute' />
@@ -51,7 +52,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="to-start-animation h-5 border-b w-full overflow-hidden hidden lg:flex items-center justify-center">
-        <div className="container opacity-40 scale-125"></div>
+        <div className="container opacity-35 scale-150"></div>
       </div>
       <TopProjectsDetail />
       <DesignSystem />

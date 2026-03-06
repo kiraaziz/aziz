@@ -229,7 +229,7 @@ to{transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)   }
 }
   
 .container {
-  width: 100%;
+  width: 100svw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -256,5 +256,29 @@ to{transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)   }
   }
   100% {
     background-position: 10px 10px;
+  }
+}
+
+.drawing-path {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 0.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: draw 15s ease-in-out forwards;
+}
+
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
   }
 }
