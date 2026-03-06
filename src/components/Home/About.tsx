@@ -43,7 +43,7 @@ export default function About() {
                     ))}
                 </div>
             </div>
-            {sw < 19.3 && (
+            {sw < 17.5 && sw > 14 && (
                 <>
                     <svg className='absolute top-75 left-165 w-svw overflow-visible -z 2xl:block hidden' viewBox="0 0 100 50">
                         <path className="drawing-path" d="M 8 0 L 8 2 L 25 2 L 25 16 L 0 16" />
