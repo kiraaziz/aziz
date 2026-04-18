@@ -36,7 +36,7 @@ export default function HomePage() {
                           loop
                           muted
                           playsInline
-                          className="object-cover h-full w-full absolute"
+                          className="object-cover h-full w-full absolute opacity-30"
                           style={{ display: "block", mixBlendMode: "screen" }}
                         />
                         <div className="absolute h-full w-full bg-linear-to-r from-background -translate-x-2" />
