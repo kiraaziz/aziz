@@ -71,6 +71,7 @@ const Github = () => {
             data={activity}
             blockMargin={3}
             theme={{
+              light: ['hsla(222, 100%, 28%, 0.12)', 'hsl(222, 100%, 45%)'],
               dark: ['hsla(222, 100%, 28%, 0.12)', 'hsl(222, 100%, 45%)']
             }}
           />
