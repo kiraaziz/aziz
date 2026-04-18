@@ -28,7 +28,7 @@ export default function HomePage() {
                   className={`group relative lg:border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r ${i === 0 && "border-b!"} rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col`}
                 >
                   {i === 0 && (
-                    <div className="absolute top-0 right-0 h-full w-1/2 z-0 pointer-events-none">
+                    <div className="to-start-animation absolute top-0 right-0 h-full w-1/2 z-0 pointer-events-none">
                       <div className="relative w-full h-full max-h-120 ">
                         <video
                           src="/videos/2.mp4"
@@ -43,7 +43,7 @@ export default function HomePage() {
                       </div>
                     </div>
                   )}
-                  {i === 1 && <div className='absolute bottom-3 right-0'>
+                  {i === 1 && <div className='to-start-animation  absolute bottom-3 right-0'>
                     <div className='relative h-15 w-15'>
                       <img src={ad.icon} className='h-15 absolute' />
                       <img src={ad.icon} className='h-15 absolute blur-3xl' />
@@ -52,7 +52,7 @@ export default function HomePage() {
                   }
                   {/* <img src={ad.icon} className='h-15 absolute' /> */}
                   {/* <img src={ad.icon} className='h-15 absolute blur-3xl' /> */}
-                  <div className="relative z-10">
+                  <div className="to-start-animation relative z-10">
                     <span
                       className={`mb-2  w-max text-xs rounded-full  border  px-2 text-foreground/60 font-extralight! `}
                     >
