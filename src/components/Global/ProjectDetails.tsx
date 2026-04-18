@@ -7,7 +7,7 @@ import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel'
 import { useHalfText } from '@/utils/global'
 
-export default function ProjectDetails({ data, isShort = false , i}: any) {
+export default function ProjectDetails({ data, isShort = false, i }: any) {
 
   const [open, setOpen] = React.useState(false)
   const [isDesktop, setIsDesktop] = React.useState(false)
@@ -37,11 +37,11 @@ export default function ProjectDetails({ data, isShort = false , i}: any) {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
           {isShort ? (
-            <div className={`w-full flex-col flex  bg-muted/20 p-2 hover:cursor-pointer to-start-animation border-t ${![4, 19].includes(i) && "border-r"}`}>
+            <div className={`w-full flex-col flex  bg-muted/10 p-2 hover:cursor-pointer to-start-animation border-t border-dashed ${![4, 19].includes(i) && "border-r"}`}>
               <div className="gap-1 flex items-center justify-center w-full">
-                {data.logo && <div className="h-10 w-10 flex items-center justify-center overflow-visible relative">
+                {data.logo && <div className="h-10 w-10 flex items-center justify-center overflow-visible relative" style={{ filter: "grayscale(1) brightness(3) saturate(1.4)", }}>
                   <img src={`/svg/app/${data.logo}`} className={`h-8`} />
-                  <img src={`/svg/app/${data.logo}`} className={`h-8 hidden opacity-70 lg:block absolute blur-xl `} />
+                  <img src={`/svg/app/${data.logo}`} className={`h-8 hidden opacity-20 lg:block absolute blur `} />
                 </div>}
                 <div className="w-full flex-1">
                   <h1 className="font-medium mr-2 text-foreground/80">{data.name}</h1>
@@ -67,11 +67,11 @@ export default function ProjectDetails({ data, isShort = false , i}: any) {
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger>
         {isShort ? (
-          <div className="w-full flex-col flex  bg-muted/20 p-2  border rounded-2xl hover:cursor-pointer to-start-animation">
+          <div className={`w-full flex-col flex  bg-muted/10 p-2 hover:cursor-pointer to-start-animation border-t border-dashed ${![4, 19].includes(i) && "border-r"}`}>
             <div className="gap-1 flex items-center justify-center w-full">
-              {data.logo && <div className="h-10 w-10 flex items-center justify-center overflow-visible relative">
+              {data.logo && <div className="h-10 w-10 flex items-center justify-center overflow-visible relative" style={{ filter: "grayscale(1) brightness(3) saturate(1.4)", }}>
                 <img src={`/svg/app/${data.logo}`} className={`h-8`} />
-                <img src={`/svg/app/${data.logo}`} className={`h-8 hidden opacity-70 lg:block absolute blur-xl `} />
+                <img src={`/svg/app/${data.logo}`} className={`h-8 hidden opacity-20 lg:block absolute blur `} />
               </div>}
               <div className="w-full flex-1">
                 <h1 className="font-medium mr-2 text-foreground/80">{data.name}</h1>
@@ -171,11 +171,11 @@ const Details = ({ data }: any) => {
             </Button>
           </DrawerClose>
           {data.url && (
-            <a 
-              href={data.url} 
-              onClick={(e) => e.stopPropagation()} 
+            <a
+              href={data.url}
+              onClick={(e) => e.stopPropagation()}
               className="w-full h-full"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Button className="w-full gap-3 mt-3 rounded-xl bg-muted/20" variant="outline">

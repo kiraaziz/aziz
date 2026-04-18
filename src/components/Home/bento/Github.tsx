@@ -49,7 +49,7 @@ const Github = () => {
   }
 
   return (
-    <div className={`lg:order-1 order-2 lg:border-b col-span-2 h-full relative ${!scroll && " lg:p-0"}`}>
+    <div className={`lg:order-1 order-2 lg:border-t border-dashed col-span-2 h-full relative ${!scroll && " lg:p-0"}`}>
       <div className={`w-full  ${scroll ? "animate-pulse opacity-30! h-61" : "h-61"} lg:p-5`}>
         {!scroll && <div className="to-start-animation flex items-center justify-between w-full mb-4">
           <h1 className="text-lg lg:text-xl font-medium hidden lg:flex">{metaData.bento.github.title}</h1>
@@ -65,14 +65,13 @@ const Github = () => {
             <ArrowRight size={20} />
           </a>
         </div>}
-        <div className={`to-start-animation w-full  relative overflow-hidden ${!scroll ? "opacity-100" : "opacity-0"}`}>
-          <div className="absolute -left-5 top-0 w-28 -translate-x-1/2  h-full bg-background blur-xl" />
+        <div className={`relative to-start-animation w-full overflow-hidden ${!scroll ? "opacity-100" : "opacity-0"}`}>
+          <div className="absolute -left-5 top-0 w-full h-full bg-linear-to-r from-background " />
           <ActivityCalendar
             data={activity}
             blockMargin={3}
             theme={{
-              light: ['hsla(210 98.39% 52.23% / 0.06)', 'hsl(210 98.39% 52.23%)'],
-              dark: ['hsla(210 98.39% 52.23% / 0.06)', 'hsl(210 98.39% 52.23%)'],
+              dark: ['hsla(222, 100%, 28%, 0.12)', 'hsl(222, 100%, 45%)']
             }}
           />
         </div>

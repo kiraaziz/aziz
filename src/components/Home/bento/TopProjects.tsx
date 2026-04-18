@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 export default function TopProjects() {
   return (
     <div className="w-full flex flex-col justify-between">
-      <div className="p-4 flex items-center justify-between w-full flex-1">
+      <div className=" to-start-animation  p-4 flex items-center justify-between w-full flex-1">
         <h1 className="text-lg lg:text-xl to-start-animation font-medium ">{metaData.bento.topApp.title}</h1>
         <a href="/project" className="text-sm font-light text-foreground/60 gap-2 transition-all ease-in-out duration-200 lg:hover:gap-5 flex items-center justify-center">
           {metaData.bento.topApp.more}

@@ -72,10 +72,11 @@
   height: 200vh;
   background: url(/images/globals/noise.jpg) repeat;
   background-repeat: repeat;
-  opacity: 0.06;
+  opacity: 0.045;
   visibility: visible;
   pointer-events: none;
   display: block;
+  @apply z-30
 }
 
 .react-activity-calendar>* {

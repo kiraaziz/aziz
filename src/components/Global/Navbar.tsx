@@ -19,7 +19,7 @@ export default function SideBar() {
 
     return (
         <>
-            <header className="to-start-animation sticky top-0 flex h-16 border-b bg-muted/10 items-center gap-4 border-bx px-4 md:px-6 ">
+            <header className="sticky top-0 flex h-16 border-b border-dashed items-center gap-4 border-bx px-4 md:px-6 ">
                 <Link href="/" className="lg:ml-10 flex items-center justify-center gap-2 text-foreground whitespace-nowrap font-bold to-start-animation">
                     <SquareTerminal size={23} className="text-primary" />
                     {title}

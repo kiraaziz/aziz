@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 })
 
 export default function RootLayout({
@@ -33,12 +33,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
       </head>
       <body className="bg-background relative text-foreground">
-        <div className="h-screen w-screen bg fixed top-0 right-0 z-0"></div>
+        <div className="h-screen w-screen bg fixed top-0 right-0"></div>
         <div className="flex h-svh w-full flex-col z-10 overflow-hidden">
           <Navbar />
           <Animator />
           <main id="root" className="  h-[calc(100svh-4rem)] z-10 overflow-x-hidden">
-            <div className="bgs" />
+            <div className="bg" />
             <div className="h-max p-5 lg:p-0 min-h-[calc(100svh-11rem)]">
               {children}
               <div className="w-full h-20"></div>
@@ -46,7 +46,7 @@ export default function RootLayout({
             <Footer />
           </main>
         </div>
-        <Analytics mode={'production'} />
+        {/* <Analytics mode={'production'} /> */}
       </body>
     </html>
   )
