@@ -1,5 +1,43 @@
 export const projects = [
   {
+    "name": "Web Whale",
+    "logo": "webwhale.svg",
+    "url": "https://whale.kiraaziz.club",
+    "tags": "next15 electron grapesjs",
+    "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
+    "short": "Website builder",
+    "main": true,
+    "bento": true,
+    "images": [
+      {
+        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
+        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
+        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
+        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
+        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
+      }
+    ]
+  },
+  {
+    "name": "Kira Letter",
+    "logo": "letter.svg",
+    "url": "https://letter.kiraaziz.club",
+    "tags": "nextjs react saas forms newsletter realtime",
+    "description": "Build powerful newsletters and forms in minutes with Kira Letter. Create stunning forms, collaborate live, and track results instantly—all with zero code. Launch your newsletter in minutes with Kira Letter.",
+    "short": "Newsletter & Form SaaS",
+    "main": true,
+    "bento": true,
+    "images": [
+      {
+        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
+        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
+        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
+        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
+        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
+      }
+    ]
+  },
+  {
     "name": "Healthybase",
     "logo": "healthybase.svg",
     "url": "https://healthybase.cloud",
@@ -7,6 +45,7 @@ export const projects = [
     "description": "Automatic snapshots, secure encryption, and daily restore for PostgreSQL. Set it once and sleep easy — we keep your PostgreSQL data safe and compliant.",
     "short": "Backup your DB",
     "main": true,
+    "bento": true,
     "images": [
       {
         "original": "/images/projects/healthybase/3vuoxv0kpxe/original.webp",
@@ -32,6 +71,7 @@ export const projects = [
     "description": "The first headless backend that lets you easily add and manage your data, connecting seamlessly with API .",
     "short": "Simple BAAS",
     "main": true,
+    "bento": true,
     "images": [
       {
         "original": "/images/projects/eyebase/8b9f7280lso/original.webp",
@@ -95,24 +135,6 @@ export const projects = [
     ]
   },
   {
-    "name": "Web Whale",
-    "logo": "webwhale.svg",
-    "url": "https://github.com/kiraaziz/web-whale",
-    "tags": "next15 electron grapesjs",
-    "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
-    "short": "Website builder",
-    "main": true,
-    "images": [
-      {
-        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
-        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
-        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
-        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
-        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
-      }
-    ]
-  },
-  {
     "logo": "lightai.svg",
     "name": "Light Ai 2.0",
     "description": "🚀 Unleash your creativity with our free text-to-image web app! 💬✨ Join 6000+ users and explore 20,000+ images. Exciting new features include reacting to others' creations and improved performance. Transform words into visuals effortlessly – join for free on our website! 🎨🌟 #TextToImage #CreativeFreedom",
@@ -120,7 +142,7 @@ export const projects = [
     "tags": "next13 react firebase huggingface ai",
     "url": "https://light-ai.vercel.app",
     "main": true,
-
+    "bento": true,
     "demo": "https://www.youtube.com/embed/jtmYK7AI9ho?si=_1s7zhC7W9GfMVnJ",
     "images": [
       {
@@ -370,13 +392,12 @@ export const projects = [
       }
     ]
   },
-  
+
   {
     "name": "Agria group",
     "url": "https://agriagroup.tn/",
     "tags": "next13 react postgresql colify shadcn",
     "description": "🚀 Considered one of my best apps! Built from scratch: a complete CMS for a multi-language website with content management, member tracking, visitor analytics, and a visual editor.",
-    "main": true,
     "images": [
       {
         "original": "/images/projects/agria-group/bn4xczrdjgd/original.webp",
@@ -529,6 +550,7 @@ export const projects = [
     "description": "Seamlessly integrate AI with personalized templates, cluster management, and secure API key generation. 🚀 Revolutionize your workflow effortlessly!",
     "short": "AI based API",
     "main": true,
+    "bento": true,
     "tags": "next13 react postgresql zod mistar-ai huggingface ai",
     "url": "https://ai-type.vercel.app/",
     "demo": "https://www.youtube.com/embed/YUUuWDU8-0E?si=YKr-PWQpLgZ-aLhR",
@@ -601,13 +623,14 @@ export const projects = [
     "tags": "next13 prisma shadcn CockroachDB llama mermaidJs firework_ai excalidraw",
     "url": "https://neoflow-kira.vercel.app",
     "main": true,
+    "bento": true,
     "demo": "https://www.youtube.com/embed/Yh4lONl_MYQ?si=yzBP06PoTigGi_V6",
     "images": [
       {
-        "original": "/images/projects/neoflow/VkD2sh7b/original.webp",  
+        "original": "/images/projects/neoflow/VkD2sh7b/original.webp",
         "high": "/images/projects/neoflow/VkD2sh7b/high.webp",
-        "medium": "/images/projects/neoflow/VkD2sh7b/medium.webp",      
-        "small": "/images/projects/neoflow/VkD2sh7b/small.webp",        
+        "medium": "/images/projects/neoflow/VkD2sh7b/medium.webp",
+        "small": "/images/projects/neoflow/VkD2sh7b/small.webp",
         "xs": "/images/projects/neoflow/VkD2sh7b/xs.webp"
       },
       {
@@ -743,7 +766,6 @@ export const projects = [
         "xs": "/images/projects/schooler/m45r09z9qhe/xs.webp"
       }
     ],
-    "md": 3
   },
   {
     "logo": "mangahook.svg",
@@ -754,6 +776,7 @@ export const projects = [
     "short": "Free manga site",
     "tags": "next13 express scraping manga",
     "main": true,
+    "bento": true,
     "images": [
       {
         "original": "/images/projects/manga-hook/0lvrm3vgq86/original.webp",

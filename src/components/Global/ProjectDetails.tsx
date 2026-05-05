@@ -39,13 +39,15 @@ export default function ProjectDetails({ data, isShort = false, i }: any) {
           {isShort ? (
             <div className={`w-full flex-col flex  bg-muted/10 p-2 hover:cursor-pointer to-start-animation border-t border-dashed ${![4, 19].includes(i) && "border-r"}`}>
               <div className="gap-1 flex items-center justify-center w-full">
-                {data.logo && <div className="h-10 w-10 flex items-center justify-center overflow-visible relative" style={{ filter: "grayscale(1) brightness(3) saturate(1.4)", }}>
-                  <img src={`/svg/app/${data.logo}`} className={`h-8`} />
-                  <img src={`/svg/app/${data.logo}`} className={`h-8 hidden opacity-20 lg:block absolute blur `} />
-                </div>}
-                <div className="w-full flex-1">
-                  <h1 className="font-medium mr-2 text-foreground/80">{data.name}</h1>
-                  <p className="text-sm text-foreground/60 w-full">{useHalfText(data.short, 13)}</p>
+                {data.logo && (
+                  <div className="h-10 w-10  flex items-center justify-center overflow-visible relative">
+                    <img src={`/svg/app/${data.logo}`} className="h-8" />
+                    <img src={`/svg/app/${data.logo}`} className="h-8 hidden opacity-20 lg:block absolute blur" />
+                  </div>
+                )}
+                <div className="w-[calc(100%-2.75rem)]">
+                  <h1 className="font-medium mr-2 text-foreground/80 truncate">{data.name}</h1>
+                  <p className="text-sm text-foreground/60 w-full truncate">{data.short}</p>
                 </div>
               </div>
             </div>
@@ -192,7 +194,7 @@ const Details = ({ data }: any) => {
 
 const Card = ({ data }: any) => {
   return (
-    <div className="w-full border bg-muted/20 rounded-3xl overflow-hidden hover:cursor-pointer h-full to-start-animation">
+    <div className="w-full border bg-muted/20 rounded-2xl overflow-hidden hover:cursor-pointer h-full to-start-animation">
       <img src={data.images[0].small} className="to-start-animation h-40 lg:h-52 border-b w-full object-cover object-top-left bg-primary/20 " />
       <div className="p-4 pb-3 relative">
         <div className="w-full flex items-center justify-center gap-2">

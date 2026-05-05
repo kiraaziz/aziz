@@ -1,100 +1,58 @@
-import { Button } from '@/components/ui/button'
-import { ArrowDown } from 'lucide-react'
-import { metaData } from '@/utils/content/metaData'
+import DotesLayout from "../Global/DotesLayout";
 
 export default function About() {
     return (
         <div className="w-full max-w-5xl mx-auto lg:border-x border-dashed relative">
-            <div className="to-start-animation w-full lg:px-5 max-w-4xl mx-auto pb-10 lg:py-10!">
-                <div className="w-full h-full space-y-5 my-3">
+            <div className="to-start-animation w-full pb-10 lg:p-10!">
+                <div className="w-full h-full">
                     <div className="max-w-2xl flex h-full items-center justify-between">
                         <div className="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5">
                             <h1 className="text-xl lg:text-5xl font-bold to-start-animation mb-3.5 -tracking-wide">
-                                {metaData.home.about.title}
+                                Hi, I’m Kira Aziz
                             </h1>
-                            <p className="mb-0.5 font-light text-sm text-foreground/50 to-start-animation -tracking-wide">
-                                - I'm Kira, a Tunisian developer with a CS degree, now studying engineering
+                            <p className="mt-1.5 mb-0.5 font-extralight text- text-foreground/50 to-start-animation -tracking-wide">
+                                - I am currently working as a Tech Lead at a <a href="https://dev.delib.pro/" className="text-primary border-b border-dashed border-primary font-medium mx-1 " target="_blank" rel="noopener noreferrer">Délib</a>,  In parallel, I am pursuing a degree in software engineering.
+                                <div className="h-1.5" />
+                                - Also I ship scalable features for application used by a global audience of over <span className="text-primary border-b border-dashed border-primary font-medium mx-1 ">+200k users</span>.
+                                <div className="h-1.5" />
+                                - I also contribute to open-source projects with over <span className="text-primary border-b border-dashed border-primary font-medium mx-1 ">300 Stars</span>, on GitHub, and reaching over <span className="text-primary border-b border-dashed border-primary font-medium mx-1 ">60,000</span> readers on Dev.to.
                             </p>
-                            <p className="mb-0.5 font-light text-sm text-foreground/50 to-start-animation -tracking-wide">
-                                - 3+ years' experience and 60k+ reads on<a href="https://dev.to/kiraaziz" className="text-primary hover:underline mx-1" target="_blank" rel="noopener noreferrer">dev.to</a>
-                            </p>
-                            <p className="mb-0.5 font-light text-sm text-foreground/50 to-start-animation -tracking-wide">
-                                - I build apps like{' '}
+
+                            <div className="flex gap-4 mt-7">
                                 <a
-                                    href="https://light-ai.vercel.app/"
-                                    className="text-primary hover:underline mx-1"
+                                    href="https://github.com/kiraaziz"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className="flex items-center text-foreground/70 hover:text-primary text-sm"
                                 >
-                                    Light AI
+                                    <img src="/contact/github.svg" alt="GitHub" className="h-4 w-4 mr-2" />
+                                    GitHub
                                 </a>
-                                ,{' '}
                                 <a
-                                    href="https://eyebase.vercel.app/"
-                                    className="text-primary hover:underline mx-1"
+                                    href="https://www.linkedin.com/in/med-aziz-rjeibi/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className="flex items-center text-foreground/70 hover:text-primary text-sm border-x px-4"
                                 >
-                                    Eyebase
+                                    <img src="/contact/linkedin.svg" alt="LinkedIn" className="h-4 w-4 mr-2" />
+                                    LinkedIn
                                 </a>
-                                ,{' '}
                                 <a
-                                    href="https://healthybase.cloud"
-                                    className="text-primary hover:underline mx-1"
+                                    href="https://www.facebook.com/aziz.kira.581/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className="flex items-center text-foreground/70 hover:text-primary text-sm "
                                 >
-                                    HealthyBase
+                                    <img src="/contact/facebook.svg" alt="Facebook" className="h-4 w-4 mr-2" />
+                                    Facebook
                                 </a>
-                                , and{' '}
-                                <a
-                                    href="https://neoflow-kira.vercel.app/"
-                                    className="text-primary hover:underline mx-1"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    NeoFlow
-                                </a>
-                            </p>
-                       
-                            <p className="mb-0.5 font-light text-sm text-foreground/50 to-start-animation -tracking-wide">
-                                - Now working on my own startup,{' '}
-                                <a
-                                    href="https://lymoun.agency"
-                                    className="text-primary hover:underline mx-1"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Lymoun
-                                </a>
-                            </p>
-                            <p className="mb-0.5 font-light text-sm text-foreground/50 to-start-animation -tracking-wide">
-                                - At work, I build apps from scratch and have helped scale products <br />  to over 200k active users! 
-                            </p>
-                            <a href={metaData.home.about.cv.href} target="_blank" rel="noopener noreferrer">
-                                <Button variant="ghost" className='mt-5 px-4! border border-border/30 bg-foreground/3 rounded-full gap-3  lg:mt-4 overflow-visible group'>
-                                    {metaData.home.about.cv.label}
-                                    <ArrowDown className="lg:group-hover:translate-y-2 ease-in-out duration-200" size={20} />
-                                </Button>
-                            </a>
+                            </div>
+                            <DotesLayout />
                         </div>
                     </div>
                 </div >
             </div >
-            <div className=' to-start-animation bottom-0 bg-ye absolute right-0 w-130 h-full -z-10'>
-                <div className="relative w-full h-full max-h-120 hidden md:block ">
-                    <img src="/images/globals/wave.webp" 
-                        className="object-cover h-full w-full absolute opacity-40"
-                        style={{
-                            display: 'block',
-                            mixBlendMode: 'screen',
-                            filter: 'grayscale(0.4)'
-                        }}
-                    /> 
-                    <div className="absolute h-full w-full bg-linear-to-r via-background/90 from-background" />
-                    <div className="absolute h-full w-full bg-linear-to-r via-background/0 from-background" />
-                </div>
-            </div>
         </div >
     )
 }
+
