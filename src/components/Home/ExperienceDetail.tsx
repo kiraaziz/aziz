@@ -15,11 +15,13 @@ export default function ExperienceDetail() {
             </div>
             <div>
               <div className="w-full">
-                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">Oct 2025 - Present (Paris, France)</p>
+                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">
+                  Oct 2025 - Present
+                  <span className="hidden lg:inline"> (Paris, France)</span>
+                </p>
                 <div className="text-lg text-foreground/90 mb-2 flex flex-row gap-1 items-center to-start-animation">
-                  <div className="lg:hidden">BPW</div>
-                  <div className="lg:flex hidden">Délib</div>
-                  <span className="ml-2 text-sm text-foreground/60">- Software Engineer</span>
+                  <div>Délib</div>
+                  <span className="ml-2 text-sm text-foreground/60 hidden lg:block">- Tech Lead</span>
                 </div>
               </div>
             </div>
@@ -42,11 +44,13 @@ export default function ExperienceDetail() {
             </div>
             <div>
               <div className="w-full">
-                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">July 2024 - Present (Paris, France)</p>
+                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">
+                  July 2024 - Present
+                  <span className="hidden lg:inline"> (Paris, France)</span>
+                </p>
                 <div className="text-lg text-foreground/90 mb-2 flex flex-row gap-1 items-center to-start-animation">
-                  <div className="lg:hidden">Capyxis </div>
-                  <div className="lg:flex hidden">Capyxis </div>
-                  <span className="ml-2 text-sm text-foreground/60">- Software Engineer </span>
+                  <div>Capyxis </div>
+                  <span className="ml-2 text-sm text-foreground/60 hidden lg:block">- Software Engineer </span>
                 </div>
               </div>
             </div>
@@ -73,11 +77,13 @@ export default function ExperienceDetail() {
             </div>
             <div>
               <div className="w-full">
-                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">Jan 2025 - Sept 2025 (Montreal, Canada)</p>
+                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">
+                  Jan 2025 - Sept 2025
+                  <span className="hidden lg:inline"> (Montreal, Canada)</span>
+                </p>
                 <div className="text-lg text-foreground/90 mb-2 flex flex-row gap-1 items-center to-start-animation">
-                  <div className="lg:hidden">Better Player Win</div>
-                  <div className="lg:flex hidden">Better Player Win</div>
-                  <span className="ml-2 text-sm text-foreground/60">- Software Engineer </span>
+                  <div>Better Player Win</div>
+                  <span className="ml-2 text-sm text-foreground/60 hidden lg:block">- Software Engineer </span>
                 </div>
               </div>
             </div>
@@ -102,11 +108,13 @@ export default function ExperienceDetail() {
             </div>
             <div>
               <div className="w-full">
-                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">July 2023 - July 2024 (Monastir, Tunisia)</p>
+                <p className="text-xs text-foreground/50 whitespace-nowrap to-start-animation">
+                  July 2023 - July 2024
+                  <span className="hidden lg:inline"> (Monastir, Tunisia)</span>
+                </p>
                 <div className="text-lg text-foreground/90 mb-2 flex flex-row gap-1 items-center to-start-animation">
-                  <div className="lg:hidden">Kombas Net </div>
-                  <div className="lg:flex hidden">Kombas Net </div>
-                  <span className="ml-2 text-sm text-foreground/60">- Software Engineer </span>
+                  <div>Kombas Net </div>
+                  <span className="ml-2 text-sm text-foreground/60 hidden lg:block">- Software Engineer </span>
                 </div>
               </div>
             </div>

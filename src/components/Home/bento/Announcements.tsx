@@ -8,7 +8,7 @@ export default function Announcements() {
                 target="_blank"
                 rel="noopener"
                 href="https://lymoun.agency"
-                className="group relative lg:border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r border-b! rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col"
+                className="group relative border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r border-b! rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col"
             >
                 <div className="to-start-animation absolute top-0 right-0 h-full w-1/2 z-0 pointer-events-none">
                     <div className="relative w-full h-full max-h-120 ">
@@ -39,7 +39,7 @@ export default function Announcements() {
                 target="_blank"
                 rel="noopener"
                 href="https://healthybase.cloud"
-                className="group relative lg:border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col"
+                className="group relative border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col"
             >
                 <div className='to-start-animation absolute bottom-3 right-0'>
                     <div className='relative h-12 w-12'>
