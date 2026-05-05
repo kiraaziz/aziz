@@ -10,11 +10,13 @@ export default function About() {
                             <h1 className="text-xl lg:text-3xl font-bold to-start-animation mb-3.5 -tracking-wide">
                                 Hi, I’m Kira Aziz
                             </h1>
-                            <p className="mt-1.5 mb-0.5 font-extralight text- text-foreground/50 to-start-animation -tracking-wide">
+                            <p className="mt-1.5 mb-0.5 font-extralight text- text-foreground/50 -tracking-wide">
                                 - I am currently working as a Tech Lead at a <a href="https://dev.delib.pro/" className="text-primary border-b border-dashed border-primary font-medium mx-1 " target="_blank" rel="noopener noreferrer">Délib</a>,  In parallel, I am pursuing a degree in software engineering.
-                                <div className="h-1.5" />
+                            </p>
+                            <p className="mt-1.5 mb-0.5 font-extralight text- text-foreground/50 -tracking-wide">
                                 - Also I ship scalable features for application used by a global audience of over <span className="text-primary border-b border-dashed border-primary font-medium mx-1 ">+200k users</span>.
-                                <div className="h-1.5" />
+                            </p>
+                            <p className="mt-1.5 mb-0.5 font-extralight text- text-foreground/50 -tracking-wide">
                                 - I also contribute to open-source projects with over <span className="text-primary border-b border-dashed border-primary font-medium mx-1 ">300 Stars</span>, on GitHub, and reaching over <span className="text-primary border-b border-dashed border-primary font-medium mx-1 ">60,000</span> readers on Dev.to.
                             </p>
 
