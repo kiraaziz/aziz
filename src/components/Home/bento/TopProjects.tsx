@@ -1,5 +1,4 @@
 import ProjectDetails from '@/components/Global/ProjectDetails'
-import { metaData } from '@/utils/content/metaData'
 import { projects } from '@/utils/content/project'
 import { ArrowRight } from 'lucide-react'
 
