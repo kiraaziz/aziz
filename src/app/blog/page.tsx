@@ -1,26 +1,26 @@
-import { Button } from '@/components/ui/button';
-import RippleGrid from '@/components/ui/RippleGrid';
-import { metaData } from '@/utils/content/metaData';
-import { cn, useHalfText } from '@/utils/global';
-import { ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button'
+import { cn, useHalfText } from '@/utils/global'
+import { ArrowRight } from 'lucide-react'
 
 export default async function BlogPage() {
-
-  const articleReq = await fetch(`https://dev.to/api/articles?username=kiraaziz`);
-  const articles = await articleReq.json();
+  const articleReq = await fetch(`https://dev.to/api/articles?username=kiraaziz`)
+  const articles = await articleReq.json()
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-1 w-full lg:py-10 gap-2 mx-auto max-w-3xl">
+    <div className="grid grid-cols-1 lg:grid-cols-1 w-full lg:py-24 gap-2 mx-auto max-w-3xl">
       <div className="mb-5 to-start-animation relative col-span-full rounded-3xl border p-4 border-primary/20! overflow-hidden bg-primary/5">
-        <div className="hidden lg:flex absolute opacity-40 h-full w-full top-0 left-0 -z-10 overflow-hidden">
-          <RippleGrid enableRainbow={false} gridColor="#ffffff" rippleIntensity={0.3} gridSize={10} gridThickness={5} opacity={0.5} />
-        </div>
-        <span className="to-start-animation text-xs font-semibold rounded-full bg-primary/10 text-primary border !border-primary/20! px-3">{metaData.blogPage.badge}</span>
-        <h2 className="to-start-animation text-lg font-bold">{metaData.blogPage.title}</h2>
-        <p className="text-sm text-foreground/60 mt-1 font-light">{metaData.blogPage.description}</p>
-        <a href={metaData.blogPage.button.href} target="_blank" rel="noopener">
+        <span className="to-start-animation text-xs font-semibold rounded-full bg-primary/10 text-primary border !border-primary/20! px-3">
+          New Announcement
+        </span>
+        <h2 className="to-start-animation text-lg font-bold">
+          We’ve just launched our brand new blog - check it out!
+        </h2>
+        <p className="text-sm text-foreground/60 mt-1 font-light">
+          Welcome to my digital playground—where I share my coding journey, creative projects, and lessons learned !
+        </p>
+        <a href="https://blog.kiraaziz.club" target="_blank" rel="noopener">
           <Button className="to-start-animation mt-2 rounded-full bg-muted/20 flex items-center justify-center gap-1 hover:gap-3 ease-in-out duration-300 transition-all" variant="outline">
-            {metaData.blogPage.button.label}
+            Get Started
             <ArrowRight size={20} />
           </Button>
         </a>
@@ -65,5 +65,5 @@ export default async function BlogPage() {
         </div>
       ))}
     </div>
-  );
+  )
 }

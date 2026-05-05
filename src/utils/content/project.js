@@ -1,24 +1,5 @@
 export const projects = [
   {
-    "name": "Web Whale",
-    "logo": "webwhale.svg",
-    "url": "https://whale.kiraaziz.club",
-    "tags": "next15 electron grapesjs",
-    "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
-    "short": "Website builder",
-    "main": true,
-    "bento": true,
-    "images": [
-      {
-        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
-        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
-        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
-        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
-        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
-      }
-    ]
-  },
-  {
     "name": "Kira Letter",
     "logo": "letter.svg",
     "url": "https://letter.kiraaziz.club",
@@ -29,11 +10,30 @@ export const projects = [
     "bento": true,
     "images": [
       {
-        "original": "/images/projects/webwhale/wj98oipm91n/original.webp",
-        "high": "/images/projects/webwhale/wj98oipm91n/high.webp",
-        "medium": "/images/projects/webwhale/wj98oipm91n/medium.webp",
-        "small": "/images/projects/webwhale/wj98oipm91n/small.webp",
-        "xs": "/images/projects/webwhale/wj98oipm91n/xs.webp"
+        "original": "/images/projects/letter/fpzpm436qz0/original.webp",
+        "high": "/images/projects/letter/fpzpm436qz0/high.webp",
+        "medium": "/images/projects/letter/fpzpm436qz0/medium.webp",
+        "small": "/images/projects/letter/fpzpm436qz0/small.webp",
+        "xs": "/images/projects/letter/fpzpm436qz0/xs.webp"
+      }
+    ]
+  },
+  {
+    "name": "Web Whale",
+    "logo": "webwhale.svg",
+    "url": "https://whale.kiraaziz.club",
+    "tags": "next15 electron grapesjs",
+    "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
+    "short": "Website builder",
+    "main": true,
+    "bento": true,
+    "images": [
+      {
+        "original": "/images/projects/webwhale/c9qpp7d98xh/original.webp",
+        "high": "/images/projects/webwhale/c9qpp7d98xh/high.webp",
+        "medium": "/images/projects/webwhale/c9qpp7d98xh/medium.webp",
+        "small": "/images/projects/webwhale/c9qpp7d98xh/small.webp",
+        "xs": "/images/projects/webwhale/c9qpp7d98xh/xs.webp"
       }
     ]
   },

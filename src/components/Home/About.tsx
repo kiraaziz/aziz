@@ -7,7 +7,7 @@ export default function About() {
                 <div className="w-full h-full">
                     <div className="max-w-2xl flex h-full items-center justify-between">
                         <div className="flex items-start justify-between w-full flex-col lg:mt-0 mt-5 lg:p-5">
-                            <h1 className="text-xl lg:text-5xl font-bold to-start-animation mb-3.5 -tracking-wide">
+                            <h1 className="text-xl lg:text-3xl font-bold to-start-animation mb-3.5 -tracking-wide">
                                 Hi, I’m Kira Aziz
                             </h1>
                             <p className="mt-1.5 mb-0.5 font-extralight text- text-foreground/50 to-start-animation -tracking-wide">

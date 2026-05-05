@@ -3,13 +3,13 @@ import React from 'react'
 
 export default function page() {
     return (
-        <div className="mt-2 flex flex-col mx-auto w-full max-w-3xl lg:py-10 gap-10 lg:space-y-8">
+        <div className="mt-2 flex flex-col mx-auto w-full max-w-3xl  gap-10 lg:space-y-8 lg:py-24">
             {
                 stack.map((val) => (
                     <div className="gap-3 w-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-5 lg:px-5">
-                        <div className="col-span-full to-start-animation">
-                            <h1 className="text-xl font-bold">{val.name}</h1>
-                        </div>
+                        <h1 className="col-span-full to-start-animation text-xl lg:text-3xl font-bold w-full mb-2">
+                            {val.name}
+                        </h1>
                         {val.children.map((childVal: any) => (
                             <div className="to-start-animation border bg-muted/20 p-1 rounded-2xl">
                                 <div className="w-full relative h-20 overflow-visible flex items-center justify-center">

@@ -116,7 +116,7 @@ const Details = ({ data }: any) => {
 
   return (
     <div className=" hover:cursor-point flex md:flex-row flex-col lg:space-y-0 space-y-5 gap-5 w-full ">
-      <div className="flex flex-col md:max-w-96 mt-5 lg:mt-0">
+      <div className="flex flex-col md:max-w-110 mt-5 lg:mt-0">
         <Carousel setApi={setApi}>
           <CarouselContent>
             {data.demo &&

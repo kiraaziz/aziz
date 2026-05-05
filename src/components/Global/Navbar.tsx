@@ -49,7 +49,7 @@ export default function SideBar() {
                     ))}
                 </div>
                 <div className="flex-1 "></div>
-                <Link href="/" className="opacity-0 lg:ml-10 flex items-center justify-center gap-2 text-foreground whitespace-nowrap font-bold to-start-animation">
+                <Link href="/" className="opacity-0 lg:ml-10 flex items-center justify-center gap-2 text-foreground whitespace-nowrap font-bold">
                     <div className='flex items-center justify-center mr-2'>
                         <span className=' text-lg text-primary/70 '>~</span>
                         <span className='mr-1.5 text-lg font-light text-foreground/70'>/</span>
