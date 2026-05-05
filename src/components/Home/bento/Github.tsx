@@ -40,7 +40,7 @@ const Github = () => {
 
   if (!activity || loading) {
     return <div className="lg:order-1 order-2 lg:border-b border-dashed col-span-2 h-full relative  overflow-hidden">
-      <div className="w-full h-56 lg:h-61 animate-pulse opacity-30!">
+      <div className="w-full h-56 lg:h-65 animate-pulse opacity-30!">
       </div>
     </div>
   }
