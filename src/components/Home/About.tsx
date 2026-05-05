@@ -47,7 +47,7 @@ export default function About() {
                                     Facebook
                                 </a>
                             </div>
-                            <DotesLayout />
+                            {/* <DotesLayout /> */}
                         </div>
                     </div>
                 </div >

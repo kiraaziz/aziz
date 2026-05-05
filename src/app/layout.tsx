@@ -34,7 +34,7 @@ export default function RootLayout({
         <div className="flex h-svh w-full flex-col z-10 overflow-hidden">
           <Navbar />
           <Animator />
-          <main className="h-[calc(100svh-4rem)] z-10 overflow-x-hidden">
+          <main id="root" className="h-[calc(100svh-4rem)] z-10 overflow-x-hidden">
             <div className="h-max p-5 lg:p-0 min-h-[calc(100svh-11rem)]">
               {children}
               <div className="h-screen w-screen bg fixed top-0 right-0"></div>
