@@ -27,9 +27,9 @@ export default function SideBar() {
         <>
             <header className="sticky top-0 flex h-16 border-b border-dashed items-center gap-4 border-bx px-4 md:px-6 ">
                 <Link href="/" className="lg:ml-10 flex items-center justify-center gap-2 text-foreground whitespace-nowrap font-bold to-start-animation">
-                    <div className='flex items-center justify-center mr-2'>
-                        <span className='text-xl! text-primary/70 '>~</span>
-                        <span className='mr-1.5 text-lg font-light text-foreground/70'>/</span>
+                     <div className='flex items-center justify-center mr-2'>
+                        {/* <span className='text-xl! text-primary/70 '>~</span> */}
+                        {/* <span className='mr-1.5 text-lg font-light text-foreground/70'>/</span> */}
                         <div className='h-5.5 w-2 bg-primary animate-blink ' />
                     </div>
                     Kira Aziz

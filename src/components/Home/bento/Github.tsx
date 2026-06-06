@@ -46,7 +46,7 @@ const Github = () => {
   }
 
   return (
-    <div className={`lg:order-1 order-2 lg:border-b border-dashed col-span-2 h-full relative ${!scroll && " lg:p-0"}`}>
+    <div className={`xx lg:order-1 order-2 lg:border-b border-dashed col-span-2 h-full relative ${!scroll && " lg:p-0"}`}>
       <div className={`w-full  ${scroll ? "animate-pulse opacity-30! h-61" : "h-61"} lg:p-5`}>
         {!scroll && <div className="to-start-animation flex items-center justify-between w-full mb-4">
           <h1 className="text-lg lg:text-xl font-medium hidden lg:flex">Last activities</h1>

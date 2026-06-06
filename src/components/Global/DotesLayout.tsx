@@ -12,7 +12,7 @@ export default function DotesLayout() {
                 <div className="flex items-center justify-end">
                     <div className="to-start-animation  relative w-full h-120 ">
                         <video
-                            src="/videos/1.mp4"
+                            src="/videos/3.mp4"
                             autoPlay
                             loop
                             muted
