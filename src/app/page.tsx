@@ -6,6 +6,7 @@ import TopProjectsDetail from "@/components/Home/TopProjectsDetail"
 import DesignSystem from "@/components/Home/DesignSystem"
 import ExperienceDetail from "@/components/Home/ExperienceDetail"
 import Announcements from "@/components/Home/bento/Announcements"
+import Now from "@/components/Home/Now"
 
 export default function HomePage() {
   return (
@@ -24,6 +25,10 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <div className=" h-5 border-y border-dashed w-full overflow-hidden hidden lg:flex items-center justify-center">
+        <div className="container opacity-25 scale-150"></div>
+      </div>
+      <Now />
       <div className=" h-5 border-y border-dashed w-full overflow-hidden hidden lg:flex items-center justify-center">
         <div className="container opacity-25 scale-150"></div>
       </div>
