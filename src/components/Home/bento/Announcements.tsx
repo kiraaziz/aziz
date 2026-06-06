@@ -38,7 +38,7 @@ export default function Announcements() {
             <a
                 target="_blank"
                 rel="noopener"
-                href="https://healthybase.cloud"
+                href="https://letter.kiraaziz.club"
                 className="group relative border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col"
             >
                 <div className='to-start-animation absolute bottom-7 right-5'>
@@ -47,7 +47,6 @@ export default function Announcements() {
                         <img src="/svg/app/letter.svg" className='h-15 absolute blur-xl opacity-40' />
                     </div>
                 </div>
-                {/* <img src="/svg/app/healthybase.svg" className='h-15 absolute blur-3xl' /> */}
                 <div className="to-start-animation relative z-10">
                     <span className="mb-2 w-max text-xs rounded-full border px-2 text-foreground/60 font-extralight! ">
                         New SAAS Launch
