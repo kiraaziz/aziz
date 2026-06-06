@@ -40,14 +40,17 @@ export default function Now() {
                     <br />
                     You simply describe your business and features, and the AI takes care of the rest—building everything for you automatically
                 </p>
-                <Link href="https://letter.kiraaziz.club/s/blossom">
+                <a
+                    href="https://letter.kiraaziz.club/s/blossom"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <Button className='to-start-animation mt-4 group h-12 pr-1 rounded-full bg-pink-400 hover:bg-pink-300'>
                         Register Now
                         <span className='h-10 w-12 bg-black text-white rounded-full flex items-center justify-center'>
                             <ArrowUpRight className='group-hover:scale-125 ease-in-out duration-200' />
                         </span>
                     </Button>
-                </Link>
+                </a>
             </div>
         </div>
     )
