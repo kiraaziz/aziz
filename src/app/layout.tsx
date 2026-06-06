@@ -4,6 +4,7 @@ import { Roboto_Mono } from "next/font/google"
 import "@/utils/styles/globals.css"
 import Footer from "@/components/Global/Footer"
 import Animator from "@/components/ui/animator"
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: "Kira Aziz | Fullstack Developer Portfolio",
@@ -43,6 +44,7 @@ export default function RootLayout({
             <Footer />
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   )
