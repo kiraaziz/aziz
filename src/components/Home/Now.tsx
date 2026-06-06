@@ -46,8 +46,6 @@ export default function Now() {
                     </span>
                 </Button>
             </div>
-
-            <img src="https://i.pinimg.com/736x/65/3d/f1/653df18a04cefc6e28e81015225be14d.jpg" className='absolute right-0 h-40 bottom-0' />
         </div>
     )
 }
