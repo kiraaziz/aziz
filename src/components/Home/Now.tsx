@@ -15,7 +15,7 @@ export default function Now() {
                 className="top-0 left-0 object-cover h-full w-full absolute opacity-80"
                 style={{ display: "block", mixBlendMode: "screen" }}
             />
-            <div className=" top-0 left-0 absolute h-full w-full bg-linear-to-tr from-background" />
+            <div className=" top-0 left-0 absolute h-full w-full bg-linear-to-b from-background" />
             <div className=" top-0 left-0 absolute h-full w-full bg-linear-to-tr from-background" />
             <div className=" top-0 left-0 absolute h-full w-full bg-linear-to-tr from-background" />
             <div className=" top-0 left-0 absolute h-full w-full bg-linear-to-tr from-background" />
