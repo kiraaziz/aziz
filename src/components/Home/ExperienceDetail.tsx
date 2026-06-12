@@ -8,10 +8,17 @@ export default function ExperienceDetail() {
         <p className="text-foreground/60 max-w-xl hidden lg:flex mb-5">Since 2023, I've worked with various companies and clients, embracing opportunities to grow and make an impact.</p>
       </div>
       <div className="grid grid-cols-1 w-full mx-auto max-w-2xl">
-        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-y">
+        <div className="w-full flex flex-col gap-1 relative justify-between py-2 lg:py-4 border-dashed lg:border-y">
+          <div className='pb-7 -translate-x-7 -translate-y-7 pt-3 hidden lg:flex absolute w-1/2 h-full top-0 -z-20 max-w-80'>
+            <img className="w-full " src="/experience/delib.svg" />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-tr opacity-60 from-background top-0' />
+          </div>
           <div className="flex items-start justify-start gap-4">
             <div className="h-12 w-12 bg-muted/20 rounded-full flex items-center justify-center border p-1.5 to-start-animation">
-              <img className="filter grayscale contrast-200 invert w-full opacity-55" src="/experience/delib.svg" />
+              <img className="w-full " src="/experience/delib.svg" />
             </div>
             <div>
               <div className="w-full">
@@ -37,10 +44,17 @@ export default function ExperienceDetail() {
             <p className="text-primary text-xs bg-primary/5 border border-border/60 tracking-wide rounded-full px-3 py-1 to-start-animation">postgresql</p>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-b">
+        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-b relative">
+          <div className='pb-7 -translate-x-7 -translate-y-7 hidden lg:flex  items-end justify-end absolute w-1/2 h-full top-0 -z-20'>
+            <img className="w-full filter grayscale contrast-200 invert" src="/experience/capyxis.png" />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-tr opacity-100 from-background top-0' />
+          </div>
           <div className="flex items-start justify-start gap-4">
             <div className="h-12 w-12 bg-muted/20 rounded-full flex items-center justify-center border p-1.5 to-start-animation">
-              <img className="filter grayscale contrast-200 invert w-full opacity-55" src="/experience/capyxis.png" />
+              <img className="filter grayscale contrast-200 invert w-full" src="/experience/capyxis.png" />
             </div>
             <div>
               <div className="w-full">
@@ -70,10 +84,17 @@ export default function ExperienceDetail() {
             <p className="text-primary text-xs bg-primary/5 border border-border/60 tracking-wide rounded-full px-3 py-1 to-start-animation">expo</p>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-b">
+        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-b relative">
+          <div className='pb-7 -translate-x-7 hidden lg:flex pt-3 items-end justify-start absolute  h-full top-0 -z-20 '>
+            <img className="h-full " src="/experience/better.svg" />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-l opacity-90 from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-r opacity-90 from-background top-0' />
+          </div>
           <div className="flex items-start justify-start gap-4">
             <div className="h-12 w-12 bg-muted/20 rounded-full flex items-center justify-center border p-1.5 to-start-animation">
-              <img className="filter grayscale contrast-200 invert w-full opacity-55" src="/experience/better.svg" />
+              <img className="w-full " src="/experience/better.svg" />
             </div>
             <div>
               <div className="w-full">
@@ -101,10 +122,16 @@ export default function ExperienceDetail() {
             <p className="text-primary text-xs bg-primary/5 border border-border/60 tracking-wide rounded-full px-3 py-1 to-start-animation">express</p>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4">
+        <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 relative">
+          <div className='pb-7 -translate-x-7 -translate-y-15 pt-3 hidden lg:flex  items-end justify-end absolute w-1/2 h-full top-0 -z-30 max-w-36'>
+            <img   className="w-full filter grayscale contrast-200 invert" src="/experience/kombas.png" />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
+            <div className='absolute h-full w-full bg-linear-to-tr opacity-100 from-background top-0' />
+          </div>
           <div className="flex items-start justify-start gap-4">
             <div className="h-12 w-12 bg-muted/20 rounded-full flex items-center justify-center border p-1.5 to-start-animation">
-              <img className="filter grayscale contrast-200 invert w-full opacity-55" src="/experience/kombas.png" />
+              <img  className="filter grayscale contrast-200 invert w-full" src="/experience/kombas.png" />
             </div>
             <div>
               <div className="w-full">
