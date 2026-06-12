@@ -33,34 +33,48 @@ export default function DesignSystem() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-14 lg:mt-28 lg:pt-10 mb-10 hidden lg:grid gap-3">
-      <div className="max-w-xl mb-2 to-start-animation">
-        <h1 className="text-lg lg:text-3xl font-bold mb-2">My Design System</h1>
-        <p className="text-foreground/60 max-w-xl hidden lg:flex font-light text-sm mb-2.5">
-          I've been working on a design system for my side projects that makes the apps load quickly and efficiently from the start.
-        </p>
+    <div className="w-full relative">
+      <div className="w-full max-w-5xl mx-auto mt-14 lg:mt-28 lg:pt-10 mb-10 hidden lg:grid gap-3">
+        <div className="max-w-xl mb-2 to-start-animation">
+          <h1 className="text-lg lg:text-3xl font-bold mb-2">My Design System</h1>
+          <p className="text-foreground/60 max-w-xl hidden lg:flex font-light text-sm mb-2.5">
+            I've been working on a design system for my side projects that makes the apps load quickly and efficiently from the start.
+          </p>
+        </div>
+        <div className="to-start-animation flex-wrap flex gap-2 lg:w-max">
+          {options.map((v, i) => (
+            <button
+              key={v.name}
+              onClick={() => setCurrent(i)}
+              className={`${i === current ? 'font-medium border bg-muted/15  rounded-full' : 'lg:hover:text-foreground text-foreground/60'} px-3 text-sm font-light py-1`}
+            >
+              {v.name}
+            </button>
+          ))}
+        </div>
+        {options.map((v, i) =>
+          i === current ? (
+            <div
+              key={v.name}
+              className="to-start-animation relative flex w-full lg:items-center items-start justify-center overflow-hidden min-h-60 pt-5 lg:pt-0 lg:min-h-165 pointer-events-none"
+            >
+              <img src={`/images/design-system/${v.image}`} className={v.class} />
+            </div>
+          ) : null
+        )}
       </div>
-      <div className="to-start-animation flex-wrap flex gap-2 lg:w-max">
-        {options.map((v, i) => (
-          <button
-            key={v.name}
-            onClick={() => setCurrent(i)}
-            className={`${i === current ? 'font-medium border bg-muted/15  rounded-full' : 'lg:hover:text-foreground text-foreground/60'} px-3 text-sm font-light py-1`}
-          >
-            {v.name}
-          </button>
-        ))}
-      </div>
-      {options.map((v, i) =>
-        i === current ? (
-          <div
-            key={v.name}
-            className="to-start-animation relative flex w-full lg:items-center items-start justify-center overflow-hidden min-h-60 pt-5 lg:pt-0 lg:min-h-165 pointer-events-none"
-          >
-            <img src={`/images/design-system/${v.image}`} className={v.class} />
-          </div>
-        ) : null
-      )}
+      <div className="lg:block hidden w-full absolute top-0 from-background -z-10 via-background/50 to-background bg-linear-to-b left-0 h-full" />
+      <div className="lg:block hidden w-full absolute top-0 from-background -z-10 via-background/50 to-background bg-linear-to-b left-0 h-full" />
+      <div className="lg:block hidden w-full absolute top-0 from-background/40 -z-10 via-background/0 to-background/40 bg-linear-to-r left-0 h-full" />
+      <video
+        src="/videos/5.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="lg:block hidden to-start-animation top-0 left-0 object-cover h-full w-full absolute opacity-40 -z-20"
+        style={{ display: "block", mixBlendMode: "screen" }}
+      />
     </div>
   );
 }

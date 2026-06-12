@@ -9,7 +9,7 @@ export default function ExperienceDetail() {
       </div>
       <div className="grid grid-cols-1 w-full mx-auto max-w-2xl">
         <div className="w-full flex flex-col gap-1 relative justify-between py-2 lg:py-4 border-dashed lg:border-y">
-          <div className='pb-7 -translate-x-7 -translate-y-7 pt-3 hidden lg:flex absolute w-1/2 h-full top-0 -z-20 max-w-80'>
+          <div className='to-start-animation pb-7 -translate-x-7 -translate-y-7 pt-3 hidden lg:flex absolute w-1/2 h-full top-0 -z-20 max-w-80'>
             <img className="w-full " src="/experience/delib.svg" />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
@@ -45,7 +45,7 @@ export default function ExperienceDetail() {
           </div>
         </div>
         <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-b relative">
-          <div className='pb-7 -translate-x-7 -translate-y-7 hidden lg:flex  items-end justify-end absolute w-1/2 h-full top-0 -z-20'>
+          <div className='to-start-animation pb-7 -translate-x-7 -translate-y-7 hidden lg:flex  items-end justify-end absolute w-1/2 h-full top-0 -z-20'>
             <img className="w-full filter grayscale contrast-200 invert" src="/experience/capyxis.png" />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
@@ -85,7 +85,7 @@ export default function ExperienceDetail() {
           </div>
         </div>
         <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 border-dashed lg:border-b relative">
-          <div className='pb-7 -translate-x-7 hidden lg:flex pt-3 items-end justify-start absolute  h-full top-0 -z-20 '>
+          <div className='to-start-animation pb-7 -translate-x-7 hidden lg:flex pt-3 items-end justify-start absolute  h-full top-0 -z-20 '>
             <img className="h-full " src="/experience/better.svg" />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
@@ -123,7 +123,7 @@ export default function ExperienceDetail() {
           </div>
         </div>
         <div className="w-full flex flex-col gap-1 justify-between py-2 lg:py-4 relative">
-          <div className='pb-7 -translate-x-7 -translate-y-15 pt-3 hidden lg:flex  items-end justify-end absolute w-1/2 h-full top-0 -z-30 max-w-36'>
+          <div className='to-start-animation pb-7 -translate-x-7 -translate-y-15 pt-3 hidden lg:flex  items-end justify-end absolute w-1/2 h-full top-0 -z-30 max-w-36'>
             <img   className="w-full filter grayscale contrast-200 invert" src="/experience/kombas.png" />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
             <div className='absolute h-full w-full bg-linear-to-bl from-background top-0' />
