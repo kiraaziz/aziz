@@ -38,7 +38,7 @@ export default function Announcements() {
             <a
                 target="_blank"
                 rel="noopener"
-                href="https://letter.kiraaziz.club"
+                href="https://letter.kiraaziz.com"
                 className="group relative border-dashed  h-1/2 lg:border-y-0 border-y border-l lg:border-r-0 border-r rounded-3xl lg:rounded-none p-4 overflow-hidden justify-center flex flex-col"
             >
                 <div className='to-start-animation absolute bottom-7 right-5'>

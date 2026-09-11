@@ -2,7 +2,7 @@ export const projects = [
   {
     "name": "Kira Letter",
     "logo": "letter.svg",
-    "url": "https://letter.kiraaziz.club",
+    "url": "https://letter.kiraaziz.com",
     "tags": "nextjs react saas forms newsletter realtime",
     "description": "Build powerful newsletters and forms in minutes with Kira Letter. Create stunning forms, collaborate live, and track results instantly—all with zero code. Launch your newsletter in minutes with Kira Letter.",
     "short": "Newsletter & Form SaaS",
@@ -21,7 +21,7 @@ export const projects = [
   {
     "name": "Web Whale",
     "logo": "webwhale.svg",
-    "url": "https://whale.kiraaziz.club",
+    "url": "https://whale.kiraaziz.com",
     "tags": "next15 electron grapesjs",
     "description": "A modern open-source website builder powered by GrapesJS and Electron. Create and design professional websites visually with an intuitive drag-and-drop interface, real-time editing, and seamless publishing—all for free.",
     "short": "Website builder",
@@ -40,7 +40,7 @@ export const projects = [
   {
     "name": "Healthybase",
     "logo": "healthybase.svg",
-    "url": "https://healthybase.cloud",
+    "url": "https://github.com/kiraaziz/healthybase",
     "tags": "next15 react postgresql shadcn coolify",
     "description": "Automatic snapshots, secure encryption, and daily restore for PostgreSQL. Set it once and sleep easy — we keep your PostgreSQL data safe and compliant.",
     "short": "Backup your DB",
@@ -119,7 +119,7 @@ export const projects = [
   },
   {
     "name": "kirablog",
-    "url": "https://blog.kiraaziz.club",
+    // "url": "https://blog.kiraaziz.club",
     "tags": "next15 react postgresql shadcn coolify",
     "description": "Dive into a world of code, creativity, and community. Here, I share my journey through technology, from frontend finesse to backend brilliance, and everything in between. Let's build, learn, and inspire together!",
     "short": "Personal blog",

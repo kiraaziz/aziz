@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://kiraaziz.club'
+  const baseUrl = 'https://kiraaziz.com'
   
   return [
     {

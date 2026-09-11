@@ -8,7 +8,7 @@ export default async function BlogPage() {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-1 w-full lg:py-24 gap-2 mx-auto max-w-3xl">
-      <div className="mb-5 to-start-animation relative col-span-full rounded-3xl border p-4 border-primary/20! overflow-hidden bg-primary/5">
+      {/* <div className="mb-5 to-start-animation relative col-span-full rounded-3xl border p-4 border-primary/20! overflow-hidden bg-primary/5">
         <span className="to-start-animation text-xs font-semibold rounded-full bg-primary/10 text-primary border !border-primary/20! px-3">
           New Announcement
         </span>
@@ -18,13 +18,13 @@ export default async function BlogPage() {
         <p className="text-sm text-foreground/60 mt-1 font-light">
           Welcome to my digital playground—where I share my coding journey, creative projects, and lessons learned !
         </p>
-        <a href="https://blog.kiraaziz.club" target="_blank" rel="noopener">
+        <a href="https://blog.kiraaziz.com" target="_blank" rel="noopener">
           <Button className="to-start-animation mt-2 rounded-full bg-muted/20 flex items-center justify-center gap-1 hover:gap-3 ease-in-out duration-300 transition-all" variant="outline">
             Get Started
             <ArrowRight size={20} />
           </Button>
         </a>
-      </div>
+      </div> */}
       {articles.map((val: any) => (
         <div
           key={val.id}
