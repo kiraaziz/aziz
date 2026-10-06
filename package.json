@@ -1,6 +1,6 @@
 {
-  "name": "new-kira",
-  "version": "0.1.0",
+  "name": "KiraFolio",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
